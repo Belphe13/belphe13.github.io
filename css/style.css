@@ -41,6 +41,10 @@ body {
   background-image: url("../img/background/bg_dropper.jpg");
 }
 
+#old_school {
+  background-image: url("../img/background/bg_profile.jpg");
+}
+
 #places {
   background-image: url("../img/background/bg_places.jpg");
 }
