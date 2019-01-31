@@ -1,0 +1,93 @@
+#projects {
+	background-image: url("../img/background/bg_projects.jpg");
+}
+
+.content {
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 100px;
+	width: 80%;
+	height: 100%;
+}
+
+.projects-index {
+	padding-top: 100px;
+	width: 100%;
+	height: 100%;
+}
+
+.projects-index p {
+  float: right;
+	margin-right: 50px;
+	position: relative;
+}
+
+.box {
+	height: 200px;
+	width: 100%;
+}
+
+.box img {
+	height: 100%;
+	width: auto;
+}
+
+.box img:hover {
+	opacity: 0.8;
+}
+
+.box p {
+	line-height: 200px;
+}
+
+#projects-cinepath {
+  background-color: #fa285a;
+}
+
+#projects-dropper {
+	background-color: #33ffff;
+}
+
+/*
+#projects-cinepath {
+	background-color: #fa285a;
+}
+
+#projects-cinepath img:hover {
+	opacity: 0.8;
+}
+
+.projects-left {
+	width: 100%;
+}
+
+.projects-left img {
+	float: left;
+	width: 100%;
+}
+
+.projects-left span {
+	margin: auto 25%;
+}
+
+#projects-underwater {
+	background-color: #fa8c28;
+}
+
+#projects-underwater img:hover {
+	opacity: 0.8;
+}
+
+.projects-right {
+	width: 100%;
+	float: right;
+}
+
+.projects-right img {
+	width: 100%;
+}
+
+.projects-right span {
+	margin: auto 25%;
+}
+*/
