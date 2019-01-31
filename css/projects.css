@@ -1,7 +1,3 @@
-#projects {
-	background-image: url("../img/background/bg_projects.jpg");
-}
-
 .content {
 	margin-left: 10%;
 	margin-right: 10%;
@@ -45,7 +41,7 @@
 }
 
 #projects-dropper {
-	background-color: #33ffff;
+	background-color: #33cccc;
 }
 
 /*
