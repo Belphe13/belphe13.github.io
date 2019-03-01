@@ -85,6 +85,7 @@ body {
   padding-bottom: 10%;
 	width: 80%;
 	height: 100%;
+
 }
 
 #map {
@@ -116,4 +117,14 @@ span {
   margin-top: 20px;
   margin-right: 5px;
   border: solid 8px #fff;
+}
+
+#index span:hover {
+  color: #ffcc33;
+  border: solid 8px #ffcc33;
+}
+
+#dropper span:hover {
+  color: #ffcc33;
+  border: solid 8px #ffcc33;
 }
