@@ -57,3 +57,38 @@
 #projects-p5js {
 	background-color: #f09696;
 }
+
+#projects-vr {
+	background-color: #fda94c;
+}
+
+.content span{
+  line-height: 100px;
+  padding: 8px;
+  margin-top: 20px;
+  margin-right: 5px;
+  border-bottom: solid 8px #fff;
+}
+
+.content span:hover {
+  color: #ffcc33;
+  border-bottom: solid 8px #ffcc33;
+}
+
+
+
+.active span:hover {
+	color: #ffcc33;
+  border-bottom: solid 8px #ffcc33;
+}
+
+.more {
+	font-family: "Circular", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 1.5;
+  margin-top: 20px;
+	display: none;
+	overflow: hidden;
+}

@@ -49,6 +49,10 @@ body {
   background-image: url("../img/background/bg_people.jpg");
 }
 
+#vr {
+  background-image: url("../img/background/bg_projects.jpg");
+}
+
 #places {
   background-image: url("../img/background/bg_places.jpg");
 }
@@ -85,7 +89,6 @@ body {
   padding-bottom: 10%;
 	width: 80%;
 	height: 100%;
-
 }
 
 #map {
@@ -111,7 +114,15 @@ body {
   color: #ffcc33;
 }
 
-span {
+.skillset span {
+  line-height: 100px;
+  padding: 8px;
+  margin-top: 20px;
+  margin-right: 5px;
+  border: solid 8px #fff;
+}
+
+#index span {
   line-height: 100px;
   padding: 8px;
   margin-top: 20px;
@@ -120,11 +131,6 @@ span {
 }
 
 #index span:hover {
-  color: #ffcc33;
-  border: solid 8px #ffcc33;
-}
-
-#dropper span:hover {
   color: #ffcc33;
   border: solid 8px #ffcc33;
 }
