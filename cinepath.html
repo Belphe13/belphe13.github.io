@@ -41,7 +41,9 @@
 				<div class="description">
 					<p>VISUALIZAED INTERFACE FOR CINEMATIC FILM LOCATIONS</p>
 					<br>
-
+					<p>My personal voyage of cinema in terms of visualizing the actual filming locations scavenged on the Internet sources including IMDb, articles and Google Maps Street View. I worked independently to design and prototype the platform using JavaScript and Google Maps API under the advice from professor Ben Grosser in New Media Department, UIUC.</p>
+					<br>
+					<p>Click on title or photo to see it in action.</p>
 				</div>
 			</div> <!-- end of basic info -->
 
@@ -54,6 +56,17 @@
 				<p>A 1984 Road Film Directed by Wim Wender</p>
 			</div>
 
+			<div class="collapsible">
+				<br><span>READ MORE</span>
+			</div>
+
+			<div class="more">
+				<div class="description">
+				<p>Not that Paris, Texas itself has been iconic in cinema history for its vivid color palette and geographical span from Texas to California, back to Taxas then into the void, but it also has provided me with personal reflections over matters of relationships and family. And I see the land and the road in awe.</p>
+				<br>
+			</div>
+			</div><br>
+
 			<a href="cinepath-frances-ha.html" target="_blank">
 				<br><span>FRANCES HA</span><br>
 				<img width="800px" src="img/projects/cinepath/frances_ha.jpg">
@@ -63,8 +76,37 @@
 				<p>A 2013 Film Directed by Noah Baumbach</p>
 			</div>
 
+			<div class="collapsible">
+				<br><span>READ MORE</span>
+			</div>
+
+			<div class="more">
+				<div class="description">
+				<p>Frances Ha! Appreciation to a dearest old friend who recommended this film to me during high school, and I have been recommended to others ever since. We don't see the reason not to fall for the story that mostly happened in New York City with a few small trips to Sacremnto, CA, Paris, France and Poughkeepsie, NY. </p>
+				<br>
+			</div>
+			</div><br>
+
+
 		</div><!-- end of content -->
 	</div>
 </body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var more = this.nextElementSibling;
+      if (more.style.display === "block") {
+        more.style.display = "none";
+      } else {
+        more.style.display = "block";
+      }
+    });
+  }
+</script>
 
 </html>

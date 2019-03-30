@@ -26,22 +26,6 @@ body {
 }
 
 /* navigations */
-.main_nav {
-	  text-align: center;
-}
-
-.main_nav a {
-  line-height: 500px;
-  color: #fff;
-  border-bottom: solid 8px #fff;
-  margin: auto 20px;
-}
-
-.main_nav a:hover {
-  color: #33ffff;
-  border-bottom: solid 8px #33ffff;
-}
-
 .sub_nav {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
