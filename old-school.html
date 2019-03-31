@@ -21,6 +21,12 @@
   <title>Old School | Projects</title>
 </head>
 
+<style>
+.white p {
+  color: #ffffff;
+}
+</style>
+
 <body id="old_school">
   <div class="container">
     <div class="sub_nav">
@@ -36,14 +42,27 @@
     <div class="content">
 
       <div class="basic_info">
-        <p>OLD SCHOOL</p><br>
+        <div class="white">
+          <p>OLD SCHOOL</p><br>
+        </div>
         <div class="description">
           <p>SEMIOTIC GESTURAL INTERFACE DESIGN</p>
           <br>
+
+
+          <span class="collapsible">MANUAL</span>
+
+          <div class="more">
+            <img width="640" src="img/projects/Old-School-User-Manual.png">
+            <br><p>Created by partner Al</p>
+            <br>
+          </div>
+
+          <a href="pdf/ARTS_244_Project_II_Report.pdf" target="_blank"><span>REPORT</span></a>
+
         </div>
       </div> <!-- end of basic info -->
 
-      <img width="640" src="img/projects/Old-School-User-Manual.png">
 
       <br><br><br>
 
@@ -53,8 +72,38 @@
 
       <iframe src="https://player.vimeo.com/video/327293766" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+      <div class="collapsible">
+        <br><span>READ MORE</span>
+      </div>
+
+      <div class="more">
+        <div class="description">
+          <p>Utilizing the basic concept of Personas and Scenarios, I worked with a graphic designer (who completed the user manual) to design a nonverbal gestural interface that controls the music playback on a hands-free music player based on the interface of the digital amplifier.</p>
+        <br>
+      </div>
+      </div><br>
+
+
+
     </div><!-- end of content -->
   </div>
 </body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var more = this.nextElementSibling;
+      if (more.style.display === "block") {
+        more.style.display = "none";
+      } else {
+        more.style.display = "block";
+      }
+    });
+  }
+</script>
 
 </html>
