@@ -42,7 +42,7 @@ body {
 }
 
 #old_school {
-  background-image: url("../img/background/bg_profile.jpg");
+  background-image: url("../img/background/bg_old_school.jpg");
 }
 
 #p5js {
@@ -51,6 +51,10 @@ body {
 
 #vr {
   background-image: url("../img/background/bg_projects.jpg");
+}
+
+#fpga {
+  background-image: url("../img/background/bg_fpga.jpg");
 }
 
 #places {
