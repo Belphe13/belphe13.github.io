@@ -14,7 +14,6 @@
 </script>
 
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/projects.css" type="text/css">
 	<link rel="stylesheet" href="css/nav.css" type="text/css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -31,6 +30,14 @@
 			<a href="people.html">PEOPLE</a>
 			-->
 			<a href="profile.html">PROFILE</a>
+		</div>
+
+		<div class="left_nav">
+			<a href="" id="current_project">CINEPATH</a><br>
+			<a href="dropper.html">DROPPER</a><br>
+			<a href="old-school.html">OLD SCHOOL</a><br>
+			<a href="p5js.html">P5.JS</a><br>
+			<a href="vr.html">VR</a><br>
 		</div>
 
 		<div class="content">
@@ -67,9 +74,9 @@
 
 			<div class="more">
 				<div class="description">
-				<p>Not that Paris, Texas itself has been iconic in cinema history for its vivid color palette and geographical span from Texas to California, back to Taxas then into the void, but it also has provided me with personal reflections over matters of relationships and family. And I see the land and the road in awe.</p>
-				<br>
-			</div>
+					<p>Not that Paris, Texas itself has been iconic in cinema history for its vivid color palette and geographical span from Texas to California, back to Taxas then into the void, but it also has provided me with personal reflections over matters of relationships and family. And I see the land and the road in awe.</p>
+					<br>
+				</div>
 			</div><br>
 
 			<a href="cinepath-frances-ha.html" target="_blank">
@@ -87,9 +94,9 @@
 
 			<div class="more">
 				<div class="description">
-				<p>Frances Ha! Appreciation to a dearest old friend who recommended this film to me during high school, and I have been recommended to others ever since. We don't see the reason not to fall for the story that mostly happened in New York City with a few small trips to Sacremnto, CA, Paris, France and Poughkeepsie, NY. </p>
-				<br>
-			</div>
+					<p>Frances Ha! Appreciation to a dearest old friend who recommended this film to me during high school, and I have been recommended to others ever since. We don't see the reason not to fall for the story that mostly happened in New York City with a few small trips to Sacremnto, CA, Paris, France and Poughkeepsie, NY. </p>
+					<br>
+				</div>
 			</div><br>
 
 
@@ -98,20 +105,20 @@
 </body>
 
 <script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
 
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var more = this.nextElementSibling;
-      if (more.style.display === "block") {
-        more.style.display = "none";
-      } else {
-        more.style.display = "block";
-      }
-    });
-  }
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var more = this.nextElementSibling;
+			if (more.style.display === "block") {
+				more.style.display = "none";
+			} else {
+				more.style.display = "block";
+			}
+		});
+	}
 </script>
 
 </html>

@@ -33,7 +33,7 @@ body {
   width: 100%;
   position: fixed;
   display: block;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
 }
 
@@ -52,4 +52,31 @@ body {
 #current_nav {
   color: #ffcc33;
   border-bottom: solid 8px #ffcc33;
+}
+
+/* project navigations */
+.left_nav {
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-left: 10%;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.left_nav a {
+  line-height: 80px;
+  font-size: 40px;
+  color: #fff;
+
+}
+
+.left_nav a:hover {
+  border-bottom: solid 6px #fff;
+}
+
+#current_project {
+  color: #ffcc33;
+  border-bottom: solid 6px #ffcc33;
 }

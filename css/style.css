@@ -8,14 +8,14 @@
 ul, li {
   list-style: none;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   color: #fff
 }
 
 a, p, span {
   text-decoration: none;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
 }
 
@@ -27,34 +27,6 @@ body {
 
 #index {
   background-image: url("../img/background/bg_index.jpg");
-}
-
-#projects {
-  background-image: url("../img/background/bg_projects.jpg");
-}
-
-#cinepath {
-  background-image: url("../img/background/bg_projects.jpg");
-}
-
-#dropper {
-  background-image: url("../img/background/bg_dropper.jpg");
-}
-
-#old_school {
-  background-image: url("../img/background/bg_old_school.jpg");
-}
-
-#p5js {
-  background-image: url("../img/background/bg_people.jpg");
-}
-
-#vr {
-  background-image: url("../img/background/bg_projects.jpg");
-}
-
-#fpga {
-  background-image: url("../img/background/bg_fpga.jpg");
 }
 
 #places {
@@ -81,10 +53,7 @@ body {
   text-align: center;
 }
 
-
 .content {
-  height: 100%;
-  width: 100%;
   overflow: hidden;
   text-align: center;
 	margin-left: 10%;
