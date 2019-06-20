@@ -58,8 +58,8 @@ body {
 .left_nav {
   margin-top: 100px;
   padding-top: 100px;
-  padding-left: 10%;
-  width: 20%;
+  padding-left: 5%;
+  width: 15%;
   height: 100%;
   position: fixed;
   z-index: 2;
