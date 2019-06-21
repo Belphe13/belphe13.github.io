@@ -1,0 +1,5 @@
+1. start with cinepath
+2. create page for untitled video processing project
+3. create page for sanity check
+4. ui design with subtitles?
+ 
