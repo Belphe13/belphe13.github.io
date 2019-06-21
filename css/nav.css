@@ -59,24 +59,24 @@ body {
   margin-top: 100px;
   padding-top: 100px;
   padding-left: 5%;
-  width: 15%;
+  width: 20%;
   height: 100%;
   position: fixed;
   z-index: 2;
 }
 
 .left_nav a {
-  line-height: 80px;
-  font-size: 40px;
+  line-height: 60px;
+  font-size: 30px;
   color: #fff;
 
 }
 
 .left_nav a:hover {
-  border-bottom: solid 6px #fff;
+  border-bottom: solid 5px #fff;
 }
 
 #current_project {
   color: #ffcc33;
-  border-bottom: solid 6px #ffcc33;
+  border-bottom: solid 5px #ffcc33;
 }
