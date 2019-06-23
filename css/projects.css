@@ -133,19 +133,26 @@
   color: #ffffff;
 }
 
-.description a {
-	font-size: 40px;
-	border-bottom: solid 6px;
-}
-
 .description a:hover {
 	color: rgba(255, 255, 255, 0.6);
 }
+
 
 .citation p {
 	font-size: 30px;
 	margin-top: 15px;
 	color: #ffffff;
+}
+
+.citation a {
+	font-size: 40px;
+	margin-top: 20px;
+	color: #ffffff;
+	border-bottom: solid 6px;
+}
+
+.citation a:hover {
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .subtitle p {
