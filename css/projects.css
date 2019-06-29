@@ -1,4 +1,4 @@
-
+/* project.html and projects */
 .projects-index {
 	padding-top: 100px;
 	width: 100%;
@@ -129,7 +129,41 @@
 .description p {
   font-size: 40px;
   margin-top: 20px;
+	line-height: 50px;
   color: #ffffff;
+}
+
+.description a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+
+.citation p {
+	font-size: 30px;
+	margin-top: 15px;
+	color: #ffffff;
+}
+
+.citation a {
+	font-size: 40px;
+	margin-top: 20px;
+	color: #ffffff;
+	border-bottom: solid 6px;
+}
+
+.citation a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.subtitle p {
+	margin-top: 40px;
+	border-bottom: solid 8px;
+}
+
+s {
+	color: white;
+	font-size: 1000px;
+	text-decoration-line:line-through;
 }
 
 .active span:hover {

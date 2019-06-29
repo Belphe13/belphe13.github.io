@@ -1,5 +1,12 @@
 1. start with cinepath
+<<<<<<< HEAD
 2. create page for untitled video processing project
 3. create page for sanity check
 4. ui design with subtitles?
 5. img optimize............................................completed 
+=======
+2. image compression online
+3. create page for untitled video processing project
+4. create page for sanity check
+5. ui design with sub-titles?
+>>>>>>> d2b05423b2da8868c647601e1b2db67b1a43aadf
