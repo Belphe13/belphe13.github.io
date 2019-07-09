@@ -43,6 +43,10 @@
   background-image: url("../img/background/bg_projects.jpg");
 }
 
+#cinemask {
+  background-image: url("../img/background/bg_people.jpg");
+}
+
 #dropper {
   background-image: url("../img/background/bg_dropper.jpg");
 }

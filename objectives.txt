@@ -1,5 +1,8 @@
-1. start with cinepath ..................................... in progress
-2. create page for untitled video processing project ....... not started
-3. sanity check sketch design .............................. not started
+1. cinepath page redesign .................................. in progress
+2. create page for cinemask ................................ in progress
+3. create page for sanity check ............................ not started
 4. ui design with subtitles like vr ........................ not started
 5. img optimize ............................................ completed
+	5.1 bg_cinemask opitimze ........................... not started
+6. profile page redesign ................................... not started
+7. index page redesign ..................................... not started
