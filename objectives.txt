@@ -1,6 +1,5 @@
-1. cinepath page redesign .................................. in progress
-3. create page for sanity check ............................ not started
-4. ui design with subtitles like vr ........................ not started
-5. img optimize ............................................ completed
-6. profile page rewrite .................................... not started
-7. index page redesign ..................................... in process
+1. cinepath page rewrite ................................... in progress
+2. create page for sanity check ............................ not started
+3. ui design with subtitles like vr ........................ not started
+4. profile paragraph writing ............................... not started
+5. index page redesign ..................................... not started
