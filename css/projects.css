@@ -47,7 +47,7 @@
   background-image: url("../img/background/bg_cyber.jpg");
 }
 
-#dropper {
+#ui {
   background-image: url("../img/background/bg_dropper.jpg");
 }
 
@@ -56,14 +56,14 @@
 }
 
 #p5js {
-  background-image: url("../img/background/bg_people.jpg");
+  background-image: url("../img/background/bg_cyber.jpg");
 }
 
 #vr {
   background-image: url("../img/background/bg_projects.jpg");
 }
 
-#fpga {
+#ece {
   background-image: url("../img/background/bg_fpga.jpg");
 }
 
@@ -75,7 +75,7 @@
 	background-color: #fbd55b;
 }
 
-#projects-dropper {
+#projects-ui {
 	background-color: #33cccc;
 }
 
@@ -91,7 +91,7 @@
 	background-color: #fda94c;
 }
 
-#projects-fpga {
+#projects-ece {
 	background-color: #905fc1;
 }
 

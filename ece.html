@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-133224330-1');
+</script>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/projects.css" type="text/css">
+	<link rel="stylesheet" href="css/nav.css" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<title>ECE | Projects</title>
+</head>
+
+<body id="ece">
+	<div class="container">
+		<div class="sub_nav">
+			<a href="index.html">LILAN</a>
+			<a href="projects.html" id="current_nav">PROJECTS</a>
+			<!--
+			<a href="places.html">PLACES</a>
+			<a href="people.html">PEOPLE</a>
+			<a href="profile.html">PROFILE</a>
+			-->
+		</div>
+
+		<div class="left_nav">
+			<a href="cinepath.html">CINEPATH</a><br>
+			<a href="cyberencoding.html">CYBERENCODE</a><br>
+			<a href="ui.html">UI/UX</a><br>
+			<a href="old-school.html">OLD SCHOOL</a><br>
+			<a href="p5js.html">P5.JS</a><br>
+			<a href="ece.html" id="current_project">ECE</a><br>
+			<a href="dataviz.html">DATAVIZ</a><br>
+			<a href="vr.html">VR</a><br>
+		</div>
+
+		<div class="content">
+
+			<div class="title">
+				<p>ECE PROJECTS</p>
+			</div> <!-- end of title -->
+
+			<div class="description">
+				<p>Courseworks in Electrical and Computer Engineering Program</p><br>
+			</div>
+			<br>
+			<div class="collapsible">
+				<span>ZKTAP</span>
+			</div>
+
+			<div class="more">
+				<div class="description">
+					<p>zkTap: A Zero-Knowledge Trustless Authentication Protocol is an ongoing project designated for ECE 445 Senior Design Lab. I am lucky to work with two fellow ECE seniors Joseph Kuo and Majdi Hassan under the guidance from graduate teaching assistant Evan Widloski and professor Arne Fliflet.</p>
+					<br>
+				</div> <!-- end of description -->
+
+				<a href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=16180" target="_blank">
+					<span>PROPOSAL</span>
+				</a>
+
+				<a href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=16198" target="_blank">
+					<span>DESIGN DOCUMNET</span>
+				</a>
+
+				<div class="subtitle">
+					<p>BLOCK DIAGRAM</p>
+				</div>
+				<div class="description">
+					<br><img width="800px" src="img/projects/zktap/dd_block.jpg">
+				</div>
+
+				<div class="subtitle">
+					<p>PHYSICAL DESIGN</p>
+				</div>
+				<div class="description">
+					<br><img width="800px" src="img/projects/zktap/tag_physical.jpeg">
+					<br><img width="800px" src="img/projects/zktap/reader_physical.jpeg">
+				</div>
+			</div><br><!--end of more-->
+
+			<div class="collapsible">
+				<span>FPGA</span>
+			  </div>
+
+			<div class="more">
+				<div class="description">
+					<p>A 80s inspired dress-up game written all in hardware language SystemVerilog</p>
+					<a href="pdf/ECE_385_Final_Project.pdf" target="_blank"><span>REPORT</span></a>
+					<br>
+				</div> <!-- end of description -->
+				<br>
+				<img width="100%" src="img/projects/fpga/fpga.jpg">
+			</div><!-- end of more -->
+
+		</div><!-- end of content -->
+	</div>
+</body>
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var more = this.nextElementSibling;
+			if (more.style.display === "block") {
+				more.style.display = "none";
+			} else {
+				more.style.display = "block";
+			}
+		});
+	}
+</script>
+
+</html>
