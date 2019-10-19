@@ -59,10 +59,6 @@
   background-image: url("../img/background/bg_cyber.jpg");
 }
 
-#vr {
-  background-image: url("../img/background/bg_projects.jpg");
-}
-
 #ece {
   background-image: url("../img/background/bg_fpga.jpg");
 }
@@ -87,12 +83,8 @@
 	background-color: #f09696;
 }
 
-#projects-vr {
-	background-color: #fda94c;
-}
-
 #projects-ece {
-	background-color: #905fc1;
+	background-color: #fda94c;
 }
 
 .container {
