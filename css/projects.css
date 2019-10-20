@@ -63,6 +63,10 @@
   background-image: url("../img/background/bg_fpga.jpg");
 }
 
+#dataviz {
+	background-image: url("../img/background/bg_projects.jpg");
+  }
+
 #projects-cinepath {
   background-color: #fa285a;
 }
