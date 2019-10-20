@@ -3,14 +3,17 @@
 
 <head>
 
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
-  <script>
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
 
-	gtag('config', 'UA-133224330-1');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-133224330-1');
 </script>
 
   <meta charset="UTF-8">
@@ -21,9 +24,9 @@
 </head>
 
 <style>
-.white p {
-  color: #ffffff;
-}
+  .white p {
+    color: #ffffff;
+  }
 </style>
 
 <body id="old_school">
@@ -46,43 +49,55 @@
       <a href="p5js.html">P5.JS</a><br>
       <a href="ece.html">ECE + CS</a><br>
       <a href="dataviz.html">DATAVIZ</a><br>
-		</div>
+    </div>
 
     <div class="content">
 
       <div class="title">
-          <p>OLD SCHOOL</p><br>
+        <p>OLD SCHOOL</p><br>
       </div>
-      
-        <div class="description">
-          <p>SEMIOTIC GESTURAL INTERFACE DESIGN</p>
+
+      <div class="description">
+        <p>This is a semiotic gestural interface design utilizing the basic concept of Personas and Scenarios, I worked with a graphic designer (who completed the
+          user manual) to design a nonverbal gestural interface that controls the music playback on a hands-free music
+          player based on the interface of the digital amplifier.</p><br>
+
+        <span class="collapsible">MANUAL</span>
+
+        <div class="more">
+          <img width="800px" src="img/projects/old_school/Old-School-User-Manual.jpg">
           <br>
-
-          <p>Utilizing the basic concept of Personas and Scenarios, I worked with a graphic designer (who completed the user manual) to design a nonverbal gestural interface that controls the music playback on a hands-free music player based on the interface of the digital amplifier.</p><br>
-                    
-          <span class="collapsible">MANUAL</span>
-
-          <div class="more">
-            <img width="800px" src="img/projects/old_school/Old-School-User-Manual.jpg">
-            <br><p>Created by partner Al</p>
-            <br>
-          </div>
-
-          <a href="pdf/ARTS_244_Project_II_Report.pdf" target="_blank"><span>REPORT</span></a>
-
+          <p>Created by partner Al</p>
+          <br>
         </div>
 
+        <a href="pdf/ARTS_244_Project_II_Report.pdf" target="_blank"><span>REPORT</span></a>
+
+      </div>
+
+      <div class="subtitle">
+          <p>PERSONA</p>
+      </div>
+
+      <div class="subtitle">
+          <p>SCENARIO</p>
+      </div>
+
+      <div class="subtitle">
+        <p>WIZARD-OF-OZ</p>
+      </div>
+
       <br><br><br>
 
-      <iframe src="https://player.vimeo.com/video/313964167" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/313964167" width="800" height="450" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
       <br><br><br>
 
-      <iframe src="https://player.vimeo.com/video/327293766" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/327293766" width="800" height="450" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
       <br><br><br>
-
-
 
     </div><!-- end of content -->
   </div>
@@ -93,7 +108,7 @@
   var i;
 
   for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
+    coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var more = this.nextElementSibling;
       if (more.style.display === "block") {
