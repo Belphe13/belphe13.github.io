@@ -2,7 +2,7 @@ var map;
 
 async function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 2.5,
+        zoom: 3.5,
         disableDefaultUI: true,
         // center in CQ
         center: new google.maps.LatLng(29.563009, 106.551559),
@@ -203,7 +203,10 @@ async function initMap() {
             }
         ]
     });
+    
+ //   freshman(map);
 
+    
     kunming(map);
 
     setTimeout(function(){
@@ -233,6 +236,48 @@ async function initMap() {
     setTimeout(function(){
         southeast_asia(map);
     }, 5500);
+
+    setTimeout(function(){
+        freshman(map);
+    }, 7200);
+
+    setTimeout(function(){
+        greatlakes(map);
+    }, 7500);
+
+    setTimeout(function(){
+        sophomore(map);
+    }, 100);
+
+    setTimeout(function(){
+        northern_mi(map);
+    }, 100);
+
+    setTimeout(function(){
+        grand_canyon(map);
+    }, 100);
+
+    setTimeout(function(){
+        seattle(map);
+    }, 100);
+
+    setTimeout(function(){
+        northwest(map);
+    }, 100);
+
+
+    setTimeout(function(){
+        newyork_train(map);
+    }, 100);
+
+    setTimeout(function(){
+        russia(map);
+    }, 1100);
+
+    setTimeout(function(){
+        siberia(map);
+    }, 1400);
+
 }
 
 /*
@@ -526,12 +571,12 @@ function southeast_asia(map) {
 
 /*
  * Undergrad:
- * Chicago - CU
+ * CQ - Doha - Chicago - CU
  * NY
  * Indy - Columbus - Detroit - CHI - CQ
- * CU - New Orleans - Atlanta - CQ - FL: ORL - UF - Daytona Beach
- * North Michigan: Milwaukee - Copper Harbor - Lighthouse
- * Grand Canyon: 
+ * CU - New Orleans - Atlanta - CQ - FL: ORL - Gainesville - Daytona Beach
+ * North Michigan: Milwaukee - Copper Harbor - Pictured Rocks
+ * Grand Canyon: St Louis - OK - Albuquerque - GC NP - Horseshoe Bend - Monument Valley - KS City
  * Seattle - Snoqualmie - Mt Rainier - Portland - Seattle
  * NY - RU: Saint Petersburg - Moscow - Yekaterinburg - Novosibirsk - Krasnoyarsk - Irkutsk - Chita - Manchuria - Beijing - Chongqing
  * DC - Montauk - Tupper Lake
@@ -539,11 +584,304 @@ function southeast_asia(map) {
  * Cleveland - Pittsburg - NY - Tupper - Burlington - Cleveland
  * FL: Orlando - Tampa - Miami - Key West
  * LA - NY - CU - BOS - CU - BOS - RI - BOS
- * Nashville - Great Smoky - Ashville - Lexington - Indy - CU
+ * Nashville - Great Smoky - Ashville - Mammoth Cave - Lexington - Indy - CU
+ * CU - NY - BOS - NY - CU
  * CU - BOS - Detorit - CU
  * CU - BOS - NY - DC - CU
  * CU - Bloomington, IL - Cable, OH
  * CU - Cleveland - BOS - Portland - Acadia - BOS
  */
+
+function freshman(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 29.563009, lng: 106.551559},    // CQ
+                     {lat: 25.286106, lng: 51.534817},    // Doha
+                     {lat: 41.881832, lng: -87.623177},    // CHI
+                     {lat: 40.116421, lng: -88.243385},    // CU
+                     {lat: 41.881832, lng: -87.623177},    // CHI
+                     {lat: 40.73061, lng: -73.935242},    // NY
+                     {lat: 40.116421, lng: -88.243385}    // CU
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+  }
+
+function greatlakes(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Champaign, IL',
+              waypoints: [
+                {location: 'Indianapolis, IN'},
+                {location: 'Columbus, OH'},
+                {location: 'Detroit, MI'},
+                {location: 'Chicago, IL'},
+                {location: 'Champaign, IL'},
+                {location: 'New Orleans, LA'},
+              ],
+              destination: 'Atlanta, GA',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function sophomore(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 33.753746, lng: -84.38633},    // ATL
+                     {lat: 41.881832, lng: -87.623177},    // CHI
+                     {lat: 39.916668, lng: 116.383331},    // BJ
+                     {lat: 29.563009, lng: 106.551559},    // CQ
+                     {lat: 39.916668, lng: 116.383331},    // BJ
+                     {lat: 41.881832, lng: -87.623177},    // CHI
+                     {lat: 28.538336, lng: -81.379234}    // ORL
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+//          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+  }
+
+function northern_mi(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Champaign, IL',
+              waypoints: [
+                {location: 'Milwaukee, WI'},
+                {location: 'Copper Harbor, MI'},
+                {location: new google.maps.LatLng(46.563491,-86.3253972)},         // Pictured Rocks
+              ],
+              destination: 'Champaign, IL',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function grand_canyon(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Champaign, IL',
+              waypoints: [
+                {location: 'Saint Louis, MO'},
+                {location: 'Oklahoma City, OK'},
+                {location: 'Albuquerque, NM'},
+                {location: new google.maps.LatLng(36.056595,-112.125092)},         // Grand Canyon
+                {location: new google.maps.LatLng(36.881278,-111.510749)},         // Horseshoe Bend
+                {location: new google.maps.LatLng(36.991728,-110.161052)},         // Monument Valley
+                {location: 'Kansas City, KS'},
+              ],
+              destination: 'Champaign, IL',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function seattle(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 40.116421, lng: -88.243385},    // CU
+                     {lat: 41.881832, lng: -87.623177},    // CHI
+                     {lat: 47.608013, lng: -122.335167}    // SEA
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+//          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+  }
+
+function northwest(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Seattle, WA',
+              waypoints: [
+                {location: new google.maps.LatLng(47.52871,-121.82539)},         // Snoqualmie
+                {location: new google.maps.LatLng(46.742846, -121.545901
+                    )},         // Mt Rainier NP
+                {location: 'Portland, OR'},
+              ],
+              destination: 'Seattle, WA',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function newyork_train(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Champaign, IL',
+              waypoints: [
+                {location: 'Chicago, IL'},
+                {location: 'Albany, NY'},
+              ],
+              destination: 'New York, NY',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+
+function russia(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 40.73061, lng: -73.935242},    // NY
+                     {lat: 59.9375, lng: 30.308611}    // Sanit Petersburg
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+  }
+
+function siberia(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: new google.maps.LatLng(59.9375,30.308611),         // St Petersburg
+              waypoints: [
+                {location: 'Yekaterinburg'},
+              ],
+              destination: 'Zabaikalsk',           // Manchuria
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route2(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function route2(map, pathCoords) {
+    var route = new google.maps.Polyline({
+        path: [],
+        geodesic : true,
+        strokeColor: '#ffcc33',
+        strokeOpacity: 0.5,
+        strokeWeight: 5,
+        editable: false,
+        map:map
+    });
+
+//    console.log(pathCoords.length);
+
+    for (var i = 0; i < pathCoords.length; i++) {
+        setTimeout(function(coords) {
+            route.getPath().push(coords);
+            map.panTo(coords);
+        }, 5 * i, pathCoords[i]);
+    }
+}
 
 google.maps.event.addDomListener(window, 'load', initMap);
