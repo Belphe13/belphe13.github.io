@@ -206,7 +206,7 @@ async function initMap() {
     
  //   freshman(map);
 
-    
+/*
     kunming(map);
 
     setTimeout(function(){
@@ -247,36 +247,40 @@ async function initMap() {
 
     setTimeout(function(){
         sophomore(map);
-    }, 100);
+    }, 8000);
 
     setTimeout(function(){
         northern_mi(map);
-    }, 100);
+    }, 8200);
 
     setTimeout(function(){
         grand_canyon(map);
-    }, 100);
+    }, 9500);
 
     setTimeout(function(){
         seattle(map);
-    }, 100);
+    }, 9800);
 
     setTimeout(function(){
         northwest(map);
-    }, 100);
+    }, 10000);
 
 
     setTimeout(function(){
         newyork_train(map);
-    }, 100);
+    }, 11500);
 
     setTimeout(function(){
         russia(map);
-    }, 1100);
+    }, 12000);
 
     setTimeout(function(){
         siberia(map);
-    }, 1400);
+    }, 13000);
+*/
+//    setTimeout(function(){
+        manchuria(map);
+ //   }, 13500);
 
 }
 
@@ -858,30 +862,50 @@ function siberia(map) {
           };
     directionsService.route(request, function(result, status) {
         if (status == google.maps.DirectionsStatus.OK) {
-            route2(map, result.routes[0].overview_path);
+            route1(map, result.routes[0].overview_path);
         }
     });
 }
 
-function route2(map, pathCoords) {
-    var route = new google.maps.Polyline({
-        path: [],
-        geodesic : true,
-        strokeColor: '#ffcc33',
-        strokeOpacity: 0.5,
-        strokeWeight: 5,
-        editable: false,
-        map:map
+function manchuria(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
     });
-
-//    console.log(pathCoords.length);
-
-    for (var i = 0; i < pathCoords.length; i++) {
-        setTimeout(function(coords) {
-            route.getPath().push(coords);
-            map.panTo(coords);
-        }, 5 * i, pathCoords[i]);
+  
+    var locations = [{lat: 49.57059, lng: 117.33163},    // Manchuria
+                     {lat: 39.916668, lng: 116.383331},    // Beijing
+                     {lat: 29.563009, lng: 106.551559},    // Chongqing
+                     {lat: 39.916668, lng: 116.383331},    // Beijing
+                     {lat: 41.881832, lng: -87.623177},    // Chicago
+                     {lat: 40.116421, lng: -88.243385},    // Champaign
+                     {lat: 41.881832, lng: -87.623177},    // Chicago
+                     {lat: 38.900497, lng: -77.007507}    // DC
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+//          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
     }
-}
+  }
 
 google.maps.event.addDomListener(window, 'load', initMap);
