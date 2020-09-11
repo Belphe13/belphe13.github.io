@@ -204,9 +204,6 @@ async function initMap() {
         ]
     });
     
- //   freshman(map);
-
-/*
     kunming(map);
 
     setTimeout(function(){
@@ -277,10 +274,10 @@ async function initMap() {
     setTimeout(function(){
         siberia(map);
     }, 13000);
-*/
-//    setTimeout(function(){
+
+    setTimeout(function(){
         manchuria(map);
- //   }, 13500);
+   }, 13500);
 
 }
 
@@ -902,10 +899,29 @@ function manchuria(map) {
     for (var i = 0; i < locations.length; i++) {
       setTimeout(function(coords) {
           latlng = new google.maps.LatLng(coords.lat, coords.lng);
-//          map.panTo(latlng);
+          map.panTo(latlng);
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
   }
+
+function montauk(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: new google.maps.LatLng(38.900497,-77.007507),         // DC
+              waypoints: [
+                {location: 'Montauk, NY'},
+                {location: 'New York, NY'},
+                {location: 'Tupper Lake, NY'},
+              ],
+              destination: 'Champaign, IL',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
 
 google.maps.event.addDomListener(window, 'load', initMap);
