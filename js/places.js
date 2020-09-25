@@ -1,11 +1,13 @@
 var map;
+var t;
 
 async function initMap() {
+    t = 0;
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 3.5,
-        disableDefaultUI: true,
-        // center in CQ
-        center: new google.maps.LatLng(29.563009, 106.551559),
+        disableDefaultUI: true,    
+        center: new google.maps.LatLng(29.563009, 106.551559),  // CQ
+//        center: new google.maps.LatLng(40.116421, -88.243385),  // CU
         styles: [{
                 "elementType": "geometry",
                 "stylers": [{
@@ -203,82 +205,212 @@ async function initMap() {
             }
         ]
     });
-    
+
     kunming(map);
+
+    t+=1500;
 
     setTimeout(function(){
         hainan(map);
-      }, 1500);
+    }, t);
+
+    t+=100;
 
     setTimeout(function(){
         southwest_china(map);
-      }, 1600);
+    }, t);
+
+    t+=1400;
 
     setTimeout(function(){
         hongkong(map);
-    }, 3000);
+    }, t);
+
+    t+=200;
 
     setTimeout(function(){
         tibet(map);
-    }, 3200);
+    }, t);
+
+    t+=1800;
 
     setTimeout(function(){
         us_camp(map);
-    }, 5000);
+    }, t);
+
+    t+= 300;
 
     setTimeout(function(){
         greece(map);
-    }, 5300);
+    }, t);
+
+    t+= 200;
 
     setTimeout(function(){
         southeast_asia(map);
-    }, 5500);
+    }, t);
+
+    t+=2000;
 
     setTimeout(function(){
         freshman(map);
-    }, 7200);
+    }, t);
+
+    t+=300;
 
     setTimeout(function(){
         greatlakes(map);
-    }, 7500);
+    }, t);
+
+    t+=1500;
 
     setTimeout(function(){
         sophomore(map);
-    }, 8000);
+    }, t);
+
+    t+=500;
 
     setTimeout(function(){
         northern_mi(map);
-    }, 8200);
+    }, t);
+
+    t+= 1300;
 
     setTimeout(function(){
         grand_canyon(map);
-    }, 9500);
+    }, t);
+
+    t+=2300;
 
     setTimeout(function(){
         seattle(map);
-    }, 9800);
+    }, t);
+
+    t+=200;
 
     setTimeout(function(){
         northwest(map);
-    }, 10000);
+    }, t);
 
+    t+= 1000;
 
     setTimeout(function(){
         newyork_train(map);
-    }, 11500);
+    }, t);
+
+    t+=1500;
 
     setTimeout(function(){
         russia(map);
-    }, 12000);
+    }, t);
 
-    setTimeout(function(){
+    t+=500;
+
+   setTimeout(function(){
         siberia(map);
-    }, 13000);
+    }, t);
+
+    t+=2000;
 
     setTimeout(function(){
         manchuria(map);
-   }, 13500);
+    }, t);
 
+   t+=200;
+
+    setTimeout(function(){
+        junior(map);
+    }, t);
+
+    t+=1000;
+
+    setTimeout(function(){
+        texas(map);
+    }, t);
+
+    t+=1000;
+
+    setTimeout(function(){
+        dc_ny(map);
+    }, t);
+
+    t+=500;
+
+    setTimeout(function(){
+        montauk(map);
+    }, t);
+
+    t+=1500;
+
+    setTimeout(function(){
+        sf(map);
+    }, t);
+
+    t+=500;
+
+    setTimeout(function(){
+        yosemite(map);
+    }, t);
+
+    t+=500;
+
+    setTimeout(function(){
+        newyork_car(map);
+    }, t);
+
+    t+=1500;
+
+    setTimeout(function(){
+        michigan(map);
+    }, t);
+
+    t+=1500;
+
+    setTimeout(function(){
+        florida(map);
+    }, t);
+
+    t+=200;
+
+    setTimeout(function(){
+        florida_car(map);
+    }, t);
+
+    t+=1000;
+
+    setTimeout(function(){
+        la(map);
+    }, t);
+
+    t+=300;
+
+    setTimeout(function(){
+        boston(map);
+    }, t);
+
+    t+=200;
+
+    setTimeout(function(){
+        northeast(map);
+    }, t);
+
+    t += 1200;
+
+    setTimeout(function(){
+        greatsmoky(map);
+    }, t);
+
+    t += 1500;
+
+    setTimeout(function(){
+        covid(map);
+    }, t);
+
+    t+= 2000;
+
+    setTimeout(function(){
+        maine(map);
+    }, t);
 }
 
 /*
@@ -580,10 +712,12 @@ function southeast_asia(map) {
  * Grand Canyon: St Louis - OK - Albuquerque - GC NP - Horseshoe Bend - Monument Valley - KS City
  * Seattle - Snoqualmie - Mt Rainier - Portland - Seattle
  * NY - RU: Saint Petersburg - Moscow - Yekaterinburg - Novosibirsk - Krasnoyarsk - Irkutsk - Chita - Manchuria - Beijing - Chongqing
+ * Texas: Dallas - San Antonio - Malaquite - Houston
  * DC - Montauk - Tupper Lake
  * Cali: SF - Yosemite
  * Cleveland - Pittsburg - NY - Tupper - Burlington - Cleveland
  * FL: Orlando - Tampa - Miami - Key West
+ * MI: CU - CHI - Holland - Ludington - Ann Arbor
  * LA - NY - CU - BOS - CU - BOS - RI - BOS
  * Nashville - Great Smoky - Ashville - Mammoth Cave - Lexington - Indy - CU
  * CU - NY - BOS - NY - CU
@@ -889,9 +1023,98 @@ function manchuria(map) {
     var locations = [{lat: 49.57059, lng: 117.33163},    // Manchuria
                      {lat: 39.916668, lng: 116.383331},    // Beijing
                      {lat: 29.563009, lng: 106.551559},    // Chongqing
-                     {lat: 39.916668, lng: 116.383331},    // Beijing
+                     {lat: 39.916668, lng: 116.383331}    // Beijing
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+  }
+
+  function junior(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 39.916668, lng: 116.383331},    // Beijing
                      {lat: 41.881832, lng: -87.623177},    // Chicago
-                     {lat: 40.116421, lng: -88.243385},    // Champaign
+                     {lat: 40.116421, lng: -88.243385}    // Champaign
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+  }
+
+function texas(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Champaign, IL',
+              waypoints: [
+                {location: 'Dallas, TX'},
+                {location: 'San Antonio, TX'},
+                {location: '20420 Park Rd 22, Corpus Christi, TX 78418'},
+                {location: 'Houston, TX'},
+              ],
+              destination: 'Champaign, IL',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+
+function dc_ny(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 40.116421, lng: -88.243385},    // Champaign
                      {lat: 41.881832, lng: -87.623177},    // Chicago
                      {lat: 38.900497, lng: -77.007507}    // DC
                    ];
@@ -899,7 +1122,7 @@ function manchuria(map) {
     for (var i = 0; i < locations.length; i++) {
       setTimeout(function(coords) {
           latlng = new google.maps.LatLng(coords.lat, coords.lng);
-          map.panTo(latlng);
+//          map.panTo(latlng);
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
@@ -913,8 +1136,330 @@ function montauk(map) {
                 {location: 'Montauk, NY'},
                 {location: 'New York, NY'},
                 {location: 'Tupper Lake, NY'},
+                {location: 'Albany, NY'},
+                {location: 'Chicago, IL'},
               ],
               destination: 'Champaign, IL',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function sf(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 40.116421, lng: -88.243385},    // Champaign
+                     {lat: 41.881832, lng: -87.623177},    // Chicago
+                     {lat: 37.773972, lng: -122.431297}    // SF
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+//          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+  }
+
+function yosemite(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'San Francisco, CA',
+              waypoints: [
+                {location: 'Fremont, CA'},
+                {location: '440 Radcliffe Dr, Santa Clara, CA'},
+                {location: new google.maps.LatLng(37.865101,-119.53833)},         // Yosemite
+                {location: '440 Radcliffe Dr, Santa Clara, CA'},
+              ],
+              destination: 'San Francisco, CA',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function newyork_car(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Champaign, IL',
+              waypoints: [
+                {location: 'Cleveland, OH'},
+                {location: 'Pittsburgh, PA'},
+                {location: new google.maps.LatLng(39.906113,-79.468056)},
+                {location: 'New York, NY'},
+                {location: 'Beacon, NY'},
+                {location: 'Tupper Lake, NY'},
+                {location: 'Burlington, VT'},
+                {location: 'Plattsburgh, NY'},
+                {location: 'Tupper Lake, NY'},
+              ],
+              destination: 'Champaign, IL',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function florida(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 40.116421, lng: -88.243385},    // Champaign
+                     {lat: 35.2271, lng: -80.8431},    // Charlotte
+                     {lat: 28.538336, lng: -81.379234}    // Orlando
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+//          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+  }
+
+function florida_car(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Orlando, FL',
+              waypoints: [
+                {location: 'Tampa, FL'},
+                {location: 'Saint Petersburg, FL'},
+                {location: 'Tampa, FL'},
+                {location: 'Miami, FL'},
+              ],
+              destination: 'Key West, FL',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function michigan(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Champaign, IL',
+              waypoints: [
+                {location: 'Chicago, IL'},
+                {location: '1600 N 25 E, Chesterton, IN 46304'},
+                {location: 'Holland, MI'},
+                {location: '8800 M-116, Ludington, MI 49431'},
+                {location: 'Ann Arbor, MI'},
+              ],
+              destination: 'Champaign, IL',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function la(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 24.5551, lng: -81.78},    // Key West
+                     {lat: 35.2271, lng: -80.8431},    // Charlotte
+                     {lat: 40.116421, lng: -88.243385},    // Champaign
+                     {lat: 41.881832, lng: -87.623177},    // Chicago
+                     {lat: 34.052235, lng: -118.243683}    // LA
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+//          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+}
+
+function boston(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 40.116421, lng: -88.243385},    // Champaign
+                     {lat: 41.881832, lng: -87.623177},    // Chicago
+                     {lat: 42.361145, lng: -71.057083}    // BOS
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+//          map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+}
+
+function northeast(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Boston, MA',
+              waypoints: [
+                {location: 'Manchester-by-the-Sea, MA 01944'},
+                {location: 'Manchester, NH'},
+                {location: '76 Mountain Rd, Epsom, NH 03234'},     // Concord, NH
+                {location: 'Brooklin, MA'},
+                {location: 'Providence, RI'},
+              ],
+              destination: 'Boston, MA',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function greatsmoky(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Champaign, IL',
+              waypoints: [
+                {location: 'Nashville, TN'},
+                {location: 'Gatlinburg, TN'},
+                {location: 'Ashville, NC'},
+                {location: 'Mammoth Cave, KY'},
+                {location: 'Lexington, KY'},
+              ],
+              destination: 'Champaign, IL',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function covid(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'New York, NY',
+              waypoints: [
+                {location: 'Boston, MA'},
+                {location: 'New York, NY'},
+                {location: 'Boston, MA'},
+                {location: 'Cleveland, OH'},
+                {location: 'Detroit, MI'},
+                {location: 'Chicago, IL'},
+                {location: 'Champaign, IL'},
+                {location: 'Boston, MA'},
+                {location: 'New York, NY'},
+                {location: 'District of Columbia'},
+                {location: 'Champaign, IL'},
+              ],
+              destination: 'Boston, MA',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function maine(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Boston, MA',
+              waypoints: [
+                {location: 'Portland, ME'},
+                {location: 'Bangor, ME'},
+                {location: 'Acadia National Park, ME'},
+              ],
+              destination: 'Boston, MA',
               travelMode: google.maps.TravelMode.DRIVING
           };
     directionsService.route(request, function(result, status) {
