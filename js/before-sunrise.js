@@ -1,3 +1,13 @@
+/*
+*   Route animation based on actual film locations of
+*   Before Sunrise by Richard Linklater in 1995 using Google
+*   Maps API.
+*
+*   Solid line indicates walk/drive/transit;
+*   Dashed line indicates fly/jumps;
+*
+*/
+
 var map;
 var t;
 
@@ -286,17 +296,23 @@ async function initMap() {
       budapest(map);
        
       t+=2000;
+
       setTimeout(function(){
         green_bridge(map);
       }, t);
+
       t+=1000;
+
       setTimeout(function(){
         two_spires_church(map);
       }, t);
+
       t+=200;
+
       setTimeout(function(){
         record_store(map);
       }, t);
+
       t+=1400;
 
       setTimeout(function(){
@@ -315,28 +331,14 @@ async function initMap() {
         river_bank(map);
       }, t);
 
-      t+=1400;
-      setTimeout(function(){
-        pinball(map);
-      }, t);
-      
-      t+=1400;
-      setTimeout(function(){
-        stairs(map);
-      }, t);
-      t+=1400;
-      setTimeout(function(){
-        belly_dancer(map);
-      }, t);
-      t+=1400;
-      setTimeout(function(){
-        passage(map);
-      }, t);
-      t+=1400;
+      t+=1600;
+
       setTimeout(function(){
         cafe(map);
       }, t);
+
       t+=1400;
+
       setTimeout(function(){
         montage(map);
       }, t);
@@ -360,6 +362,7 @@ function budapest(map) {
   const infowindow = new google.maps.InfoWindow({
     content: "<img src='img/bridge.png'>",
   });
+
   const marker = new google.maps.Marker({
     position: {lat: 48.196762, lng: 16.337598},
     map,
@@ -371,6 +374,7 @@ function budapest(map) {
     scale: 5,
     },
   });
+
   marker.addListener("click", () => {
     infowindow.open(map, marker);
   });
@@ -524,110 +528,15 @@ function river_bank(map) {
   var directionsService = new google.maps.DirectionsService();
   var request = {
             origin: new google.maps.LatLng(48.218791,16.370733),         // river bank
-            waypoints: [],
-            destination: new google.maps.LatLng(48.217741,16.372554),   // Otto Wagner Schützenhaus
-            travelMode: google.maps.TravelMode.WALKING
-        };
-  directionsService.route(request, function(result, status) {
-      if (status == google.maps.DirectionsStatus.OK) {
-          route(map, result.routes[0].overview_path);
-      }
-  });
-}
-
-function pinball(map) {
-  var lineSymbol = {
-    path: 'M 0,-1 0,1',
-    strokeOpacity: 0.5,
-    scale: 4
-  };
-
-  var line = new google.maps.Polyline({
-    path: [],
-    geodesic: true,
-    strokeColor: '#f70',
-    strokeOpacity: 0,
-    strokeWeight: 5,
-    editable: false,
-    icons: [{
-            icon: lineSymbol,
-            offset: '0',
-            repeat: '20px'
-          }],
-    map:map
-  });
-
-  var locations = [{lat: 48.217741, lng: 16.372554},     // otto
-                   {lat: 48.187502, lng: 16.413368},     // pinball
-                   {lat: 48.21265, lng: 16.363005}     // stairs
-                 ];
-
-  for (var i = 0; i < locations.length; i++) {
-    setTimeout(function(coords) {
-        latlng = new google.maps.LatLng(coords.lat, coords.lng);
-//        map.panTo(latlng);
-        line.getPath().push(latlng);
-    }, 15 * i, locations[i]);
-  }
-}
-
-function stairs(map) {
-  var directionsService = new google.maps.DirectionsService();
-  var request = {
-            origin: new google.maps.LatLng(48.21265,16.363005),         // stairs
-            waypoints: [],
-            destination: new google.maps.LatLng(48.212177,16.362774),   // Schreyvogelgasse
-            travelMode: google.maps.TravelMode.WALKING
-        };
-  directionsService.route(request, function(result, status) {
-      if (status == google.maps.DirectionsStatus.OK) {
-          route(map, result.routes[0].overview_path);
-      }
-  });
-}
-
-function belly_dancer(map) {
-  var lineSymbol = {
-    path: 'M 0,-1 0,1',
-    strokeOpacity: 0.5,
-    scale: 4
-  };
-
-  var line = new google.maps.Polyline({
-    path: [],
-    geodesic: true,
-    strokeColor: '#f70',
-    strokeOpacity: 0,
-    strokeWeight: 5,
-    editable: false,
-    icons: [{
-            icon: lineSymbol,
-            offset: '0',
-            repeat: '20px'
-          }],
-    map:map
-  });
-
-  var locations = [{lat: 48.212177, lng: 16.362774},     // Schreyvogelgasse
-                   {lat: 48.20334, lng: 16.355246}     // belly dancer
-                 ];
-
-  for (var i = 0; i < locations.length; i++) {
-    setTimeout(function(coords) {
-        latlng = new google.maps.LatLng(coords.lat, coords.lng);
-//        map.panTo(latlng);
-        line.getPath().push(latlng);
-    }, 15 * i, locations[i]);
-  }
-}
-
-function passage(map) {
-  var directionsService = new google.maps.DirectionsService();
-  var request = {
-            origin: new google.maps.LatLng(48.20334,16.355246),         // belly dancer
-            waypoints: [{location: new google.maps.LatLng(48.203367,16.355675)},      // common function
-              {location: new google.maps.LatLng(48.203256,16.355734)}      
-            ],      // left turn
+            waypoints: [
+              {location: new google.maps.LatLng(48.217741,16.372554)},    // Otto Wagner Schützenhaus
+              {location: new google.maps.LatLng(48.187502,16.413368)},    // pinball
+              {location: new google.maps.LatLng(48.21265,16.363005)},     // mölker steig
+              {location: new google.maps.LatLng(48.212177,16.362774)},    // schrevyogelasses
+              {location: new google.maps.LatLng(48.20334,16.355246)},     // belly dancer
+              {location: new google.maps.LatLng(48.203367,16.355675)},    // spittelbergagasse
+              {location: new google.maps.LatLng(48.203256,16.355734)}    // gutenberggasse
+            ],
             destination: new google.maps.LatLng(48.203273,16.355882),   // pile of pallets
             travelMode: google.maps.TravelMode.WALKING
         };
@@ -639,6 +548,28 @@ function passage(map) {
 }
 
 function cafe(map) {
+  var directionsService = new google.maps.DirectionsService();
+  var request = {
+            origin: new google.maps.LatLng(48.203273,16.355882),         // pile of pallets
+            waypoints: [
+              {location: 'Gumpendorfer Str. 11, 1060 Wien, Austria'},    // cafe phone calls
+              {location: new google.maps.LatLng(48.204244,16.368555)},    // balcony
+              {location: 'Franz-Josefs-Kai 27-29, 1010 Wien, Austria'},     // boat cafe
+              {location: 'Faulmanngasse 2, 1040 Wien, Austria'},    // Roxy
+              {location: new google.maps.LatLng(48.194446,16.364503)},     // harpsichord
+              {location: new google.maps.LatLng(48.204244,16.368555)}    // balcony
+            ],
+            destination: 'Europaplatz 2/3, 1150 Wien, Austria',   // train station
+            travelMode: google.maps.TravelMode.WALKING
+        };
+  directionsService.route(request, function(result, status) {
+      if (status == google.maps.DirectionsStatus.OK) {
+          route(map, result.routes[0].overview_path);
+      }
+  });
+}
+
+function cafe_(map) {
   var lineSymbol = {
     path: 'M 0,-1 0,1',
     strokeOpacity: 0.5,
