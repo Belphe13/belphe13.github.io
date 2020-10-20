@@ -6,8 +6,8 @@ async function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 3.5,
         disableDefaultUI: true,    
-//        center: new google.maps.LatLng(29.563009, 106.551559),  // CQ
-        center: new google.maps.LatLng(40.116421, -88.243385),  // CU
+        center: new google.maps.LatLng(29.563009, 106.551559),  // CQ
+//        center: new google.maps.LatLng(40.116421, -88.243385),  // CU
         styles: [{
                 "elementType": "geometry",
                 "stylers": [{
@@ -1482,7 +1482,7 @@ function bos_ny(map) {
               waypoints: [
                 {location: 'Beacon, NY'},
                 {location: 'Flushing, New York, NY'},
-                {location: 'Providence, RI'}
+                {location: 'Providence, RI'},
               ],
               destination: 'Boston, MA',
               travelMode: google.maps.TravelMode.DRIVING
