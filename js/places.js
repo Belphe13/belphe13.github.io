@@ -1482,7 +1482,7 @@ function bos_ny(map) {
               waypoints: [
                 {location: 'Beacon, NY'},
                 {location: 'Flushing, New York, NY'},
-                {location: 'Providence, RI'},
+                {location: 'Providence, RI'}
               ],
               destination: 'Boston, MA',
               travelMode: google.maps.TravelMode.DRIVING
