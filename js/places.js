@@ -205,7 +205,7 @@ async function initMap() {
             }
         ]
     });
-/*
+
     kunming(map);
 
     t+=1500;
@@ -407,7 +407,7 @@ async function initMap() {
     }, t);
 
     t+= 2000;
-*/
+
     setTimeout(function(){
         maine(map);
     }, t);
