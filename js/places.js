@@ -6,8 +6,8 @@ async function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 3.5,
         disableDefaultUI: true,    
-        center: new google.maps.LatLng(29.563009, 106.551559),  // CQ
-//        center: new google.maps.LatLng(40.116421, -88.243385),  // CU
+//        center: new google.maps.LatLng(29.563009, 106.551559),  // CQ
+        center: new google.maps.LatLng(40.116421, -88.243385),  // CU
         styles: [{
                 "elementType": "geometry",
                 "stylers": [{
@@ -205,7 +205,7 @@ async function initMap() {
             }
         ]
     });
-
+/*
     kunming(map);
 
     t+=1500;
@@ -407,9 +407,15 @@ async function initMap() {
     }, t);
 
     t+= 2000;
-
+*/
     setTimeout(function(){
         maine(map);
+    }, t);
+
+    t+= 2000;
+
+    setTimeout(function(){
+        bos_ny(map);
     }, t);
 }
 
@@ -1458,6 +1464,25 @@ function maine(map) {
                 {location: 'Portland, ME'},
                 {location: 'Bangor, ME'},
                 {location: 'Acadia National Park, ME'},
+              ],
+              destination: 'Boston, MA',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function bos_ny(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Boston, MA',
+              waypoints: [
+                {location: 'Beacon, NY'},
+                {location: 'Flushing, New York, NY'},
+                {location: 'Providence, RI'},
               ],
               destination: 'Boston, MA',
               travelMode: google.maps.TravelMode.DRIVING
