@@ -368,7 +368,7 @@ function budapest(map) {
     map,
     icon: {
       path: google.maps.SymbolPath.CIRCLE,
-      strokeColor: '#f70',
+      strokeColor: 'white',
     strokeOpacity: 0.5,
     strokeWeight: 5,
     scale: 5,
@@ -386,7 +386,7 @@ function route(map, pathCoords) {
   var route = new google.maps.Polyline({
       path: [],
       geodesic : true,
-      strokeColor: '#f70',
+      strokeColor: 'white',
       strokeOpacity: 0.5,
       strokeWeight: 5,
       editable: false,
@@ -426,7 +426,7 @@ function two_spires_church(map) {
   var line = new google.maps.Polyline({
     path: [],
     geodesic: true,
-    strokeColor: '#f70',
+    strokeColor: 'white',
     strokeOpacity: 0,
     strokeWeight: 5,
     editable: false,
@@ -498,7 +498,7 @@ function church(map) {
   var line = new google.maps.Polyline({
     path: [],
     geodesic: true,
-    strokeColor: '#f70',
+    strokeColor: 'white',
     strokeOpacity: 0,
     strokeWeight: 5,
     editable: false,
@@ -579,7 +579,7 @@ function cafe_(map) {
   var line = new google.maps.Polyline({
     path: [],
     geodesic: true,
-    strokeColor: '#f70',
+    strokeColor: 'white',
     strokeOpacity: 0,
     strokeWeight: 5,
     editable: false,
@@ -620,7 +620,7 @@ function montage(map) {
   var line = new google.maps.Polyline({
     path: [],
     geodesic: true,
-    strokeColor: '#f70',
+    strokeColor: 'white',
     strokeOpacity: 0,
     strokeWeight: 5,
     editable: false,
