@@ -69,11 +69,21 @@
   background-image: url("../img/background/bg_projects.jpg");
 }
 
-#cinepath {
+#cineml {
+	background-image: url("../img/background/bg_ml.png");
+}
+
+#bolex {
+	background-image: url("../img/background/bg_bolex.png");
+  }
+
+
+
+#cinepath, #dataviz {
   background-image: url("../img/background/bg_projects.jpg");
 }
 
-#cyberencoding {
+#cyberencoding, #pd, #p5js  {
   background-image: url("../img/background/bg_cyber.jpg");
 }
 
@@ -85,19 +95,23 @@
   background-image: url("../img/background/bg_old_school.jpg");
 }
 
-#p5js {
-  background-image: url("../img/background/bg_cyber.jpg");
-}
-
 #ece {
   background-image: url("../img/background/bg_fpga.jpg");
 }
 
-#dataviz {
-	background-image: url("../img/background/bg_projects.jpg");
-  }
+#projects-cineml {
+	background-color: #a08f88;
+}
 
-#projects-cinepath, #projects-cinema {
+#projects-bolex {
+	background-color: #75a7b8;
+}
+
+#projects-pd {
+	background-color: #2a3772;
+}
+
+#projects-cinepath {
   background-color: #fa285a;
 }
 

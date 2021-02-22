@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-133224330-1');
+</script>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/projects.css" type="text/css">
+  <link rel="stylesheet" href="css/nav.css" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>City Symphony: Boston | Projects</title>
+</head>
+
+<style>
+  .white p {
+    color: #ffffff;
+  }
+  .tab1 { 
+  tab-size: 1; 
+  } 
+</style>
+
+<body id="bolex">
+  <div class="container">
+    <div class="sub_nav">
+      <a href="index.html">LILAN</a>
+      <a href="projects.html" id="current_nav">PROJECTS</a>
+			<a href="places.html">PLACES</a>
+      <!--
+			<a href="people.html">PEOPLE</a>
+      <a href="profile.html">PROFILE</a>
+			-->
+    </div>
+
+    <div class="left_nav">
+      <a href="cineml.html">CINE-ML</a><br>
+      <a href="boston.html" id="current_project">BOSTON</a><br>
+			<a href="y202k.html">Y2.02K</a><br>
+      <a href="cinepath.html">CINEPATH</a><br>
+      <a href="cyberencoding.html">CYBERENCODE</a><br>
+      <a href="dataviz.html">DATAVIZ</a><br>
+      <a href="p5js.html">P5.JS</a><br>
+      <a href="dropper.html">DROPPER</a><br>
+      <a href="old-school.html">OLD SCHOOL</a><br>
+      <a href="ece.html">ENGINEERING</a><br>
+    </div>
+
+    <div class="content">
+
+      <div class="title">
+        <p>CITY SYMPHONY: BOSTON</p><br>
+      </div>
+
+      <div class="description">
+        <p>A 4-minute-long 16mm film shot with Bolex H16 RX and Kodak Tri-X Reversal Film and Kodak Ektachrome 100D Color Reversal Film, featuring the city of Boston and day trips I took while staying in Boston during the winter of 2020-2021.</p><br>
+      </div>
+
+      <br><br><br>
+
+      <iframe src="https://player.vimeo.com/video/507139717" width="880" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+      <div class="subtitle">
+          <p>READINGS</p>
+      </div>
+      <div class="description">
+          <pre class="tab1">
+					<p><cite>      Just once I knew what life was for.
+      In Boston, quite suddenly, I understood;
+      walked there along the Charles River,
+      watched the lights copying themselves,
+      all neoned and strobe-hearted, opening
+      their mouths as wide as opera singers;
+      counted the stars, my little campaigners,
+      my scar daisies, and knew that I walked my love
+      on the night green side of it and cried
+      my heart to the eastbound cars and cried
+      my heart to the westbound cars and took
+      my truth across a small humped bridge
+      and hurried my truth, the charm of it, home
+      and hoarded these constants into morning
+      only to find them gone.
+          </cite>
+
+      —Anne Sexton, <cite>“Love Poems,”</cite> 1969
+            </p>
+            </pre>
+					</div>
+
+      <br><br><br>
+
+
+    </div><!-- end of content -->
+  </div>
+</body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var more = this.nextElementSibling;
+      if (more.style.display === "block") {
+        more.style.display = "none";
+      } else {
+        more.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</html>

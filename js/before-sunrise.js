@@ -27,14 +27,6 @@ async function initMap() {
             ]
           },
           {
-            "elementType": "labels",
-            "stylers": [
-              {
-                "visibility": "off"
-              }
-            ]
-          },
-          {
             "elementType": "labels.text.fill",
             "stylers": [
               {
@@ -61,6 +53,7 @@ async function initMap() {
           },
           {
             "featureType": "administrative.land_parcel",
+            "elementType": "labels",
             "stylers": [
               {
                 "visibility": "off"
@@ -73,14 +66,6 @@ async function initMap() {
             "stylers": [
               {
                 "color": "#64779e"
-              }
-            ]
-          },
-          {
-            "featureType": "administrative.neighborhood",
-            "stylers": [
-              {
-                "visibility": "off"
               }
             ]
           },
@@ -122,6 +107,15 @@ async function initMap() {
           },
           {
             "featureType": "poi",
+            "elementType": "labels.text",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
             "elementType": "labels.text.fill",
             "stylers": [
               {
@@ -157,15 +151,6 @@ async function initMap() {
           },
           {
             "featureType": "poi.park",
-            "elementType": "labels.text",
-            "stylers": [
-              {
-                "visibility": "off"
-              }
-            ]
-          },
-          {
-            "featureType": "poi.park",
             "elementType": "labels.text.fill",
             "stylers": [
               {
@@ -179,6 +164,15 @@ async function initMap() {
             "stylers": [
               {
                 "color": "#304a7d"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
               }
             ]
           },
@@ -233,6 +227,23 @@ async function initMap() {
             "stylers": [
               {
                 "color": "#023e58"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "stylers": [
+              {
+                "visibility": "off"
               }
             ]
           },
@@ -340,7 +351,7 @@ async function initMap() {
       t+=1400;
 
       setTimeout(function(){
-        montage(map);
+        vienna_montage(map);
       }, t);
 
 }
@@ -386,8 +397,8 @@ function route(map, pathCoords) {
   var route = new google.maps.Polyline({
       path: [],
       geodesic : true,
-      strokeColor: 'white',
-      strokeOpacity: 0.5,
+      strokeColor: '#f9a2ef',
+      strokeOpacity: 0.6,
       strokeWeight: 5,
       editable: false,
       map:map
@@ -419,14 +430,14 @@ function green_bridge(map) {
 function two_spires_church(map) {
   var lineSymbol = {
     path: 'M 0,-1 0,1',
-    strokeOpacity: 0.5,
+    strokeOpacity: 0.8,
     scale: 4
   };
 
   var line = new google.maps.Polyline({
     path: [],
     geodesic: true,
-    strokeColor: 'white',
+    strokeColor: '#f9a2ef',
     strokeOpacity: 0,
     strokeWeight: 5,
     editable: false,
@@ -491,14 +502,14 @@ function nameless(map) {
 function church(map) {
   var lineSymbol = {
     path: 'M 0,-1 0,1',
-    strokeOpacity: 0.5,
+    strokeOpacity: 0.6,
     scale: 4
   };
 
   var line = new google.maps.Polyline({
     path: [],
     geodesic: true,
-    strokeColor: 'white',
+    strokeColor: '#f9a2ef',
     strokeOpacity: 0,
     strokeWeight: 5,
     editable: false,
@@ -572,14 +583,14 @@ function cafe(map) {
 function cafe_(map) {
   var lineSymbol = {
     path: 'M 0,-1 0,1',
-    strokeOpacity: 0.5,
+    strokeOpacity: 0.6,
     scale: 4
   };
 
   var line = new google.maps.Polyline({
     path: [],
     geodesic: true,
-    strokeColor: 'white',
+    strokeColor: '#f9a2ef',
     strokeOpacity: 0,
     strokeWeight: 5,
     editable: false,
@@ -610,17 +621,17 @@ function cafe_(map) {
   }
 }
 
-function montage(map) {
+function vienna_montage(map) {
   var lineSymbol = {
     path: 'M 0,-1 0,1',
-    strokeOpacity: 0.5,
+    strokeOpacity: 0.6,
     scale: 4
   };
 
   var line = new google.maps.Polyline({
     path: [],
     geodesic: true,
-    strokeColor: 'white',
+    strokeColor: '#f9a2ef',
     strokeOpacity: 0,
     strokeWeight: 5,
     editable: false,

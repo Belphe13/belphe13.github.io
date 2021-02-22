@@ -14,23 +14,15 @@ var t;
 async function initMap() {
          t = 0;     
          map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 13,
+         zoom: 14,
          disableDefaultUI: true,
-         center: new google.maps.LatLng(48.8566, 2.3522),    // Paris
+         center: new google.maps.LatLng(48.8496, 2.3622),    // Paris
          styles: [
           {
             "elementType": "geometry",
             "stylers": [
               {
                 "color": "#1d2c4d"
-              }
-            ]
-          },
-          {
-            "elementType": "labels",
-            "stylers": [
-              {
-                "visibility": "off"
               }
             ]
           },
@@ -61,6 +53,7 @@ async function initMap() {
           },
           {
             "featureType": "administrative.land_parcel",
+            "elementType": "labels",
             "stylers": [
               {
                 "visibility": "off"
@@ -73,14 +66,6 @@ async function initMap() {
             "stylers": [
               {
                 "color": "#64779e"
-              }
-            ]
-          },
-          {
-            "featureType": "administrative.neighborhood",
-            "stylers": [
-              {
-                "visibility": "off"
               }
             ]
           },
@@ -122,6 +107,15 @@ async function initMap() {
           },
           {
             "featureType": "poi",
+            "elementType": "labels.text",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
             "elementType": "labels.text.fill",
             "stylers": [
               {
@@ -157,15 +151,6 @@ async function initMap() {
           },
           {
             "featureType": "poi.park",
-            "elementType": "labels.text",
-            "stylers": [
-              {
-                "visibility": "off"
-              }
-            ]
-          },
-          {
-            "featureType": "poi.park",
             "elementType": "labels.text.fill",
             "stylers": [
               {
@@ -179,6 +164,15 @@ async function initMap() {
             "stylers": [
               {
                 "color": "#304a7d"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
               }
             ]
           },
@@ -233,6 +227,23 @@ async function initMap() {
             "stylers": [
               {
                 "color": "#023e58"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "stylers": [
+              {
+                "visibility": "off"
               }
             ]
           },
@@ -293,9 +304,9 @@ async function initMap() {
         ]
        });
 
-     // montage(map);
+      paris_montage(map);
        
-     t+=500;
+      t+=1200;
 
       setTimeout(function(){
         bookstore(map);
@@ -313,6 +324,47 @@ async function initMap() {
         celine_apt(map);
       }, t);
 
+}
+
+function paris_montage(map) {
+  var lineSymbol = {
+    path: 'M 0,-1 0,1',
+    strokeOpacity: 0.5,
+    scale: 4
+  };
+
+  var line = new google.maps.Polyline({
+    path: [],
+    geodesic: true,
+    strokeColor: '#f70',
+    strokeOpacity: 0,
+    strokeWeight: 5,
+    editable: false,
+    icons: [{
+            icon: lineSymbol,
+            offset: '0',
+            repeat: '20px'
+          }],
+    map:map
+  });
+
+  var locations = [{lat: 48.851972, lng: 2.374662},     // apartment
+                   {lat: 48.851763, lng: 2.374487},     // apartment front
+                   {lat: 48.851299, lng: 2.351805},    // across notre dame
+                   {lat: 48.849456, lng: 2.371487},     // park
+                   {lat: 48.849034, lng: 2.372},     // outside park
+                   {lat: 48.853289, lng: 2.383441},     // cafe
+                   {lat: 48.853578, lng: 2.360731},     // outside of Paroisse Saint-Paul Saint-Louis
+                   {lat: 48.852658, lng: 2.347213}     // Shakespeare and Company
+                 ];
+
+  for (var i = 0; i < locations.length; i++) {
+    setTimeout(function(coords) {
+        latlng = new google.maps.LatLng(coords.lat, coords.lng);
+//       map.panTo(latlng);
+        line.getPath().push(latlng);
+    }, 150 * i, locations[i]);
+  }
 }
 
 function route(map, pathCoords) {

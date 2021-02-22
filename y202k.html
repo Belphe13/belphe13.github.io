@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-133224330-1');
+</script>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/projects.css" type="text/css">
+  <link rel="stylesheet" href="css/nav.css" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Y2.02K | Projects</title>
+</head>
+
+<style>
+  .white p {
+    color: #ffffff;
+  }
+</style>
+
+<body id="pd">
+  <div class="container">
+    <div class="sub_nav">
+      <a href="index.html">LILAN</a>
+      <a href="projects.html" id="current_nav">PROJECTS</a>
+			<a href="places.html">PLACES</a>
+      <!--
+			<a href="people.html">PEOPLE</a>
+      <a href="profile.html">PROFILE</a>
+			-->
+    </div>
+
+    <div class="left_nav">
+      <a href="cineml.html">CINE-ML</a><br>
+			<a href="boston.html">BOSTON</a><br>
+			<a href="y202k.html" id="current_project">Y2.02K</a><br>
+      <a href="cinepath.html">CINEPATH</a><br>
+      <a href="cyberencoding.html">CYBERENCODE</a><br>
+      <a href="dataviz.html">DATAVIZ</a><br>
+      <a href="p5js.html">P5.JS</a><br>
+      <a href="dropper.html">DROPPER</a><br>
+      <a href="old-school.html">OLD SCHOOL</a><br>
+      <a href="ece.html">ENGINEERING</a><br>
+    </div>
+
+    <div class="content">
+
+      <div class="title">
+        <p>Y2.02K</p><br>
+      </div>
+
+      <div class="description">
+        <p>Pure Data patch controlled by Leap Motion, which takes hand and finger motions as inputs.</p>
+
+        <br><br><br>
+
+        <iframe src="https://player.vimeo.com/video/490552963" width="800" height="450" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        <br><br><br>
+
+        <a href="https://github.com/Belphe13/pd-tutorials/tree/master/final" target="_blank"><span>GITHUB</span></a>
+
+        <br><br><br>
+
+      </div>
+
+      <div class="subtitle">
+          <p>CONTROL</p>
+      </div>
+
+      <br><br><br>
+
+      <div class="subtitle">
+          <p>HARDWARE</p>
+      </div>
+
+      <br><br><br>
+
+      <div class="subtitle">
+          <p>SOFTWARE</p>
+      </div>
+
+      <br><br><br>
+
+
+    </div><!-- end of content -->
+  </div>
+</body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var more = this.nextElementSibling;
+      if (more.style.display === "block") {
+        more.style.display = "none";
+      } else {
+        more.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</html>
