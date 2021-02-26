@@ -8,14 +8,14 @@
 ul, li {
   list-style: none;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;          /* 75% */
   color: #fff
 }
 
 a, p, span {
   text-decoration: none;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;          /* 75% */
   color: #fff;
 }
 
@@ -58,7 +58,7 @@ body {
   text-align: center;
 	margin-left: 10%;
 	margin-right: 10%;
-	padding-top: 100px;
+	padding-top: 80px;       /* changed from 100px to 80px */
   padding-bottom: 10%;
 	width: 80%;
 	height: 100%;
@@ -71,39 +71,39 @@ body {
 }
 
 .basic_info p {
-  font-size: 60px;
+  font-size: 45px;                /* 75% */
   margin-top: 40px;
   color: #ffcc33;
 }
 
 .description p {
-  font-size: 40px;
+  font-size: 30px;                /* 75% */
   margin-top: 20px;
   color: #ffffff;
 }
 
 .skillset p {
-  margin-top: 40px;
+  margin-top: 30px;               /* 75% */
   color: #ffcc33;
 }
 
-.skillset span {
-  line-height: 100px;
-  padding: 8px;
-  margin-top: 20px;
-  margin-right: 5px;
-  border: solid 8px #fff;
+.skillset span {                  /* 75% */
+  line-height: 75px;
+  padding: 6px;
+  margin-top: 15px;
+  margin-right: 3.75px;
+  border: solid 6px #fff;
 }
 
-#index span {
-  line-height: 100px;
-  padding: 8px;
-  margin-top: 20px;
-  margin-right: 5px;
-  border: solid 8px #fff;
+#index span {                     /* 75% */
+  line-height: 75px;
+  padding: 6px;
+  margin-top: 15px;
+  margin-right: 3.75px;
+  border: solid 6px #fff;
 }
 
 #index span:hover {
   color: #ffcc33;
-  border: solid 8px #ffcc33;
+  border: solid 6px #ffcc33;
 }
