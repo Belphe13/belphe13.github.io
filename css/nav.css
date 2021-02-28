@@ -40,7 +40,7 @@ body {
   line-height: 60px;                            /* 75% */
   color: #fff;
   border-bottom: solid 6px #fff;              /* 75% */
-  margin: auto 20px;
+  margin: auto 10px;                            /* 50% */
 }
 
 .sub_nav a:hover {
@@ -57,8 +57,8 @@ body {
 .left_nav {                                    /* 75% */
   margin-top: 75px;
   padding-top: 75px;
-  padding-left: 3.75%;
-  width: 15%;
+  padding-left: 5%;                    /* 3.85% -> 5% */
+  width: 20%;                          /* 15% -> 20% */
   height: 100%;                        /* not changed */
   position: fixed;
   z-index: 2;
