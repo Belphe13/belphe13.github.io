@@ -29,7 +29,7 @@ body {
   background-image: url("../img/background/bg_places.jpg");
 }
 
-#places {
+#places, #profile {
   background-image: url("../img/background/bg_places.jpg");
 }
 
@@ -37,14 +37,11 @@ body {
   background-image: url("../img/background/bg_people.jpg");
 }
 
-#profile {
-  background-image: url("../img/background/bg_places.jpg");
-}
-
 .container {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .title {
@@ -65,9 +62,30 @@ body {
 }
 
 #map {
-    height: 100%;
-    position: position;
-    z-index: -1;
+  height: 100%;
+  position: position;
+  z-index: -1;
+}
+/* pic not well organized right now
+.pic {
+  margin-top: 75px;
+  padding-top: 75px;
+  padding-left: 5%;
+  width: 20%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.pic img{
+  width: 250px;
+}
+*/
+
+.bio {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .basic_info p {
@@ -79,7 +97,19 @@ body {
 .description p {
   font-size: 30px;                /* 75% */
   margin-top: 20px;
+  line-height: 37.5px;		/* 75% */
   color: #ffffff;
+}
+
+.bio p {
+  font-size: 30px;                /* 75% */
+  margin-top: 20px;
+  line-height: 37.5px;		/* 75% */
+  color: #ffffff;
+}
+
+.bio a:hover {
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .skillset p {
