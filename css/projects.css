@@ -20,6 +20,7 @@
 .box {
 	height: 200px;
 	width: 100%;
+	position: relative;
 }
 
 .box-cinema {
@@ -52,9 +53,10 @@
 	background-color: #fda94c;
 }
 
-.box img {
-	height: 100%;
-	width: auto;
+.box img, iframe {
+	display: block;
+	float: right;
+  	height: 200px;
 }
 
 .box img:hover {
@@ -63,6 +65,8 @@
 
 .box p {
 	line-height: 200px;
+	position: absolute;
+	margin-left: 7.5%;
 }
 
 #projects {
