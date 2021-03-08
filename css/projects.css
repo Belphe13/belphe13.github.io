@@ -53,7 +53,7 @@
 	background-color: #fda94c;
 }
 
-.box img, iframe {
+.box img, .box iframe {
 	display: block;
 	float: right;
   	height: 200px;
@@ -143,6 +143,10 @@
 
 #projects-ece {
 	background-color: #fda94c;
+}
+
+#projects-scd {
+	background-color: #13294b;
 }
 
 /* css for each project page */
