@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-133224330-1');
+	</script>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/projects.css" type="text/css">
+	<link rel="stylesheet" href="css/nav.css" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<title>Design Research @SCD | Projects</title>
+</head>
+
+<body id="p5js">
+	<div class="container">
+		<div class="sub_nav">
+			<a href="index.html">LILAN</a>
+			<a href="art.html">ART</a>
+      		<a href="design.html" id="current_nav">DESIGN</a>
+      		<a href="eng.html">ENGINEERING</a>
+			<a href="places.html">PLACES</a>
+			<!--
+			<a href="projects.html" id="current_nav">PROJECTS</a>
+			<a href="people.html">PEOPLE</a>
+			<a href="profile.html">PROFILE</a>
+			-->
+		</div>
+
+		<div class="left_nav">
+			<a href="scd.html" id="current_project"> RESEARCH</a><br>
+			<a href="dropper.html">DROPPER</a><br>
+      <a href="old-school.html">OLD SCHOOL</a><br>
+		</div>
+
+		<div class="content">
+
+			<div class="title">
+				<p>DESIGN RESEARCH</p><br>
+			</div>
+
+			<div class="description">
+        	<p> Design Research Portfolio from May 2019 to August 2020. I started as a summer intern at <a href="https://designcenter.illinois.edu" target="_blank" style="font-size: 30px; border-bottom: solid 4.5px;">Siebel Center for Design at Illinois</a> as a design research intern and later accepted a full-time position as a design strategist.
+			</p><br>
+     		</div>
+
+			<!-- Grainger Engineering -->
+			<div class="description">
+				<br>
+				<div class="collapsible">
+					<span>GRAINGER ENGINEERING</span>
+				</div>
+
+				<div class="more">
+					<p>
+					As an alumnus at <a href="https://grainger.illinois.edu" target="_blank" style="font-size: 30px; border-bottom: solid 4.5px;">Grainger College of Engineering</a> at University of Illinois at Urbana-Champaign, I’m deeply rooted in the engineering community through human-centered design processes. <br><br>
+
+					Throughout my time at Siebel Center for Design, I have dedicated my work to understand and improve engineering student experience and college perceptions through the SCD taxonomy. My team role shifted from design researcher in a small two-person research team to design strategist where I got the chance to co-lead two undergraduate interns and go through the whole process from researching planning to the final presentation at a rapid pace in two months.
+					</p>
+					<br>
+				</div>
+			</div>
+
+			<!-- iMBA -->
+			<div class="description">
+				<br>
+				<div class="collapsible">
+					<span>I-MBA STUDENT EXPERIENCE</span>
+				</div>
+
+				<div class="more">
+					<p>
+					Another 12-week-long research project was conducted during my full-time employment at Siebel Center for Design. Collaborating with Gies college of Business, we (a team of four) were tasked to understand the front-end experience of <a href="https://grainger.illinois.edu" target="_blank" style="font-size: 30px; border-bottom: solid 4.5px;">Gies iMBA</a> students from enrollment to graduation.
+					</p>
+					<br>
+				</div>
+			</div>
+
+			<!-- K-12 -->
+			<div class="description">
+				<br>
+				<div class="collapsible">
+					<span>K-12 PROFESSIONAL DEVELOPMENT</span>
+				</div>
+
+				<div class="more">
+					<p>
+					I was on the research team that developed the first module for K-12 Professional Development course which helps K-12 educators embed design thinking into the classroom. My responsibilities included secondary research, designing participant recruiting forms, looking-in interviews and coordinating within the university for platform integrations.
+					</p>
+					<br>
+				</div>
+			</div>
+			
+		</div><!-- end of content -->
+	</div>
+</body>
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function () {
+			this.classList.toggle("active");
+			var more = this.nextElementSibling;
+			if (more.style.display === "block") {
+				more.style.display = "none";
+			} else {
+				more.style.display = "block";
+			}
+		});
+	}
+</script>
+
+</html>
