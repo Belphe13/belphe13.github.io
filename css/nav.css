@@ -6,15 +6,16 @@
 }
 
 ul, li {
+  font-weight: bold;
   margin-top: 20px;
-  font-size: 30px;                               /* 75% */
+  font-size: 30px;                         /* 75% */
   color: #fff
 }
 
 a, p, span {
   text-decoration: none;
   font-weight: bold;
-  font-size: 37.5px;                            /* 75% */
+  font-size: 37.5px;                      /* 75% */
   color: #fff;
 }
 
@@ -28,7 +29,7 @@ body {
 .sub_nav {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  height: 75px;                                 /* 75% */     
+  height: 75px;                            /* 75% */     
   width: 100%;
   position: fixed;
   display: block;

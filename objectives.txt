@@ -1,9 +1,10 @@
-1. REDESIGN THE PROJECT PAGES ..................... not started
+1. REDESIGN THE PROJECT PAGES ..................... done
 2. create page for SANITY CHECK ................... not started
-3. content update for portfolio ................... not started
+3. content update for portfolio ................... started
 3.1 K-12
 3.2 IMBA
 3.3 GRAINGER ENGINEERING
       COLLEGE PERCEPTION
       STUDENT ENGAGEMENT
 4. index page redesign with bio pic ............... not started
+5. y2.02k needs SOFTWARE .......................... add from portfolio

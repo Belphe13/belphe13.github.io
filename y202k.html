@@ -75,10 +75,46 @@
 
       </div>
 
-<!--
       <div class="subtitle">
           <p>CONTROL</p>
       </div>
+
+      <div class="description">
+        <ul>
+        <li>Gestures:
+        </p>
+        &emsp; - Move the palm in X, Y, and Z directions <br>
+        &emsp; - Open/Close the palm <br>
+        &emsp; - Circle/Swipe/Kep Tap/Screen Tap
+        </p>
+        </li><br>
+
+        <li>Number of Fingers:
+        <p>Considering the possible glitches of sensor failures, I deliberately chose to have a consistent organ sound throughout.</p>
+        </li><br>
+
+        <li>Y Coordinates:
+        <p>The pitch of the organ.</p>
+        </li><br>
+
+        <li>X Z Coordinates:
+        <p>The XZ-plane was divided into 16 sub-sections and each has either sample or oscillator sound that will play once the palm position triggers.
+        </li><br>
+
+        <li>Finger Count:
+        <p>It tweaks the oscillators in the organ.</p>
+        </li><br>
+
+        <li>Sphere Radius:
+        <p>It represents the volume control. Volume is high when you open the palm and low when you close it.</p>
+        </li><br>
+
+        <li>Circle, Swipe, Key Tap and Screen Tap:
+        <p>Either will generate a random dial sound.</p>
+        </li>
+        
+        </ul> <!-- end of all controls-->
+      </div><!-- end of description -->
 
       <br><br><br>
 
@@ -86,8 +122,28 @@
           <p>HARDWARE</p>
       </div>
 
-      <br><br><br>
+      <div class="description">
+      <p>Leap Motion: the technology of yesterday! I have been fascinated with gestural controlling for quite a while and this is the first time using this sensor, which tracks hand movements and collects data.
+      
+      <br><br>
+        <iframe src="https://player.vimeo.com/video/520670058" width="800" height="450" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+       <br><br>
 
+      In this project, it tracks: <br>
+
+      &emsp; - Palm position<br>
+      &emsp; - Sphere Radius<br>
+      &emsp; - Finger Count<br>
+      &emsp; - Circle<br>
+      &emsp; - Swipe<br>
+      &emsp; - Key Tap<br>
+      &emsp; - Screen Tap<br>
+      </p>
+      </div>
+
+      <br><br><br>
+<!--
       <div class="subtitle">
           <p>SOFTWARE</p>
       </div>
