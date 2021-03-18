@@ -8,3 +8,4 @@
       STUDENT ENGAGEMENT
 4. index page redesign with bio pic ............... not started
 5. y2.02k needs SOFTWARE .......................... add from portfolio
+6. Need to fix bullet points in SCD
