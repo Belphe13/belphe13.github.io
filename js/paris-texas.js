@@ -257,7 +257,6 @@ function getDirections2(map) {
                 {location: 'Mojave Desert, CA'}
               ],
               destination: new google.maps.LatLng(34.219878, -118.350022),      // Walter's Home
-  //            destination: 'Chicago, IL',
               travelMode: google.maps.TravelMode.DRIVING
           };
 
@@ -302,7 +301,6 @@ function getDirections4(map) {
               origin: new google.maps.LatLng(34.198446, -118.321350),      // Hunter's School
               waypoints: google.maps.LatLng(34.490968, -118.203032),      // Hunter about Universe
               destination: new google.maps.LatLng(33.919858, -116.773296),      // Payphone
-  //            destination: 'Chicago, IL',
               travelMode: google.maps.TravelMode.DRIVING
           };
 
