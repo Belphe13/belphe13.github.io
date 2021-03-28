@@ -253,7 +253,7 @@ function getDirections2(map) {
                 {location: new google.maps.LatLng(30.893293, -102.873053)},     // Stop at the Gas Station
                 {location: new google.maps.LatLng(31.798908, -106.394487)},     // El Paso Airport
                 {location: new google.maps.LatLng(31.799097, -106.396152)},     // Avid Car Rental
-                {location: 'Four Courners, CA'},
+                //{location: 'Four Courners, CA'},
                 {location: 'Mojave Desert, CA'}
               ],
               destination: new google.maps.LatLng(34.219878, -118.350022),      // Walter's Home
