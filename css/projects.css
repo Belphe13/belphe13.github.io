@@ -23,36 +23,6 @@
 	position: relative;
 }
 
-.box-cinema {
-	height: 400px;
-	width: 100%;
-	background-color: #fa285a;
-}
-
-.box-dataviz {
-	height: 200px;
-	width: 100%;
-	background-color: #3a85d4;
-}
-
-.box-computational {
-	height: 200px;
-	width: 100%;
-	background-color: #f09696;
-}
-
-.box-ux {
-	height: 400px;
-	width: 100%;
-	background-color: #33cccc;
-}
-
-.box-engineering {
-	height: 200px;
-	width: 100%;
-	background-color: #fda94c;
-}
-
 .box img, .box iframe {
 	display: block;
 	float: right;
