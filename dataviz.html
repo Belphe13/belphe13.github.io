@@ -7,11 +7,14 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
 
-	gtag('config', 'UA-133224330-1');
-</script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-133224330-1');
+	</script>
 
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/projects.css" type="text/css">
@@ -24,13 +27,15 @@
 	<div class="container">
 		<div class="sub_nav">
 			<a href="index.html">LILAN</a>
-			<a href="art.html">ART</a>
-      		<a href="design.html">DESIGN</a>
-      		<a href="eng.html"  id="current_nav">ENGINEERING</a>
+			<a href="film.html">FILM</a>
+			<a href="coding.html">CODING</a>
 			<a href="places.html">PLACES</a>
 			<!--
+			<a href="design.html" id="current_nav">DESIGN</a>
+			<a href="eng.html">ENGINEERING</a>
+			<a href="art.html">ART</a>
 			<a href="projects.html" id="current_nav">PROJECTS</a>
-			<a href="people.html">PEOPLE</a>
+				  <a href="people.html">PEOPLE</a>
 			<a href="profile.html">PROFILE</a>
 			-->
 		</div>
@@ -45,56 +50,92 @@
 			<div class="title">
 				<p>DATA VISUALIZATION PRACTICES</p><br>
 			</div> <!-- end of title -->
-<!--
+			<!--
 			<div class="description">
 				<p>PROJECT-BASED DATA VISUALLIZATIONS</p><br>
 			</div>
--->		
-      <div class="description">
-		<br>
-        <div class="collapsible">
-        	<span>DEANSHIPS AND INSTITUTIONS</span>
-        </div>
+-->
+			<div class="description">
+				<br>
+				<div class="collapsible">
+					<span>DEANSHIPS AND INSTITUTIONS</span>
+				</div>
 
-        <div class="more">
-        	<p> This data visualization is a demonstration to showcase the relationships between top engineering programs in the management level, where each source node indicates an alma mater, each sink node indicates where alumnus currently holds deanships at. It’s derived from a design research project around academic peer evaluations from 2019 US News & World Report Ranking. And the dataset was collected through web scraping tools to retrieve top 50 engineering programs based on the US News Ranking and looked up where each of the deans gained their degrees. And the final directed graph is generated with graph generator tools online.</p><br>
-			<img width="750px" src="img/projects/dataviz/deans_education.jpg">
-        </div><br><!-- end of more -->
+				<div class="more">
+					<p> This data visualization is a demonstration to showcase the relationships between top engineering
+						programs in the management level, where each source node indicates an alma mater, each sink node
+						indicates where alumnus currently holds deanships at. It’s derived from a design research
+						project around academic peer evaluations from 2019 US News & World Report Ranking. And the
+						dataset was collected through web scraping tools to retrieve top 50 engineering programs based
+						on the US News Ranking and looked up where each of the deans gained their degrees. And the final
+						directed graph is generated with graph generator tools online.</p><br>
+					<img width="750px" src="img/projects/dataviz/deans_education.jpg">
+				</div><br><!-- end of more -->
 
-        <div class="collapsible">
-        	<span>DIRECTORS BUDGET AND GROSS</span>
-        </div>
+				<div class="collapsible">
+					<span>DIRECTORS BUDGET AND GROSS</span>
+				</div>
 
-        <div class="more">
-        	<p>
-				How do mostyly critiqued US Film Directors Do Through Market Feedback?
-				<br><br>
-				Given a meta dataset found online, I played around with Tableau as a data visualization tool. Filtering down to only consider US major film directors with at least 1,000 professional critic reviews in that dataset, I built two applied scatter charts not only about the average budget vs. gross for each director but also take into account Facebook likes for both cast and the movie itself. In addition to these scatter charts, user ratings on IMDb are presented in table with default color code of Tableau.
-			</p><br>
-			<div class='tableauPlaceholder' id='viz1564864802714' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;MidtermProject_17&#47;Dashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;MidtermProject_17&#47;Dashboard?:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;MidtermProject_17&#47;Dashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1564864802714');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='850px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-        </div>
+				<div class="more">
+					<p>
+						How do mostyly critiqued US Film Directors Do Through Market Feedback?
+						<br><br>
+						Given a meta dataset found online, I played around with Tableau as a data visualization tool.
+						Filtering down to only consider US major film directors with at least 1,000 professional critic
+						reviews in that dataset, I built two applied scatter charts not only about the average budget
+						vs. gross for each director but also take into account Facebook likes for both cast and the
+						movie itself. In addition to these scatter charts, user ratings on IMDb are presented in table
+						with default color code of Tableau.
+					</p><br>
+					<div class='tableauPlaceholder' id='viz1564864802714' style='position: relative'><noscript><a
+								href='#'><img alt=' '
+									src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;MidtermProject_17&#47;Dashboard&#47;1_rss.png'
+									style='border: none' /></a></noscript><object class='tableauViz'
+							style='display:none;'>
+							<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+							<param name='embed_code_version' value='3' />
+							<param name='path'
+								value='views&#47;MidtermProject_17&#47;Dashboard?:embed=y&amp;:display_count=y' />
+							<param name='toolbar' value='yes' />
+							<param name='static_image'
+								value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;MidtermProject_17&#47;Dashboard&#47;1.png' />
+							<param name='animate_transition' value='yes' />
+							<param name='display_static_image' value='yes' />
+							<param name='display_spinner' value='yes' />
+							<param name='display_overlay' value='yes' />
+							<param name='display_count' value='yes' /></object></div>
+					<script type='text/javascript'>
+						var divElement = document.getElementById('viz1564864802714');
+						var vizElement = divElement.getElementsByTagName('object')[0];
+						vizElement.style.width = '1000px';
+						vizElement.style.height = '850px';
+						var scriptElement = document.createElement('script');
+						scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+						vizElement.parentNode.insertBefore(scriptElement, vizElement);
+					</script>
+				</div>
 
-      </div><!-- end of description-->
+			</div><!-- end of description-->
 
 		</div><!-- end of content -->
 	</div>
 </body>
 
 <script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
 
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var more = this.nextElementSibling;
-      if (more.style.display === "block") {
-        more.style.display = "none";
-      } else {
-        more.style.display = "block";
-      }
-    });
-  }
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function () {
+			this.classList.toggle("active");
+			var more = this.nextElementSibling;
+			if (more.style.display === "block") {
+				more.style.display = "none";
+			} else {
+				more.style.display = "block";
+			}
+		});
+	}
 </script>
 
 </html>
