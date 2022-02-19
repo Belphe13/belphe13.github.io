@@ -25,7 +25,7 @@
 		<div class="sub_nav">
 			<a href="index.html">LILAN</a>
       		<a href="" id="current_nav">FILM</a>
-      		<a href="cineml.html">CODING</a>
+      		<a href="cinepath.html">CODING</a>
 			<a href="places.html">PLACES</a>
       		<!--
       		<a href="projects.html" id="current_nav">PROJECTS</a>
@@ -47,38 +47,20 @@
 			</div> <!-- end of title -->
 
 			<div class="description">
-				<p>Through the process similar to a previous coding project <a href="cineml.html" target="_blank" style="font-size: 30px; border-bottom: solid 4.5px;"> CINEML</a> which takes machine learning approach to analyze cinema, I looked into a 13-min short Black and White film <a href="https://www.youtube.com/watch?v=XqQeSf24phU" target="_blank" style="font-size: 30px; border-bottom: solid 4.5px;"><i>The Perfect Human</i></a> by Jørgen Leth and remade the cult classic with generative adversarial network (GAN), which was later transformed into analog form, reexamining and questioning the contested notion of perfect human.
+				<p>
+					<i>The Perfect Human</i> is a remake of Jørgen Leth's Black and White cult classic <a href="https://www.youtube.com/watch?v=XqQeSf24phU" target="_blank" style="font-size: 30px; border-bottom: solid 4.5px;"><i>The Perfect Human</i></a> (1968) with generative adversarial network (GAN) and takes machine learning approach to analyze cinema. Later the reamke of the computer-generated moving images are transformed from digital recreation to an analog artifact of tranparencies, reexamining and questioning the contested notion of perfect human.
+
+					<br><br>
+
+					Video installation version of the work is currently on view as part of the Digital + Media Biennial at Sol Koffler Gallery at 169 Weybosset St, Providence, RI until Feb 27. In March, this group exhibition will travel to Boston CyberArts.
+
 				</p>
 				<br>
 			</div> <!-- end of description -->
 
-			<br>
-
-
-<!--
-
-			<div class="subtitle">
-				<p>SUBTITLE</p>
-			</div>
-			<div class="description">
-				<p>
-
-                </p>
-			</div>
-
-			<div class="subtitle">
-				<p>SUBTITLE</p>
-			</div>
-			
-			<br><br><br>
-			<div class="description">
-				<p>
-
-				</p>
-			</div>
-
-			<br><br><br>
-		-->
+			<a href="https://github.com/Belphe13/cineml-perfect-human" target="_blank">
+				<span>GITHUB</span><br>
+			</a>
 
 			<br>
 
@@ -88,9 +70,7 @@
 
 			<div class="description">
 			<p>
-			To some extent, every film is staged. The original film of The Perfect Human by Leth was too obviously staged in a boundless space. It is an unrealistic environment to portray the non-existing perfect human. White background successfully situates the concept of perfect human far from the reality. <br><br>
-
-			The reason I intentionally choose the 360p low-resolution video found on YouTube and train a neural network based on it is to create an ambiguous and abstract remake that complicates the contested notion of perfect human. The computer-generated fakes also played a crucial part in generalizing what perfect human means.
+			To some extent, every film is staged. The original film by Leth was obviously staged in a boundless space. It was filming a middle-class Danish couple performing everyday rituals as if they are subjects in a zoo and the film itself examines human behavior in a "suave, pseudo-scientific" way. It is an unrealistic environment to portray the non-existing perfect human in a bright demonstration room with dissection lights. White background successfully situates the concept of perfect human far from the reality.
 			</p>
 			</div>
 
@@ -100,6 +80,16 @@
 				<p>PROCESS</p>
 			</div>
 
+			<div class="description">
+				<p>
+					I intend to challenge the concept of the perfect human with the intervention of GAN, in this case, StyleGAN2, which is commonly used for producing unlimited number of portraits of fake human faces.
+
+					<br><br>
+
+					After pre-process the image dataset which is composed of every 12 frames per second from a 360p low-resolution video found on YouTube, I loaded 9,408 images and started training that lasted 16h 33m 12s.
+				</p>
+			</div>
+			
 			<br>
 
 			<iframe src="https://player.vimeo.com/video/522684582" width="750px" height="400px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -107,19 +97,69 @@
 			<br><br><br>
 			<div class="description"> <!-- details re: training-->
 				<p>
+					The video above shows the original frames from the film undergoing 709 iternations of training over time. Looking at these previews, I cannot help but think about how the placement of images resembles the filmstrips, and each of the frames is isolated yet interconnected.
+				</p>
+			</div>
+
+			<br>
+
+			<div class="subtitle">
+				<p>Video Projection</p>
+			</div>
+			<div class="description">
+				<p>
+					For the first version of the installation, I chose to present it through video installation because of the fact that projection will ease the crispness of pixels and blur the images with ambiguity. Also historically, 1960s has been the years where there were a lot of "educational videos" being produced with similar aestheics.
+                </p>
+			</div>
+
+			<br>
+			<!--
+			<div class="subtitle">
+				<p>DIGITAL-ANALOG CONVERSION</p>
+			</div>
+			
+			<br><br><br>
+			<div class="description">
+				<p>
+
+				</p>
+			</div>
+
+			<br>
+			-->
+			<div class="subtitle">
+				<p>FILM INSTALLATION</p>
+			</div>
+			
+			<br><br><br>
+			<div class="description">
+				<p>
+
+				</p>
+			</div>
+
+			<br>
+			
+			<div class="subtitle">
+				<p>VIDEO INSTALLATION WITH LIGHTBOX</p>
+			</div>
+			
+			<br><br><br>
+			<div class="description">
+				<p>
 
 				</p>
 			</div>
 
 
+			<iframe width="800" height="450" src="https://www.youtube.com/embed/epro1QWsAZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<br><br><br>
 
 
-			<br>
 <!--
 			<iframe src="https://player.vimeo.com/video/533367370" width="640px" height="440px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 -->
-
-			
 
 			<br><br><br>
 

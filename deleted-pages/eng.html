@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-133224330-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/projects.css" type="text/css">
+  <link rel="stylesheet" href="css/nav.css" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Engineering | Lilan Yang</title>
+</head>
+
+<body id="projects">
+  <div class="container">
+    <div class="sub_nav">
+      <a href="index.html">LILAN</a>
+      <a href="woke-up.html">FILM</a>
+      <a href="cineml.html">CODING</a>
+      <a href="places.html">PLACES</a>
+      <!--
+      <a href="design.html" id="current_nav">DESIGN</a>
+      <a href="eng.html">ENGINEERING</a>
+      <a href="art.html">ART</a>
+      <a href="projects.html" id="current_nav">PROJECTS</a>
+			<a href="people.html">PEOPLE</a>
+      <a href="profile.html">PROFILE</a>
+      -->
+    </div>
+
+    <div class="projects-index">
+
+      <div id="projects-ece" class="box" onclick="location.href='ece.html'" style="cursor: pointer">
+        <a href="ece.html">
+          <img src="img/projects/michigan.jpg">
+          <p>TECHNICAL</p>
+        </a>
+      </div>
+
+      <div id="projects-dataviz" class="box" onclick="location.href='dataviz.html'" style="cursor: pointer">
+        <a href="dataviz.html">
+          <img src="img/projects/dataviz.jpg">
+          <p>DATAVIZ</p>
+        </a>
+      </div>
+
+    </div><!-- end of content -->
+
+  </div>
+
+</body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var more = this.nextElementSibling;
+      if (more.style.display === "block") {
+        more.style.display = "none";
+      } else {
+        more.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</html>
