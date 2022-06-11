@@ -1,6 +1,6 @@
 1. index page redesign with bio pic ............... not started
-2. Everything Comes Full Circle ................... not started
+2. Everything Comes Full Circle ................... in progress
 2.1 Garamond font
 2.2 Blocks
-2.3 Integration
 3. Responsive vimeo links
+4. Update design projects ......................... done
