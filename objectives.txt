@@ -2,5 +2,5 @@
 2. Everything Comes Full Circle ................... in progress
 2.1 Garamond font
 2.2 Blocks
-3. Responsive vimeo links
-4. Update design projects ......................... done
+3. Responsive vimeo links ......................... in progress
+4. Update design projects ......................... in progress
