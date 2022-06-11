@@ -62,6 +62,10 @@
 	background-image: url("../img/film/916761730012_11A.jpg");
 }
 
+#ecfc {
+	background-image: url("../img/background/bg_ecfc.png");
+}
+
 /* background image in project pages */
 #cinepath {
 	background-image: url("../img/background/bg_projects.jpg");
