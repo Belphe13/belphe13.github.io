@@ -4,3 +4,4 @@
 2.2 Blocks
 3. Responsive vimeo links ......................... in progress
 4. Update design projects ......................... in progress
+5. Update font size in em (1em=16px) ............. not started
