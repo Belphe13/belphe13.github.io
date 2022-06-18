@@ -126,15 +126,25 @@ body {
   border: solid 6px #fff;
 }
 
-#index span {                     /* 75% */
-  line-height: 75px;
-  padding: 6px;
-  margin-top: 15px;
-  margin-right: 3.75px;
-  border: solid 6px #fff;
+.content span {
+	/* 75% */
+	line-height: 45px;		/* 75->45px */
+	font-size: 30px;
+	margin-top: 15px;
+	margin-right: 5px;
+	border: solid 6px #fff;
+	/* dropdown */
+	border-radius: 75px;
+	padding: 5px 20px;
+	display: inline-flex;
 }
 
-#index span:hover {
-  color: #ffcc33;
-  border: solid 6px #ffcc33;
+.content span:hover {
+	color: #ffcc33;
+	border: solid 6px #ffcc33;
+	/* 75% */
+}
+
+.description a:hover{
+  color: rgba(255, 255, 255, 0.6);
 }
