@@ -1,0 +1,68 @@
+#design {
+	background-color: white;
+}
+
+#design .container {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background-color: white;
+}
+
+#design a, #design p, #design li {
+    color:black;
+}
+
+#design a:hover {
+    color: grey;
+}
+
+#design .sub_nav {
+    background-color: white;
+    color: white;
+}
+
+#design .sub_nav a {
+    background-color: white;
+    color: #;
+    border-bottom: solid 6px black;
+}
+
+#design .sub_nav a:hover {
+    color: #ffcc33;
+    border-bottom: solid 6px #ffcc33;
+    /* 75% */
+}
+
+#design #current_nav {
+    /* 75% */
+    color: #ffcc33;
+    border-bottom: solid 6px #ffcc33;
+}
+
+#design #current_project{
+    color:#ffcc33;
+}
+
+#design .left_nav a:hover {
+    color: grey;
+    border-bottom: solid 4px grey;
+}
+
+#design #current_project {
+    border-bottom: solid 4px #ffcc33;
+}
+
+#design span {
+    color: black;
+    border: solid 6px black;
+    border-radius: 75px;
+	padding: 5px 20px;
+	display: inline-flex;
+}
+
+#design span:hover{
+    color: #ffcc33;
+	border: solid 6px #ffcc33;
+    cursor:pointer;
+}

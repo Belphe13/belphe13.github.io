@@ -90,6 +90,9 @@
 	background-image: url("../img/background/bg_fpga.jpg");
 }
 
+#design {
+	background-color: white;
+}
 
 /* color for boxes on project pages */
 #projects-cineml,
@@ -252,6 +255,6 @@ s {
 .content span:hover {
 	color: #ffcc33;
 	border: solid 6px #ffcc33;
-	/* 75% */
+	cursor:pointer;
 }
 
