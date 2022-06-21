@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-133224330-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/projects.css" type="text/css">
+  <link rel="stylesheet" href="css/nav.css" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Illuminated Bay | DataViz</title>
+</head>
+
+<style>
+  .white p {
+    color: #ffffff;
+  }
+
+  .tab1 {
+    tab-size: 1;
+  }
+</style>
+
+<body id="nature_lab">
+  <div class="container">
+    <div class="sub_nav">
+      <a href="index.html">LILAN</a>
+			<a href="ecfc.html">FILM</a>
+      <a href="scd.html">DESIGN</a>
+			<a href="" id="current_nav">DATAVIZ</a>
+			<a href="y202k.html">CODING</a>
+			<a href="places.html">PLACES</a>
+    </div>
+
+    <div class="left_nav">
+      <a href="cinepath.html">CINEPATH</a><br>
+			<a href="nature-lab.html" id="current_project">ILLUMINATED BAY</a><br>
+			<a href="dataviz.html">TABLEAU</a>
+    </div>
+
+    <div class="content">
+
+      <div class="title">
+        <p>ILLUMINATED BAY</p><br>
+      </div>
+
+      <div class="description">
+        <p>
+          The Illuminated Bay, a project funded by a Rhode Island Science and Technology Advisory Council (RI-STAC) collaborative research grant. The Illuminated Bay is a large-scale visualization experience displaying complex ecological dynamics on a three-dimensional model of Narragansett Bay.
+
+          <br><br>
+
+          My responsibilities were to create compelling, visual, data-driven content concerning Narragansett Bay's history, ecology and future using Adobe After Effects and investigate the technology and methods involving metrics and data collection for public art installation.
+
+        </p><br>
+      </div>
+
+      <br><img width="100%" src="img/projects/dataviz/illuminated-bay.png">
+
+      <br><br>
+
+    </div><!-- end of content -->
+  </div>
+</body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var more = this.nextElementSibling;
+      if (more.style.display === "block") {
+        more.style.display = "none";
+      } else {
+        more.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</html>

@@ -4,7 +4,11 @@
 2.2 Blocks
 3. Responsive vimeo links ......................... in progress
 4. Update design projects ......................... in progress
-5. DESIGN ALL WHITE!
-6. DROPDOWNS ⬇ ▼
-7. NEWPAGE ⏎↩︎↵
-8. Update span links
+
+5. CYBERENCODE in P5JS
+
+
+
+****
+ROPDOWNS ⬇ ▼
+NEWPAGE ⏎↩︎↵

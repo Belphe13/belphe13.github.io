@@ -72,8 +72,7 @@
 }
 
 #cyberencoding,
-#pd,
-#p5js {
+#pd {
 	background-image: url("../img/background/bg_cyber.jpg");
 }
 
@@ -92,6 +91,11 @@
 
 #design {
 	background-color: white;
+}
+
+#nature_lab,
+#p5js  {
+	background-image: url("../img/background/bg_risd-beach.JPG");
 }
 
 /* color for boxes on project pages */
