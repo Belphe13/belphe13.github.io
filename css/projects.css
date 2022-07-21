@@ -84,9 +84,12 @@
 	background-image: url("../img/background/bg_old_school.jpg");
 }
 
-#ece,
-#dataviz {
+#ece {
 	background-image: url("../img/background/bg_fpga.jpg");
+}
+
+#dataviz {
+	background-image: url("../img/background/bg_index.jpg");
 }
 
 #design {
