@@ -148,3 +148,77 @@ body {
 .description a:hover{
   color: rgba(255, 255, 255, 0.6);
 }
+
+.bio span {
+	/* 75% */
+	line-height: 45px;		/* 75->45px */
+	font-size: 30px;
+	margin-top: 15px;
+	margin-right: 5px;
+	border: solid 6px #fff;
+	/* dropdown */
+	border-radius: 75px;
+	padding: 5px 20px;
+	display: inline-flex;
+}
+
+.bio span:hover {
+	color: #ffcc33;
+	border: solid 6px #ffcc33;
+	/* 75% */
+}
+
+.about {
+    /* 75% */
+    margin-top: 50px;
+    padding-top: 75px;
+    padding-left: 5%;
+    /* 3.85% -> 5% */
+    width: 37%;
+    /* 15% -> 20% */
+    height: 100%;
+    /* not changed */
+    position: fixed;
+    z-index: 2;
+    line-height: 45px;
+    font-size: 22.5px;
+}
+
+.about p {
+  font-size: 30px;                /* 75% */
+  margin-top: 20px;
+  line-height: 37.5px;		        /* 75% */
+  color: #ffffff;
+}
+
+.about a {
+  /* 75% */
+  line-height: 45px;
+  font-size: 22.5px;
+  color: #fff;
+  display: inline-flexbox;
+}
+
+.about a:hover {
+  /* 75% */
+  color: #ffcc33;
+}
+
+.about span {
+	/* 75% */
+	line-height: 45px;		/* 75->45px */
+	font-size: 30px;
+	margin-top: 15px;
+	margin-right: 5px;
+	border: solid 6px #fff;
+	/* dropdown */
+	border-radius: 75px;
+	padding: 5px 20px;
+	display: inline-flex;
+}
+
+.about span:hover {
+	color: #ffcc33;
+	border: solid 6px #ffcc33;
+	/* 75% */
+}
