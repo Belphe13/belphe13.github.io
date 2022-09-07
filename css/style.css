@@ -67,22 +67,6 @@ body {
   z-index: -1;
 }
 
-/* pic not well organized right now
-.pic {
-  margin-top: 75px;
-  padding-top: 75px;
-  padding-left: 5%;
-  width: 20%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-}
-
-.pic img{
-  width: 250px;
-}
-*/
-
 .bio {
   text-align: left;
   margin-left: 5%;
@@ -172,11 +156,9 @@ body {
     /* 75% */
     margin-top: 50px;
     padding-top: 75px;
-    padding-left: 5%;
-    /* 3.85% -> 5% */
-    width: 37%;
-    /* 15% -> 20% */
-    height: 100%;
+    padding-left: 5%;       /* 3.85% -> 5% */
+    width: 37%;             /* 15% -> 37% */
+
     /* not changed */
     position: fixed;
     z-index: 2;

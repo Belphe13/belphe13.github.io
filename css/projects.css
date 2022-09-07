@@ -14,7 +14,8 @@
 
 .projects-index p {
 	float: right;
-	margin-right: 50px;
+	/* margin-right: 50px; */
+	margin: auto;
 	position: relative;
 }
 

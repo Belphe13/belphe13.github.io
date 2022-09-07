@@ -1,0 +1,148 @@
+/* project.html and projects */
+.projects-index {
+	padding-top: 75px;
+	/* 75% */
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-content: center;
+	align-content: center;
+}
+
+.projects-index p {
+	float: right;
+	/* margin-right: 50px; */
+	margin: auto;
+	position: relative;
+}
+
+.box {
+	height: 200px;
+	width: 100%;
+	position: relative;
+}
+
+.box a {
+	position: absolute;
+  	top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box img,
+.box iframe {
+	display: block;
+	float: right;
+	height: 200px;
+}
+
+.box img:hover {
+	opacity: 0.8;
+}
+
+.box p {
+	padding: 15px;
+	position: absolute;
+	margin-top: 70px;
+	margin-left: 70px;
+}
+
+#projects {
+	background-image: url("../img/background/bg_projects.jpg");
+}
+
+#cineml {
+	background-image: url("../img/background/bg_ml.png");
+}
+
+#bolex {
+	background-image: url("../img/background/bg_bolex.png");
+}
+
+#wokeup {
+	background-image: url("../img/background/bg_wokeup.png");
+}
+
+#perfect-human {
+	background-image: url("../img/film/916761730012_11A.jpg");
+}
+
+#ecfc {
+	background-image: url("../img/background/bg_ecfc.png");
+}
+
+/* color for boxes on project pages */
+#projects-cineml,
+#projects-cineml p {
+	background-color: #a08f88;
+}
+
+#projects-bolex,
+#projects-bolex p {
+	background-color: #75a7b8;
+}
+
+#projects-pd,
+#projects-pd p {
+	background-color: #2a3772;
+}
+
+#projects-cinepath,
+#projects-cinepath p {
+	background-color: #fa285a;
+}
+
+#projects-cyberencoding,
+#projects-cyberencoding p {
+	background-color: #fbd55b;
+}
+
+#projects-dataviz,
+#projects-dataviz p {
+	background-color: #3a85d4;
+}
+
+#projects-ui,
+#projects-ui p {
+	background-color: #33cccc;
+}
+
+#projects-old-school,
+#projects-old-school p {
+	background-color: #445BB9;
+}
+
+#projects-p5js,
+#projects-p5js p {
+	background-color: #f09696;
+}
+
+#projects-ece,
+#projects-ece p {
+	background-color: #fda94c;
+}
+
+#projects-scd,
+#projects-scd p {
+	background-color: #13294b;
+}
+
+#projects-woke-up, 
+#projects-woke-up p {
+	background-color: #595959;
+}
+
+#projects-perfect-human, 
+#projects-perfect-human p {
+	background-color: #b3b3b3;
+}
+
+#projects-ecfc, 
+#projects-ecfc p {
+	background-color: #46382b;
+}
