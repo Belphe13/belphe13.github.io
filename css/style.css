@@ -29,8 +29,12 @@ body {
   background-image: url("../img/background/bg_places.jpg");
 }
 
-#places, #profile {
+#profile {
   background-image: url("../img/background/bg_places.jpg");
+}
+
+#places {
+  background-color: black;
 }
 
 #people {
@@ -63,7 +67,7 @@ body {
 
 #map {
   height: 100%;
-  width: 70%;
+  width: 100%;
   position: fixed;
   border: #ffcc33;
   z-index: -1;
@@ -156,8 +160,11 @@ body {
 
 .about {
     /* 75% */
-    margin-top: 50px;
+    margin-top: 75px;
     padding-top: 75px;
+    margin-bottom: 50px;
+    padding-bottom: 75px;
+
     padding-left: 5%;       /* 3.85% -> 5% */
     width: 37%;             /* 15% -> 37% */
 
@@ -166,6 +173,8 @@ body {
     z-index: 2;
     line-height: 45px;
     font-size: 22.5px;
+
+    background-color: black;
 }
 
 .about p {
