@@ -63,7 +63,9 @@ body {
 
 #map {
   height: 100%;
-  position: position;
+  width: 70%;
+  position: fixed;
+  border: #ffcc33;
   z-index: -1;
 }
 
