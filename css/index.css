@@ -1,3 +1,10 @@
+/* transition for more by clicking down arrow */
+#down {
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+
 /* project.html and projects */
 .projects-index {
 	padding-top: 75px;
