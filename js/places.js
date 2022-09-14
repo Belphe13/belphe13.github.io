@@ -4,9 +4,9 @@ var t;
 async function initMap() {
     t = 0;
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 3.5,
+        zoom: 4.2,
         disableDefaultUI: true,    
-        center: new google.maps.LatLng(29.563009, 106.551559),  // CQ
+        center: new google.maps.LatLng(29.563009, 106.551559),  // CQ (29.563009, 106.551559) -(0,30)
         styles: [{
                 "elementType": "geometry",
                 "stylers": [{

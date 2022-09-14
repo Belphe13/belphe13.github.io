@@ -63,7 +63,6 @@ body {
 
 #map {
   height: 100%;
-  position: position;
   z-index: -1;
 }
 
@@ -154,10 +153,11 @@ body {
 
 .about {
     /* 75% */
-    margin-top: 50px;
+    margin-top: 75px;
     padding-top: 75px;
     padding-left: 5%;       /* 3.85% -> 5% */
-    width: 37%;             /* 15% -> 37% */
+    padding-right: 5%;       /* 3.85% -> 5% */
+    width: 36%;             /* 15% -> 37% */
 
     /* not changed */
     position: fixed;
