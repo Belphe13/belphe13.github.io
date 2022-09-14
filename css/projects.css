@@ -102,62 +102,6 @@
 	background-image: url("../img/background/bg_risd-beach.JPG");
 }
 
-/* color for boxes on project pages */
-#projects-cineml,
-#projects-cineml p {
-	background-color: #a08f88;
-}
-
-#projects-bolex,
-#projects-bolex p {
-	background-color: #75a7b8;
-}
-
-#projects-pd,
-#projects-pd p {
-	background-color: #2a3772;
-}
-
-#projects-cinepath,
-#projects-cinepath p {
-	background-color: #fa285a;
-}
-
-#projects-cyberencoding,
-#projects-cyberencoding p {
-	background-color: #fbd55b;
-}
-
-#projects-dataviz,
-#projects-dataviz p {
-	background-color: #3a85d4;
-}
-
-#projects-ui,
-#projects-ui p {
-	background-color: #33cccc;
-}
-
-#projects-old-school,
-#projects-old-school p {
-	background-color: #445BB9;
-}
-
-#projects-p5js,
-#projects-p5js p {
-	background-color: #f09696;
-}
-
-#projects-ece,
-#projects-ece p {
-	background-color: #fda94c;
-}
-
-#projects-scd,
-#projects-scd p {
-	background-color: #13294b;
-}
-
 /* css for each project page */
 .container {
 	height: 100%;
