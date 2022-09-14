@@ -7,7 +7,6 @@ async function initMap() {
         zoom: 3.5,
         disableDefaultUI: true,    
         center: new google.maps.LatLng(29.563009, 106.551559),  // CQ
-//        center: new google.maps.LatLng(40.116421, -88.243385),  // CU
         styles: [{
                 "elementType": "geometry",
                 "stylers": [{
@@ -376,7 +375,7 @@ async function initMap() {
         florida_car(map);
     }, t);
 
-    t+=1000;
+    t+=2000;
 
     setTimeout(function(){
         la(map);
@@ -406,18 +405,80 @@ async function initMap() {
         covid(map);
     }, t);
 
-    t+= 2000;
+    t += 2000;
 
     setTimeout(function(){
         maine(map);
     }, t);
 
-    t+= 2000;
+    t += 2000;
 
     setTimeout(function(){
         bos_ny(map);
     }, t);
+
+    t += 1200;
+
+    setTimeout(function(){
+        bos_winter(map);
+    }, t);
+
+    t += 1500;
+
+    setTimeout(function(){
+        texas_flight(map);
+    }, t);
+
+    t += 200;
+
+    setTimeout(function(){
+        texas_car(map);
+    }, t);
+
+    t += 1500;
+
+    setTimeout(function(){
+        terlingua(map);
+    }, t);
+
+    t += 1500;
+
+    setTimeout(function(){
+        texas_cali(map);
+    }, t);
+
+    t += 200;
+
+    setTimeout(function(){
+        joshuatree(map);
+    }, t);
+
+    t += 2000;
+
+    setTimeout(function(){
+        sfo_bos_ord(map);
+    }, t);
+
+    t += 200;
+
+    setTimeout(function(){
+        ri_winter(map);
+    }, t);
+
+    t += 2000;
+
+    setTimeout(function(){
+        orient_pt_ferry(map);
+    }, t);
+
+    t += 100;
+
+    setTimeout(function(){
+        post_risd(map);
+    }, t);
+
 }
+
 
 /*
  * Childhood travel: 
@@ -771,7 +832,7 @@ function freshman(map) {
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
-  }
+}
 
 function greatlakes(map) {
     var directionsService = new google.maps.DirectionsService();
@@ -833,7 +894,7 @@ function sophomore(map) {
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
-  }
+}
 
 function northern_mi(map) {
     var directionsService = new google.maps.DirectionsService();
@@ -911,7 +972,7 @@ function seattle(map) {
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
-  }
+}
 
 function northwest(map) {
     var directionsService = new google.maps.DirectionsService();
@@ -919,8 +980,7 @@ function northwest(map) {
               origin: 'Seattle, WA',
               waypoints: [
                 {location: new google.maps.LatLng(47.52871,-121.82539)},         // Snoqualmie
-                {location: new google.maps.LatLng(46.742846, -121.545901
-                    )},         // Mt Rainier NP
+                {location: new google.maps.LatLng(46.742846, -121.545901)},         // Mt Rainier NP
                 {location: 'Portland, OR'},
               ],
               destination: 'Seattle, WA',
@@ -950,7 +1010,6 @@ function newyork_train(map) {
         }
     });
 }
-
 
 function russia(map) {
     var lineSymbol = {
@@ -985,7 +1044,7 @@ function russia(map) {
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
-  }
+}
 
 function siberia(map) {
     var directionsService = new google.maps.DirectionsService();
@@ -1039,7 +1098,7 @@ function manchuria(map) {
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
-  }
+}
 
   function junior(map) {
     var lineSymbol = {
@@ -1075,7 +1134,7 @@ function manchuria(map) {
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
-  }
+}
 
 function texas(map) {
     var directionsService = new google.maps.DirectionsService();
@@ -1096,7 +1155,6 @@ function texas(map) {
         }
     });
 }
-
 
 function dc_ny(map) {
     var lineSymbol = {
@@ -1132,7 +1190,7 @@ function dc_ny(map) {
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
-  }
+}
 
 function montauk(map) {
     var directionsService = new google.maps.DirectionsService();
@@ -1189,7 +1247,7 @@ function sf(map) {
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
-  }
+}
 
 function yosemite(map) {
     var directionsService = new google.maps.DirectionsService();
@@ -1270,7 +1328,7 @@ function florida(map) {
           line.getPath().push(latlng);
       }, 17 * i, locations[i]);
     }
-  }
+}
 
 function florida_car(map) {
     var directionsService = new google.maps.DirectionsService();
@@ -1475,16 +1533,323 @@ function maine(map) {
     });
 }
 
+
+/* 
+ * Master
+ * BOS - NY
+ * BOSTON WINTER
+ *
+ * UPDATING SEP 7, 2022 */
 function bos_ny(map) {
     var directionsService = new google.maps.DirectionsService();
     var request = {
               origin: 'Boston, MA',
               waypoints: [
+                {location: 'Providence, RI'},
+                {location: 'Boston, MA'},
                 {location: 'Beacon, NY'},
                 {location: 'Flushing, New York, NY'},
                 {location: 'Providence, RI'},
+                {location: 'Boston, MA'},
+                {location: 'Lincoln, NH'},      // White Mtns
               ],
               destination: 'Boston, MA',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function bos_winter(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Boston, MA',
+              waypoints: [
+                {location: 'New York, NY'},
+                {location: 'Boston, MA'},
+                {location: new google.maps.LatLng(42.330495,-73.672116)},         // Art Omi
+                {location: 'Boston, MA'},
+                {location: 'Mashpee, MA'},
+                {location: 'Boston, MA'},
+                {location: 'Providence, RI'},
+                {location: 'Boston, MA'},
+                {location: 'New York, NY'},
+              ],
+              destination: 'Boston, MA',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function texas_flight(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 42.361145, lng: -71.057083},    // BOS
+                     {lat: 29.76287, lng: -95.36299}     // Houston
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+  //        map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+}
+
+function texas_car(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Houston, TX',
+              waypoints: [
+                {location: 'San Antonio, TX'},
+                {location: 'Del Rio, TX'},
+                {location: 'Marathon, TX'},
+                {location: 'Fort Stockton, TX'},
+                {location: 'Alpine, TX'},
+                {location: 'Marfa, TX'},
+                {location: new google.maps.LatLng(30.60349,-104.5185)},      // Prada Marfa
+                {location: 'Fort Davis, TX'},
+              ],
+              destination: 'Alpine, TX',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function terlingua(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Alpine, TX',
+              waypoints: [
+                {location: 'Big Bend National Park, TX'},
+                {location: 'Terlingua, TX'},
+                {location: 'Lajitas, TX'},
+                {location: 'Terlingua, TX'},
+                {location: new google.maps.LatLng(29.16735,-103.61045)},       // Santa Elena Canyon
+                {location: new google.maps.LatLng(29.32839,-103.20601)},      // Pather Junction
+                {location: 'Marathon, TX'},
+                {location: 'Fort Stockton, TX'},
+                {location: 'Ozona, TX'},
+                {location: 'Austin, TX'},
+              ],
+              destination: 'Houston, TX',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function texas_cali(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 29.76287, lng: -95.36299},    // Houston
+                     {lat: 34.052235, lng: -118.243683}     // LA
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+  //        map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+}
+
+function joshuatree(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Los Angeles, CA',
+              waypoints: [
+                {location: 'Joshua Tree National Park, CA'},
+                {location: 'Amboy, CA'},
+                {location: new google.maps.LatLng(35.01245,-115.65239)},      // Mojave Desert
+                {location: 'Las Vegas, NV'},
+                {location: new google.maps.LatLng(36.63794,-117.03678)},      // Death Valley
+                {location: 'Yosemite National Park, CA'},
+                {location: 'Sacramento, CA'},
+                {location: 'Berkeley, CA'},
+                {location: 'San Mateo, CA'},
+                {location: 'San Jose, CA'},
+                {location: 'San Francisco, CA'},
+                {location: 'Mountain View, CA'},
+                {location: 'Monterey, CA'},
+              ],
+              destination: 'San Mateo, CA',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function sfo_bos_ord(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 37.62085, lng: -122.38107},    // SFO
+                     {lat: 42.361145, lng: -71.057083},     // BOS
+                     {lat: 41.881832, lng: -87.623177}     // ORD
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+  //        map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+}
+
+function ri_winter(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'Providence, RI',
+              waypoints: [
+                {location: 'Boston, MA'},
+                {location: '686 Flanders Rd, Henniker, NH 03242'},      // Pats Peak
+                {location: 'Providence, RI'},
+                {location: 'Killington, VT'},
+                {location: 'Providence, RI'},
+                {location: 'Portland, ME'},
+                {location: 'Acadia National Park, ME'},
+                {location: 'Providence, RI'},
+                {location: 'Cotuit, MA'},
+                {location: 'Providence, RI'},
+                {location: 'New York, NY'},
+                {location: 'Jersey City, NJ'},
+                {location: 'Montauk, NY'},
+              ],
+              destination: 'Orient Point, NY',
+              travelMode: google.maps.TravelMode.DRIVING
+          };
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
+}
+
+function orient_pt_ferry(map) {
+    var lineSymbol = {
+      path: 'M 0,-1 0,1',
+      strokeOpacity: 0.5,
+      scale: 4
+    };
+  
+    var line = new google.maps.Polyline({
+      path: [],
+      geodesic: true,
+      strokeColor: '#ffcc33',
+      strokeOpacity: 0,
+      strokeWeight: 5,
+      editable: false,
+      icons: [{
+              icon: lineSymbol,
+              offset: '0',
+              repeat: '20px'
+            }],
+      map:map
+    });
+  
+    var locations = [{lat: 41.1552, lng: -72.24159},    // Orient Point
+                     {lat: 41.35638, lng: -72.09361}    // New London
+                   ];
+  
+    for (var i = 0; i < locations.length; i++) {
+      setTimeout(function(coords) {
+          latlng = new google.maps.LatLng(coords.lat, coords.lng);
+  //        map.panTo(latlng);
+          line.getPath().push(latlng);
+      }, 17 * i, locations[i]);
+    }
+}
+
+function post_risd(map) {
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: 'New London, CT',
+              waypoints: [
+                {location: 'Providence, RI'},
+                {location: 'Bristol, RI'},
+                {location: 'Housatonic, Great Barrington, MA'},
+                {location: 'Hudson, NY'},
+                {location: 'Housatonic, Great Barrington, MA'},
+                {location: 'New York, NY'},
+              ],
+              destination: 'Housatonic, Great Barrington, MA',
               travelMode: google.maps.TravelMode.DRIVING
           };
     directionsService.route(request, function(result, status) {
