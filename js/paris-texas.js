@@ -40,39 +40,39 @@ async function initMap() {
          ]
        });
 
-      //  getDirections1(map);     // 1250 + 500
+      getDirections1(map);     // 1250 + 500
 
-      //  setTimeout(function(){
-      //    jump1(map);            // 50
-      //  }, 1750);
+      setTimeout(function(){
+        jump1(map);            // 50
+      }, 1750);
 
        setTimeout(function(){
          getDirections2(map);   // 6350
        }, 1800);
 
-      // setTimeout(function(){
-      //   getDirections3(map);    // 7750
-      // }, 8150);
+      setTimeout(function(){
+        getDirections3(map);    // 7750
+      }, 8150);
 
-      // setTimeout(function(){
-      //   getDirections4(map);    // 730
-      // }, 15900);
+      setTimeout(function(){
+        getDirections4(map);    // 730
+      }, 15900);
 
-      // setTimeout(function(){
-      //   jump2(map);             // 800
-      // }, 16630);
+      setTimeout(function(){
+        jump2(map);             // 800
+      }, 16630);
 
-      // setTimeout(function(){
-      //   getDirections5(map);    // 2600 + 2700
-      // }, 17430);
+      setTimeout(function(){
+        getDirections5(map);    // 2600 + 2700
+      }, 17430);
 
-      // setTimeout(function(){
-      //   getDirections6(map);    // 2300 + 4350
-      // }, 22730);
+      setTimeout(function(){
+        getDirections6(map);    // 2300 + 4350
+      }, 22730);
 
-      // setTimeout(function(){
-      //   jump3(map);
-      // }, 29380);
+      setTimeout(function(){
+        jump3(map);
+      }, 29380);
 
 }
 
