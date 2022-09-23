@@ -153,7 +153,6 @@ body {
 
 .about {
     /* 75% */
-    margin: auto;
     margin-top: 75px;
     padding-top: 75px;
     padding-left: 5%;       /* 3.85% -> 5% */
@@ -161,7 +160,7 @@ body {
     width: 36%;             /* 15% -> 37% */
 
     /* not changed */
-    /* position: fixed; */
+    position: fixed;
     z-index: 2;
     line-height: 45px;
     font-size: 22.5px;
