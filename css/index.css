@@ -158,3 +158,13 @@
 #projects-planktons p {
 	background-color: #000;
 }
+
+/* hover over for more text */
+.extra {
+	display: none;
+	font-size: 25px;
+}
+
+a:hover .extra {
+	display: inline-block;
+}
