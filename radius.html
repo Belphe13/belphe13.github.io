@@ -1,180 +1,124 @@
 <!DOCTYPE html>
 <!--
- @license
+@license
  Copyright 2019 Google LLC. All Rights Reserved.
  SPDX-License-Identifier: Apache-2.0
 -->
 <html>
-  <head>
-    <title>Places Search Box</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <!-- <script type="module" src="./index.ts"></script> -->
+<head>
+  <title>Places Search Box</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <!-- <script type="module" src="./index.ts"></script> -->
 
 
   <script type="text/javascript">
-  // map variable in global scope
-  var map;
-  let r,address;
-  var geocoder;
+    var map, geocoder, radius, address;
 
-  function initMap() {
-  //   // initialize the map variable
-    geocoder = new google.maps.Geocoder();
+    function initMap() {
+      geocoder = new google.maps.Geocoder();
 
-     map = new google.maps.Map(document.getElementById('map'), {
-       scrollwheel: true,
-       mapTypeControl: false,
-       center: {
-         lat: 48.8534100,
-         lng: 2.3488000},
-       zoom: 13,
-       streetViewControl: false,
-       zoomControl: true
-     });
-   }
-
-/*
-  function initAutocomplete() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: {
-         lat: 48.8534100,
-         lng: 2.3488000},
-    zoom: 13,
-    mapTypeId: "roadmap",
-  });
-
-
-  // Create the search box and link it to the UI element.
-  const input = document.getElementById("pac-input");
-  const searchBox = new google.maps.places.SearchBox(input);
-
-  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-  // Bias the SearchBox results towards current map's viewport.
-  map.addListener("bounds_changed", () => {
-    searchBox.setBounds(map.getBounds());
-  });
-
-
-
-  // Listen for the event fired when the user selects a prediction and retrieve
-  // more details for that place.
-  searchBox.addListener("places_changed", () => {
-    const places = searchBox.getPlaces();
-
-    if (places.length == 0) {
-      return;
+      map = new google.maps.Map(document.getElementById('map'), {
+        scrollwheel: true,
+        mapTypeControl: false,
+        center: {
+          lat: 42.255975,
+          lng: -73.371215
+        },
+        zoom: 12,
+        streetViewControl: false,
+        zoomControl: true
+      });
     }
 
-    // Clear out the old markers.
-    markers.forEach((marker) => {
-      marker.setMap(null);
-    });
-    markers = [];
+    function drawOnclick() {
+      // alert("clicked");
+      radius = document.getElementById("num-input").value;
+      address = document.getElementById("pac-input").value;
 
+      geocoder.geocode({
+        'address': address
+      }, function (results, status) {
+        if (status == 'OK') {
+          map.setCenter(results[0].geometry.location);
 
-    // For each place, get the icon, name and location.
-    const bounds = new google.maps.LatLngBounds();
-
-    places.forEach((place) => {
-      if (!place.geometry || !place.geometry.location) {
-        console.log("Returned place contains no geometry");
-        return;
-      }
-
-      const icon = {
-        url: place.icon,
-        size: new google.maps.Size(71, 71),
-        origin: new google.maps.Point(0, 0),
-        anchor: new google.maps.Point(17, 34),
-        scaledSize: new google.maps.Size(25, 25),
-      };
-
-      p = place.geometry.location;
-
-      // Create a marker for each place.
-      markers.push(
-        new google.maps.Marker({
-          map,
-          icon,
-          title: place.name,
-          position: place.geometry.location,
-        })
-      );
-
-      if (place.geometry.viewport) {
-        // Only geocodes have viewport.
-        bounds.union(place.geometry.viewport);
-      } else {
-        bounds.extend(place.geometry.location);
-      }
-    });
-    map.fitBounds(bounds);
-  });
-}
-*/
-function drawOnclick() {
-    // alert("clicked");
-    r = document.getElementById("num-input").value;
-    address = document.getElementById("pac-input").value;
-
-    geocoder.geocode( { 'address': address}, function(results, status) {
-      if (status == 'OK') {
-        map.setCenter(results[0].geometry.location);
-        var marker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
             map: map,
             position: results[0].geometry.location
-        });
-    } else {
-        alert('Geocode was not successful for the following reason: ' + status);
-      }
-    });
+          });
 
-    var antennasCircle = new google.maps.Circle({
-      strokeColor: "#FF0000",
-      strokeOpacity: 0.8,
-      strokeWeight: 2,
-      fillColor: "#FF0000",
-      fillOpacity: 0.35,
-      map: map,
-      center: results[0].geometry.location,
-      radius: r * 100
-    });
-//    map.fitBounds(antennasCircle.getBounds());
+          var area = new google.maps.Circle({
+            strokeColor: "#FF0000",
+            strokeOpacity: 0.3,
+            strokeWeight: 2,
+            fillColor: "#FF0000",
+            fillOpacity: 0.35,
+            map: map,
+            center: results[0].geometry.location,
+            radius: radius * 1609.34
+          });
+          map.fitBounds(area.getBounds());
+        } else {
+          alert('Geocode was not successful for the following reason: ' + status);
+        }
+      });
+    }
+  </script>
 
-    console.log(r);
-    console.log(p);
+  <style>
+    #map {
+      height: 100%;
+    }
 
-  }
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
 
+    #description, body {
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 300;
+    }
 
+    #pac-input, #num-input {
+      background-color: #fff;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 300;
+      margin-left: 12px;
+      padding: 0 11px 0 13px;
+      text-overflow: ellipsis;
+      width: 200px;
+    }
 
-</script>
+    #pac-input:focus, #num-input:focus {
+      border-color: #4d90fe;
+    }
+  </style>
 
+</head>
 
-  </head>
-  <body>
-    <input type="number" id="num-input" value="100"/>
-    <button type="button" id="button" onclick="drawOnclick()">Submit</button>
-    <input
-      id="pac-input"
-      class="controls"
-      type="text"
-      placeholder="Search Box"
-      value="Paris"
-    />
-    <div id="map"></div>
+<body>
+  <input type="number" id="num-input" value="1" /> miles<br>
+  <input id="pac-input" class="controls" type="text" placeholder="Search Box" value="01236" />
+  <button type="button" id="button" onclick="drawOnclick()">Submit</button>
 
-    <!-- 
+  <div id="map"></div>
+
+  <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
      and consistent behavior across browsers, consider loading using Promises
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUWAKLSoS7v52u7nHNa2QXygx-ucdx-t8&callback=initMap&libraries=places&v=weekly"
-      defer
-    ></script>
-  </body>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUWAKLSoS7v52u7nHNa2QXygx-ucdx-t8&callback=initMap&libraries=places&v=weekly"
+    defer></script>
+</body>
+
 </html>
