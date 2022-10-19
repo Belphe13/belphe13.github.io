@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Georgia Utilities</name>
+    <description>Google Maps Data Visualization project features where locals can pay their utilities bills with cash.</description>
+    <Style id="icon-1502-E65100-labelson">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Copy of Retail Locations - Georgia</name>
+      <Placemark>
+        <name>Dollar General</name>
+        <address>225 Main St W Abbeville Georgia 31001</address>
+        <description><![CDATA[Address: 225 Main St W<br>City: Abbeville<br>State: Georgia<br>Zip: 31001<br>Counties: Wilcox]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>225 Main St W</value>
+          </Data>
+          <Data name="City">
+            <value>Abbeville</value>
+          </Data>
+          <Data name="State">
+            <value>Georgia</value>
+          </Data>
+          <Data name="Zip">
+            <value>31001</value>
+          </Data>
+          <Data name="Counties">
+            <value>Wilcox</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dollar General</name>
+        <address>77 East Main St Adrian Georgia 31002</address>
+        <description><![CDATA[Address: 77 East Main St<br>City: Adrian<br>State: Georgia<br>Zip: 31002<br>Counties: Emanuel,Johnson]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>77 East Main St</value>
+          </Data>
+          <Data name="City">
+            <value>Adrian</value>
+          </Data>
+          <Data name="State">
+            <value>Georgia</value>
+          </Data>
+          <Data name="Zip">
+            <value>31002</value>
+          </Data>
+          <Data name="Counties">
+            <value>Emanuel,Johnson</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dollar General</name>
+        <address>4494 New Hope Church Rd S Acworth Georgia 30102</address>
+        <description><![CDATA[Address: 4494 New Hope Church Rd S<br>City: Acworth<br>State: Georgia<br>Zip: 30102<br>Counties: Cobb]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>4494 New Hope Church Rd S</value>
+          </Data>
+          <Data name="City">
+            <value>Acworth</value>
+          </Data>
+          <Data name="State">
+            <value>Georgia</value>
+          </Data>
+          <Data name="Zip">
+            <value>30102</value>
+          </Data>
+          <Data name="Counties">
+            <value>Cobb</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dollar General</name>
+        <address>5747 Bells Ferry Rd Acworth Georgia 30102</address>
+        <description><![CDATA[Address: 5747 Bells Ferry Rd<br>City: Acworth<br>State: Georgia<br>Zip: 30102<br>Counties: Cobb]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>5747 Bells Ferry Rd</value>
+          </Data>
+          <Data name="City">
+            <value>Acworth</value>
+          </Data>
+          <Data name="State">
+            <value>Georgia</value>
+          </Data>
+          <Data name="Zip">
+            <value>30102</value>
+          </Data>
+          <Data name="Counties">
+            <value>Cobb</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dollar General</name>
+        <address>5071 Lake Acworth Dr Acworth Georgia 30101</address>
+        <description><![CDATA[Address: 5071 Lake Acworth Dr<br>City: Acworth<br>State: Georgia<br>Zip: 30101<br>Counties: Cobb]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>5071 Lake Acworth Dr</value>
+          </Data>
+          <Data name="City">
+            <value>Acworth</value>
+          </Data>
+          <Data name="State">
+            <value>Georgia</value>
+          </Data>
+          <Data name="Zip">
+            <value>30101</value>
+          </Data>
+          <Data name="Counties">
+            <value>Cobb</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dollar General</name>
+        <address>5650 Third Army Rd Acworth Georgia 30101</address>
+        <description><![CDATA[Address: 5650 Third Army Rd<br>City: Acworth<br>State: Georgia<br>Zip: 30101<br>Counties: Cobb]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>5650 Third Army Rd</value>
+          </Data>
+          <Data name="City">
+            <value>Acworth</value>
+          </Data>
+          <Data name="State">
+            <value>Georgia</value>
+          </Data>
+          <Data name="Zip">
+            <value>30101</value>
+          </Data>
+          <Data name="Counties">
+            <value>Cobb</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dollar General</name>
+        <address>4961 Regions Dr Nw Acworth Georgia 30101</address>
+        <description><![CDATA[Address: 4961 Regions Dr Nw<br>City: Acworth<br>State: Georgia<br>Zip: 30101<br>Counties: Cobb]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>4961 Regions Dr Nw</value>
+          </Data>
+          <Data name="City">
+            <value>Acworth</value>
+          </Data>
+          <Data name="State">
+            <value>Georgia</value>
+          </Data>
+          <Data name="Zip">
+            <value>30101</value>
+          </Data>
+          <Data name="Counties">
+            <value>Cobb</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dollar General</name>
+        <address>6064 Joe Frank Harris Pkwy Adairsville Georgia 30103</address>
+        <description><![CDATA[Address: 6064 Joe Frank Harris Pkwy<br>City: Adairsville<br>State: Georgia<br>Zip: 30103<br>Counties: Bartow]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>6064 Joe Frank Harris Pkwy</value>
+          </Data>
+          <Data name="City">
+            <value>Adairsville</value>
+          </Data>
+          <Data name="State">
+            <value>Georgia</value>
+          </Data>
+          <Data name="Zip">
+            <value>30103</value>
+          </Data>
+          <Data name="Counties">
+            <value>Bartow</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dollar General</name>
+        <address>115 N Elm St Adel Georgia 31620</address>
+        <description><![CDATA[Address: 115 N Elm St<br>City: Adel<br>State: Georgia<br>Zip: 31620<br>Counties: Cook]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>115 N Elm St</value>
+          </Data>
+          <Data name="City">
+            <value>Adel</value>
+          </Data>
+          <Data name="State">
+            <value>Georgia</value>
+          </Data>
+          <Data name="Zip">
+            <value>31620</value>
+          </Data>
+          <Data name="Counties">
+            <value>Cook</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dollar General</name>
+        <address>69 W Main St Alamo Georgia 30411</address>
+        <description><![CDATA[Address: 69 W Main St<br>City: Alamo<br>State: Georgia<br>Zip: 30411<br>Counties: Wheeler]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Address">
+            <value>69 W Main St</value>
+          </Data>
+          <Data name="City">
+            <value>Alamo</value>
+          </Data>
+          <Data name="State">
+            <value>Georgia</value>
+          </Data>
+          <Data name="Zip">
+            <value>30411</value>
+          </Data>
+          <Data name="Counties">
+            <value>Wheeler</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Copy of Electric Utility Providers - Georgia</name>
+      <Placemark>
+        <name>Altamaha EMC</name>
+        <address>611 West Liberty Avenue Lyons GA 30436</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 407<br>Address: 611 West Liberty Avenue<br>City: Lyons<br>State: GA<br>Zip: 30436<br>Counties Served: Emanuel,Johnson,Laurens,Montgomery,Tattnall,Toombs,Treutlen]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>407.0</value>
+          </Data>
+          <Data name="Address">
+            <value>611 West Liberty Avenue</value>
+          </Data>
+          <Data name="City">
+            <value>Lyons</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>30436</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Emanuel,Johnson,Laurens,Montgomery,Tattnall,Toombs,Treutlen</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Altamaha EMC</name>
+        <address>730 U S Highway 1 South Swainsboro GA 30401</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 407<br>Address: 730 U S Highway 1 South<br>City: Swainsboro<br>State: GA<br>Zip: 30401<br>Counties Served: Emanuel,Johnson,Laurens,Montgomery,Tattnall,Toombs,Treutlen]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>407.0</value>
+          </Data>
+          <Data name="Address">
+            <value>730 U S Highway 1 South</value>
+          </Data>
+          <Data name="City">
+            <value>Swainsboro</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>30401</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Emanuel,Johnson,Laurens,Montgomery,Tattnall,Toombs,Treutlen</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Altamaha EMC</name>
+        <address>1016 Second Street Soperton GA 30457</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 407<br>Address: 1016 Second Street<br>City: Soperton<br>State: GA<br>Zip: 30457<br>Counties Served: Emanuel,Johnson,Laurens,Montgomery,Tattnall,Toombs,Treutlen]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>407.0</value>
+          </Data>
+          <Data name="Address">
+            <value>1016 Second Street</value>
+          </Data>
+          <Data name="City">
+            <value>Soperton</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>30457</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Emanuel,Johnson,Laurens,Montgomery,Tattnall,Toombs,Treutlen</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Altamaha EMC</name>
+        <address>679 Ed Beckham Road East Dublin GA 31027</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 407<br>Address: 679 Ed Beckham Road<br>City: East Dublin<br>State: GA<br>Zip: 31027<br>Counties Served: Emanuel,Johnson,Laurens,Montgomery,Tattnall,Toombs,Treutlen]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>407.0</value>
+          </Data>
+          <Data name="Address">
+            <value>679 Ed Beckham Road</value>
+          </Data>
+          <Data name="City">
+            <value>East Dublin</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>31027</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Emanuel,Johnson,Laurens,Montgomery,Tattnall,Toombs,Treutlen</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Amicalola EMC</name>
+        <address>544 Hwy 515 South Jasper GA 30143</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 562<br>Address: 544 Hwy 515 South<br>City: Jasper<br>State: GA<br>Zip: 30143<br>Counties Served: Bartow,Cherokee,Dawson,Fannin,Forsyth,Gilmer,Gordon,Lumpkin,Murray,Pickens]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>562.0</value>
+          </Data>
+          <Data name="Address">
+            <value>544 Hwy 515 South</value>
+          </Data>
+          <Data name="City">
+            <value>Jasper</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>30143</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Bartow,Cherokee,Dawson,Fannin,Forsyth,Gilmer,Gordon,Lumpkin,Murray,Pickens</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Amicalola EMC</name>
+        <address>150 Tabor Street Ellijay GA 30450</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 562<br>Address: 150 Tabor Street<br>City: Ellijay<br>State: GA<br>Zip: 30450<br>Counties Served: Bartow,Cherokee,Dawson,Fannin,Forsyth,Gilmer,Gordon,Lumpkin,Murray,Pickens]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>562.0</value>
+          </Data>
+          <Data name="Address">
+            <value>150 Tabor Street</value>
+          </Data>
+          <Data name="City">
+            <value>Ellijay</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>30450</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Bartow,Cherokee,Dawson,Fannin,Forsyth,Gilmer,Gordon,Lumpkin,Murray,Pickens</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Amicalola EMC</name>
+        <address>150 Hwy 52 West Dahlonega GA 30533</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 562<br>Address: 150 Hwy 52 West<br>City: Dahlonega<br>State: GA<br>Zip: 30533<br>Counties Served: Bartow,Cherokee,Dawson,Fannin,Forsyth,Gilmer,Gordon,Lumpkin,Murray,Pickens]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>562.0</value>
+          </Data>
+          <Data name="Address">
+            <value>150 Hwy 52 West</value>
+          </Data>
+          <Data name="City">
+            <value>Dahlonega</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>30533</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Bartow,Cherokee,Dawson,Fannin,Forsyth,Gilmer,Gordon,Lumpkin,Murray,Pickens</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Blue Ridge Mountain EMC</name>
+        <address>875 Main Street East Young Harris GA 30582</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 1891<br>Address: 875 Main Street East<br>City: Young Harris<br>State: GA<br>Zip: 30582<br>Counties Served: Fannin,Gilmer,Towns,Union]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>1891.0</value>
+          </Data>
+          <Data name="Address">
+            <value>875 Main Street East</value>
+          </Data>
+          <Data name="City">
+            <value>Young Harris</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>30582</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Fannin,Gilmer,Towns,Union</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>CANOOCHEE EMC</name>
+        <address>342 East Brazell Street Reidsville GA 30453</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 2903<br>Address: 342 East Brazell Street<br>City: Reidsville<br>State: GA<br>Zip: 30453<br>Counties Served: Bryan,Bulloch,Chatham,Emanuel,Evans,Liberty,Long,Tattnall,Toombs]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>2903.0</value>
+          </Data>
+          <Data name="Address">
+            <value>342 East Brazell Street</value>
+          </Data>
+          <Data name="City">
+            <value>Reidsville</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>30453</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Bryan,Bulloch,Chatham,Emanuel,Evans,Liberty,Long,Tattnall,Toombs</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>CANOOCHEE EMC</name>
+        <address>2983 Ga HWY 196W Hinesville GA 31313</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 2903<br>Address: 2983 Ga HWY 196W<br>City: Hinesville<br>State: GA<br>Zip: 31313<br>Counties Served: Bryan,Bulloch,Chatham,Emanuel,Evans,Liberty,Long,Tattnall,Toombs]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>2903.0</value>
+          </Data>
+          <Data name="Address">
+            <value>2983 Ga HWY 196W</value>
+          </Data>
+          <Data name="City">
+            <value>Hinesville</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>31313</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Bryan,Bulloch,Chatham,Emanuel,Evans,Liberty,Long,Tattnall,Toombs</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>CANOOCHEE EMC</name>
+        <address>919 E Bacon St Pembroke GA 31321</address>
+        <description><![CDATA[Type: COOP<br>UtilityNo: 2903<br>Address: 919 E Bacon St<br>City: Pembroke<br>State: GA<br>Zip: 31321<br>Counties Served: Bryan,Bulloch,Chatham,Emanuel,Evans,Liberty,Long,Tattnall,Toombs]]></description>
+        <styleUrl>#icon-1502-E65100-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="Type">
+            <value>COOP</value>
+          </Data>
+          <Data name="UtilityNo">
+            <value>2903.0</value>
+          </Data>
+          <Data name="Address">
+            <value>919 E Bacon St</value>
+          </Data>
+          <Data name="City">
+            <value>Pembroke</value>
+          </Data>
+          <Data name="State">
+            <value>GA</value>
+          </Data>
+          <Data name="Zip">
+            <value>31321</value>
+          </Data>
+          <Data name="Counties Served">
+            <value>Bryan,Bulloch,Chatham,Emanuel,Evans,Liberty,Long,Tattnall,Toombs</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
