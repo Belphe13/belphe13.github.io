@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="ga_retail" id="ga_retail">
+	<SimpleField name="Address" type="string"></SimpleField>
+	<SimpleField name="Latitude" type="float"></SimpleField>
+	<SimpleField name="Longitude" type="float"></SimpleField>
+	<SimpleField name="Counties" type="string"></SimpleField>
+</Schema>
+<Folder><name>ga_retail</name>
+  <Placemark>
+	<name>Dollar General</name>
+	<ExtendedData><SchemaData schemaUrl="#ga_retail">
+		<SimpleData name="Address">225 Main St W, Abbeville, Georgia 31001</SimpleData>
+		<SimpleData name="Latitude">31.9927859</SimpleData>
+		<SimpleData name="Longitude">-83.3087021</SimpleData>
+		<SimpleData name="Counties">Wilcox</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-83.3087021,31.9927859</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dollar General</name>
+	<ExtendedData><SchemaData schemaUrl="#ga_retail">
+		<SimpleData name="Address">77 East Main St, Adrian, Georgia 31002</SimpleData>
+		<SimpleData name="Latitude">32.5314277</SimpleData>
+		<SimpleData name="Longitude">-82.5868316</SimpleData>
+		<SimpleData name="Counties">Emanuel,Johnson</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.5868316,32.5314277</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dollar General</name>
+	<ExtendedData><SchemaData schemaUrl="#ga_retail">
+		<SimpleData name="Address">4494 New Hope Church Rd S, Acworth, Georgia 30102</SimpleData>
+		<SimpleData name="Latitude">34.1175472</SimpleData>
+		<SimpleData name="Longitude">-84.6793748</SimpleData>
+		<SimpleData name="Counties">Cobb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-84.6793748,34.1175472</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dollar General</name>
+	<ExtendedData><SchemaData schemaUrl="#ga_retail">
+		<SimpleData name="Address">5747 Bells Ferry Rd, Acworth, Georgia 30102</SimpleData>
+		<SimpleData name="Latitude">34.0909358</SimpleData>
+		<SimpleData name="Longitude">-84.5812285</SimpleData>
+		<SimpleData name="Counties">Cobb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-84.5812285,34.0909358</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dollar General</name>
+	<ExtendedData><SchemaData schemaUrl="#ga_retail">
+		<SimpleData name="Address">5071 Lake Acworth Dr, Acworth, Georgia 30101</SimpleData>
+		<SimpleData name="Latitude">34.0738007</SimpleData>
+		<SimpleData name="Longitude">-84.6788209</SimpleData>
+		<SimpleData name="Counties">Cobb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-84.6788209,34.0738007</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dollar General</name>
+	<ExtendedData><SchemaData schemaUrl="#ga_retail">
+		<SimpleData name="Address">5650 Third Army Rd, Acworth, Georgia 30101</SimpleData>
+		<SimpleData name="Latitude">34.0851961</SimpleData>
+		<SimpleData name="Longitude">-84.7226177</SimpleData>
+		<SimpleData name="Counties">Cobb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-84.7226177,34.0851961</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dollar General</name>
+	<ExtendedData><SchemaData schemaUrl="#ga_retail">
+		<SimpleData name="Address">4961 Regions Dr Nw, Acworth, Georgia 30101</SimpleData>
+		<SimpleData name="Latitude">34.0765111</SimpleData>
+		<SimpleData name="Longitude">-84.648035</SimpleData>
+		<SimpleData name="Counties">Cobb</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-84.648035,34.0765111</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dollar General</name>
+	<ExtendedData><SchemaData schemaUrl="#ga_retail">
+		<SimpleData name="Address">6064 Joe Frank Harris Pkwy, Adairsville, Georgia 30103</SimpleData>
+		<SimpleData name="Latitude">34.3730779</SimpleData>
+		<SimpleData name="Longitude">-84.9288757</SimpleData>
+		<SimpleData name="Counties">Bartow</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-84.9288757,34.3730779</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dollar General</name>
+	<ExtendedData><SchemaData schemaUrl="#ga_retail">
+		<SimpleData name="Address">115 N Elm St, Adel, Georgia 31620</SimpleData>
+		<SimpleData name="Latitude">31.1352269</SimpleData>
+		<SimpleData name="Longitude">-83.4336302</SimpleData>
+		<SimpleData name="Counties">Cook</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-83.4336302,31.1352269</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Dollar General</name>
+	<ExtendedData><SchemaData schemaUrl="#ga_retail">
+		<SimpleData name="Address">69 W Main St, Alamo, Georgia 30411</SimpleData>
+		<SimpleData name="Latitude">32.14362</SimpleData>
+		<SimpleData name="Longitude">-82.7806798</SimpleData>
+		<SimpleData name="Counties">Wheeler</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-82.7806798,32.14362</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
