@@ -433,7 +433,4 @@ function jump3(map) {
   }
 }
 
-
-
-
 google.maps.event.addDomListener(window, 'load', initMap);
