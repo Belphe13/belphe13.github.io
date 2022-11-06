@@ -2,11 +2,1286 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>Copy of Paris, Texas</name>
-    <NetworkLink>
-      <name>Testing</name>
-      <Link>
-        <href><![CDATA[https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1imeyU0m2YjsmQ1X7Slmkg3jQz-9bdlw&lid=ZzXsTV9bgx8]]></href>
-      </Link>
-    </NetworkLink>
+    <Style id="icon-seq2-0-0-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-0-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-0-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-0-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-0-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-1-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-1-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-1-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-1-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-1-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-10-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-11.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-10-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-11.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-10-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-10-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-10-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-11-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-12.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-11-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-12.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-11-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-11-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-11-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-12-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-13.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-12-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-13.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-12-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-12-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-12-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-13-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-14.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-13-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-14.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-13-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-13-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-13-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-14-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-15.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-14-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-15.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-14-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-14-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-14-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-15-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-16.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-15-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-16.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-15-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-15-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-15-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-16-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-17.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-16-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-17.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-16-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-16-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-16-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-17-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-18.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-17-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-18.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-17-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-17-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-17-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-18-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-19.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-18-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-19.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-18-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-18-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-18-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-19-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-20.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-19-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-20.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-19-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-19-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-19-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-2-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-2-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-2-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-2-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-2-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-20-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-21.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-20-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-21.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-20-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-20-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-20-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-3-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-3-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-3-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-3-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-3-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-4-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-4-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-4-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-4-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-4-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-5-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-5-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-5-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-5-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-5-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-6-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-7.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-6-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-7.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-6-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-6-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-6-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-7-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-7-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-7-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-7-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-7-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-8-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-9.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-8-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-9.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-8-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-8-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-8-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-9-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-10.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-9-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-10.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-9-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-9-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-9-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Terlingua M. D. Clinic</name>
+      <description><![CDATA[time: 8:52<br>location: 51470 TX-118, Alpine, TX 79830<br>latitude: 29.623064<br>longtitude: -103.573552<br>note: ]]></description>
+      <styleUrl>#icon-seq2-0-0-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>8:52</value>
+        </Data>
+        <Data name="location">
+          <value>51470 TX-118, Alpine, TX 79830</value>
+        </Data>
+        <Data name="latitude">
+          <value>29.623064</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-103.573552</value>
+        </Data>
+        <Data name="note">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -103.573552,29.623064,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>American Legion Rd</name>
+      <description><![CDATA[time: 11:16<br>location: 51470 TX-118, Alpine, TX 79830<br>latitude: 29.62268<br>longtitude: -103.572845<br>note: Walter in a car]]></description>
+      <styleUrl>#icon-seq2-0-1-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>11:16</value>
+        </Data>
+        <Data name="location">
+          <value>51470 TX-118, Alpine, TX 79830</value>
+        </Data>
+        <Data name="latitude">
+          <value>29.62268</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-103.572845</value>
+        </Data>
+        <Data name="note">
+          <value>Walter in a car</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -103.572845,29.62268,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Marathon Motel & RV Park]]></name>
+      <description><![CDATA[time: 15:46<br>location: 701 US-90, Marathon, TX 79842<br>latitude: 30.208263<br>longtitude: -103.25439<br>note: ]]></description>
+      <styleUrl>#icon-seq2-0-2-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>15:46</value>
+        </Data>
+        <Data name="location">
+          <value>701 US-90, Marathon, TX 79842</value>
+        </Data>
+        <Data name="latitude">
+          <value>30.208263</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-103.25439</value>
+        </Data>
+        <Data name="note">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -103.25439,30.208263,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shoemaker Hardware Store</name>
+      <description><![CDATA[time: 17:53<br>location: NE 1st Street, Marathon, TX 79842<br>latitude: 30.206028<br>longtitude: -103.241448<br>note: ]]></description>
+      <styleUrl>#icon-seq2-0-3-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>17:53</value>
+        </Data>
+        <Data name="location">
+          <value>NE 1st Street, Marathon, TX 79842</value>
+        </Data>
+        <Data name="latitude">
+          <value>30.206028</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-103.241448</value>
+        </Data>
+        <Data name="note">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -103.241448,30.206028,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Marathon Motel & RV Park]]></name>
+      <description><![CDATA[time: 18:43<br>location: 701 US-90, Marathon, TX 79842<br>latitude: 30.208263<br>longtitude: -103.25439<br>note: Walter is back]]></description>
+      <styleUrl>#icon-seq2-0-4-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>18:43</value>
+        </Data>
+        <Data name="location">
+          <value>701 US-90, Marathon, TX 79842</value>
+        </Data>
+        <Data name="latitude">
+          <value>30.208263</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-103.25439</value>
+        </Data>
+        <Data name="note">
+          <value>Walter is back</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -103.25439,30.208263,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>El Rancho Motel</name>
+      <description><![CDATA[time: 24:30<br>location: 901 E Dickinson Blvd, Fort Stockton, TX 79735<br>latitude: 30.893629<br>longtitude: -102.870452<br>note: ]]></description>
+      <styleUrl>#icon-seq2-0-5-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>24:30</value>
+        </Data>
+        <Data name="location">
+          <value>901 E Dickinson Blvd, Fort Stockton, TX 79735</value>
+        </Data>
+        <Data name="latitude">
+          <value>30.893629</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-102.870452</value>
+        </Data>
+        <Data name="note">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -102.870452,30.893629,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Stop at the gas station</name>
+      <description><![CDATA[time: 25:03<br>location: 609 E Dickinson Blvd, Fort Stockton, TX 79735<br>latitude: 30.893293<br>longtitude: -102.873053<br>note: ]]></description>
+      <styleUrl>#icon-seq2-0-6-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>25:03</value>
+        </Data>
+        <Data name="location">
+          <value>609 E Dickinson Blvd, Fort Stockton, TX 79735</value>
+        </Data>
+        <Data name="latitude">
+          <value>30.893293</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-102.873053</value>
+        </Data>
+        <Data name="note">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -102.873053,30.893293,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>El Paso Airport</name>
+      <description><![CDATA[time: 26:15<br>location: 6701 Convair Rd, El Paso, TX 79925<br>latitude: 31.798908<br>longtitude: -106.394487<br>note: ]]></description>
+      <styleUrl>#icon-seq2-0-7-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>26:15</value>
+        </Data>
+        <Data name="location">
+          <value>6701 Convair Rd, El Paso, TX 79925</value>
+        </Data>
+        <Data name="latitude">
+          <value>31.798908</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-106.394487</value>
+        </Data>
+        <Data name="note">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -106.394487,31.798908,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Avis Car Rental</name>
+      <description><![CDATA[time: 27:56<br>location: 6505 Convair Rd Suite 400, El Paso, TX 79925<br>latitude: 31.799097<br>longtitude: -106.396152<br>note: ]]></description>
+      <styleUrl>#icon-seq2-0-8-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>27:56</value>
+        </Data>
+        <Data name="location">
+          <value>6505 Convair Rd Suite 400, El Paso, TX 79925</value>
+        </Data>
+        <Data name="latitude">
+          <value>31.799097</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-106.396152</value>
+        </Data>
+        <Data name="note">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -106.396152,31.799097,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Walter's Home]]></name>
+      <description><![CDATA[time: 37:58<br>location: 10060 Olivia Terrace, Sun Valley, CA 91352<br>latitude: 34.219878<br>longtitude: -118.350022<br>note: Walter's Home]]></description>
+      <styleUrl>#icon-seq2-0-9-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>37:58</value>
+        </Data>
+        <Data name="location">
+          <value>10060 Olivia Terrace, Sun Valley, CA 91352</value>
+        </Data>
+        <Data name="latitude">
+          <value>34.219878</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-118.350022</value>
+        </Data>
+        <Data name="note">
+          <value><![CDATA[Walter's Home]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.350022,34.219878,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Walter's Backyard]]></name>
+      <description><![CDATA[time: 42:13<br>location: 10060 Olivia Terrace, Sun Valley, CA 91352<br>latitude: 34.21973<br>longtitude: -118.350115<br>note: Backyard]]></description>
+      <styleUrl>#icon-seq2-0-10-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>42:13</value>
+        </Data>
+        <Data name="location">
+          <value>10060 Olivia Terrace, Sun Valley, CA 91352</value>
+        </Data>
+        <Data name="latitude">
+          <value>34.21973</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-118.350115</value>
+        </Data>
+        <Data name="note">
+          <value>Backyard</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.350115,34.21973,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Thomas Jefferson Elementary School</name>
+      <description><![CDATA[time: 48:15<br>location: 1900 N 6th St, Burbank, CA 91504<br>latitude: 34.198446<br>longtitude: -118.32135<br>note: Hunter's School]]></description>
+      <styleUrl>#icon-seq2-0-11-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>48:15</value>
+        </Data>
+        <Data name="location">
+          <value>1900 N 6th St, Burbank, CA 91504</value>
+        </Data>
+        <Data name="latitude">
+          <value>34.198446</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-118.32135</value>
+        </Data>
+        <Data name="note">
+          <value><![CDATA[Hunter's School]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.32135,34.198446,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Payphone</name>
+      <description><![CDATA[time: 1:18:40<br>location: 50900 Seminole Drive, Cabazon, California, United States<br>latitude: 33.919858<br>longtitude: -116.773296<br>note: Payphone]]></description>
+      <styleUrl>#icon-seq2-0-12-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>1:18:40</value>
+        </Data>
+        <Data name="location">
+          <value>50900 Seminole Drive, Cabazon, California, United States</value>
+        </Data>
+        <Data name="latitude">
+          <value>33.919858</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-116.773296</value>
+        </Data>
+        <Data name="note">
+          <value>Payphone</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -116.773296,33.919858,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wheel Inn Restaurant</name>
+      <description><![CDATA[time: 1:22:25<br>location: 50900 Seminole Drive, Cabazon, California, USA<br>latitude: 33.919858<br>longtitude: -116.773296<br>note: Father and son in a hotel room]]></description>
+      <styleUrl>#icon-seq2-0-13-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>1:22:25</value>
+        </Data>
+        <Data name="location">
+          <value>50900 Seminole Drive, Cabazon, California, USA</value>
+        </Data>
+        <Data name="latitude">
+          <value>33.919858</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-116.773296</value>
+        </Data>
+        <Data name="note">
+          <value>Father and son in a hotel room</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -116.773296,33.919858,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Downtown Chase Band Drive Up</name>
+      <description><![CDATA[time: 1:25:32<br>location: 212 Milam St, Houston, TX 77002<br>latitude: 29.764011<br>longtitude: -95.362674<br>note: Meeting Jane]]></description>
+      <styleUrl>#icon-seq2-0-14-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>1:25:32</value>
+        </Data>
+        <Data name="location">
+          <value>212 Milam St, Houston, TX 77002</value>
+        </Data>
+        <Data name="latitude">
+          <value>29.764011</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-95.362674</value>
+        </Data>
+        <Data name="note">
+          <value>Meeting Jane</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -95.362674,29.764011,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Port Auther</name>
+      <description><![CDATA[time: 1:33:03<br>location: Austin Ave & Procter St, Port Arthur, TX 77640<br>latitude: 29.871551<br>longtitude: -93.934962<br>note: Arrived in Port Auther]]></description>
+      <styleUrl>#icon-seq2-0-15-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>1:33:03</value>
+        </Data>
+        <Data name="location">
+          <value><![CDATA[Austin Ave & Procter St, Port Arthur, TX 77640]]></value>
+        </Data>
+        <Data name="latitude">
+          <value>29.871551</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-93.934962</value>
+        </Data>
+        <Data name="note">
+          <value>Arrived in Port Auther</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -93.934962,29.871551,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Keyhole Klub</name>
+      <description><![CDATA[time: 1:34:57<br>location: 436 Procter St, Port Arthur, TX 77640<br>latitude: 29.871193<br>longtitude: -93.935046<br>note: ]]></description>
+      <styleUrl>#icon-seq2-0-16-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>1:34:57</value>
+        </Data>
+        <Data name="location">
+          <value>436 Procter St, Port Arthur, TX 77640</value>
+        </Data>
+        <Data name="latitude">
+          <value>29.871193</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-93.935046</value>
+        </Data>
+        <Data name="note">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -93.935046,29.871193,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Grocery</name>
+      <description><![CDATA[time: 1:55:31<br>location: 205 Broadway, Nordheim, TX 78141<br>latitude: 28.922325<br>longtitude: -97.610163<br>note: Grocery]]></description>
+      <styleUrl>#icon-seq2-0-17-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>1:55:31</value>
+        </Data>
+        <Data name="location">
+          <value>205 Broadway, Nordheim, TX 78141</value>
+        </Data>
+        <Data name="latitude">
+          <value>28.922325</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-97.610163</value>
+        </Data>
+        <Data name="note">
+          <value>Grocery</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -97.610163,28.922325,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>DoubleTree by Hilton Hotel Houston Downtown</name>
+      <description><![CDATA[time: 1:56:46<br>location: 400 Dallas St, Houston, TX 77002<br>latitude: 29.757957<br>longtitude: -95.37118<br>note: Travis tape recording]]></description>
+      <styleUrl>#icon-seq2-0-18-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>1:56:46</value>
+        </Data>
+        <Data name="location">
+          <value>400 Dallas St, Houston, TX 77002</value>
+        </Data>
+        <Data name="latitude">
+          <value>29.757957</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-95.37118</value>
+        </Data>
+        <Data name="note">
+          <value>Travis tape recording</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -95.37118,29.757957,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Keyhole Klub</name>
+      <description><![CDATA[time: 1:58:54<br>location: 436 Procter St, Port Arthur, TX 77640<br>latitude: 29.871193<br>longtitude: -93.935046<br>note: The Famous Scene]]></description>
+      <styleUrl>#icon-seq2-0-19-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>1:58:54</value>
+        </Data>
+        <Data name="location">
+          <value>436 Procter St, Port Arthur, TX 77640</value>
+        </Data>
+        <Data name="latitude">
+          <value>29.871193</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-93.935046</value>
+        </Data>
+        <Data name="note">
+          <value>The Famous Scene</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -93.935046,29.871193,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Downtown Parking Garage</name>
+      <description><![CDATA[time: 2:19:40<br>location: 1100 Smith St, Houston, TX 77002<br>latitude: 29.758249<br>longtitude: -95.369281<br>note: Travis spying]]></description>
+      <styleUrl>#icon-seq2-0-20-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="time">
+          <value>2:19:40</value>
+        </Data>
+        <Data name="location">
+          <value>1100 Smith St, Houston, TX 77002</value>
+        </Data>
+        <Data name="latitude">
+          <value>29.758249</value>
+        </Data>
+        <Data name="longtitude">
+          <value>-95.369281</value>
+        </Data>
+        <Data name="note">
+          <value>Travis spying</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -95.369281,29.758249,0
+        </coordinates>
+      </Point>
+    </Placemark>
   </Document>
 </kml>

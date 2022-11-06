@@ -13,15 +13,8 @@
 */
 
 var map;
-var locations = [];
 
 function initMap() {
-
-  /* JSON Request from Google Sheet
-    Needs: Google Sheet ID, API key with Map JavaScript, Google Sheets enabled
-  */
-
-  
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 6,
           disableDefaultUI: true,
@@ -53,89 +46,39 @@ function initMap() {
          jump1(map);            // 50
        }, 1750);
  
-        setTimeout(function(){
-          getDirections2(map);   // 6350
-        }, 1800);
+      //   setTimeout(function(){
+      //     getDirections2(map);   // 6350
+      //   }, 1800);
  
-       setTimeout(function(){
-         getDirections3(map);    // 7750
-       }, 8150);
+      //  setTimeout(function(){
+      //    getDirections3(map);    // 7750
+      //  }, 8150);
  
-    //    setTimeout(function(){
-    //      getDirections4(map);    // 730
-    //    }, 15900);
+      //  setTimeout(function(){
+      //    getDirections4(map);    // 730
+      //  }, 15900);
  
-    //    setTimeout(function(){
-    //      jump2(map);             // 800
-    //    }, 16630);
+      //  setTimeout(function(){
+      //    jump2(map);             // 800
+      //  }, 16630);
  
-    //    setTimeout(function(){
-    //      getDirections5(map);    // 2600 + 2700
-    //    }, 17430);
+      //  setTimeout(function(){
+      //    getDirections5(map);    // 2600 + 2700
+      //  }, 17430);
  
-    //    setTimeout(function(){
-    //      getDirections6(map);    // 2300 + 4350
-    //    }, 22730);
+      //  setTimeout(function(){
+      //    getDirections6(map);    // 2300 + 4350
+      //  }, 22730);
  
-    //    setTimeout(function(){
-    //      jump3(map);
-    //    }, 29380);
+      //  setTimeout(function(){
+      //    jump3(map);
+      //  }, 29380);
 
-    new google.maps.KmlLayer({
+       new google.maps.KmlLayer({
         url: "https://lilanyang.studio/kml/paris-texas.kml",
         map: map,
-    });
+      });
 
-}
-
-function setLocations(map, locations) {
-  var bounds = new google.maps.LatLngBounds();
-  var infowindow = new google.maps.InfoWindow({
-    content: "Content String"
-  });
-     
-  for (var i = 0; i < locations.length; i++) {
-    var new_marker = createMarker(map, locations[i], infowindow);
-    bounds.extend(new_marker.position);
-  }
-
-  map.fitBounds(bounds);
-}
-
-function createMarker(map, location, infowindow) {
-  var position = {
-    lat: parseFloat(location.latitude),
-    lng: parseFloat(location.longitude)
-  };
-
-
-  var icon_fd = {
-    url: "../georgia-utilities/icon/family-dollar.png",
-    scaledSize: new google.maps.Size(30, 30),
-    origin: new google.maps.Point(0, 0), 
-    anchor: new google.maps.Point(15, 15)
-  };
-
-    var marker = new google.maps.Marker({
-      position: position,
-      map: map,
-      title: location.name,
-      icon: icon_fd
-    });
-
-  
-  google.maps.event.addListener(marker, "click", function () {
-    infowindow.setContent(
-      "<div>" +
-      (location.name === undefined ? "" : "<p><strong>Name: </strong>" + location.name + "</p>") +
-      (location.address === undefined ? "" : "<p><strong>Address: </strong>" + location.address + "</p>") +
-      "</div>"
-    );
-    
-    infowindow.open(map, marker);
-    });
-
-  return marker;
 }
 
 /* Travel Modes Abandoned
