@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Copy of Paris, Texas</name>
+    <NetworkLink>
+      <name>Testing</name>
+      <Link>
+        <href><![CDATA[https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1imeyU0m2YjsmQ1X7Slmkg3jQz-9bdlw&lid=ZzXsTV9bgx8]]></href>
+      </Link>
+    </NetworkLink>
+  </Document>
+</kml>
