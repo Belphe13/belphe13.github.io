@@ -15,6 +15,8 @@
 var map;
 
 function initMap() {
+
+  
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 6,
           disableDefaultUI: true,
@@ -75,7 +77,7 @@ function initMap() {
       //  }, 29380);
 
        new google.maps.KmlLayer({
-        url: "https://lilanyang.studio/kml/paris-texas.kml",
+        url: "https://lilanyang.studio/kml/paris-texas.kmz",
         map: map,
       });
 
