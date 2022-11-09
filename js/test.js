@@ -19,7 +19,7 @@ function initMap() {
 /* JSON Request from Google Sheet
     Needs: Google Sheet ID, API key with Map JavaScript, Google Sheets enabled
   */
-    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1PiGipEMaa0Mn12UPUsS5Su0jmaBE_LfFRZDOHXkqOJE/values/Sheet1!A2:F?key=AIzaSyAMytzLDrJXPz7KCAaD-EhqVGDlkP6H5As", function (data) {
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1PiGipEMaa0Mn12UPUsS5Su0jmaBE_LfFRZDOHXkqOJE/values/Sheet1!A2:G?key=AIzaSyAMytzLDrJXPz7KCAaD-EhqVGDlkP6H5As", function (data) {
         $(data.values).each(function () {
           var location = {};
           location.timestamp = this[0];
@@ -110,11 +110,11 @@ function setLocations(map, locations) {
     for (var i = 0; i < locations.length; i++) {
       var new_marker = createMarker(map, locations[i], infowindow);
       bounds.extend(new_marker.position);
+      console.log("location img:" + locations[i].img);
     }
   
     map.fitBounds(bounds);
 
-    console.log("setlocation executed");
   }
 
 
@@ -140,7 +140,8 @@ function createMarker(map, location, infowindow) {
     
     google.maps.event.addListener(marker, "click", function () {
       infowindow.setContent(
-        "<div>" + "<img src = '" + location.img + "'" + "<br>" + 
+        "<div>" + 
+        (location.img === undefined ? "" : "<img src='" + location.img + "'/>" + "<br>") + 
         (location.name === undefined ? "" : "<p><strong>Location: </strong>" + location.name + "</p>") +
         (location.address === undefined ? "" : "<p><strong>Address: </strong>" + location.address + "</p>") +
         (location.timestamp === undefined ? "" : "<p><strong>Timestamp: </strong>" + location.timestamp + "</p>") +
