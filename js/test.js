@@ -13,10 +13,24 @@
 */
 
 var map;
+var locations = [];
 
 function initMap() {
+/* JSON Request from Google Sheet
+    Needs: Google Sheet ID, API key with Map JavaScript, Google Sheets enabled
+  */
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1PiGipEMaa0Mn12UPUsS5Su0jmaBE_LfFRZDOHXkqOJE/values/Sheet1!A2:F?key=AIzaSyAMytzLDrJXPz7KCAaD-EhqVGDlkP6H5As", function (data) {
+        $(data.values).each(function () {
+          var location = {};
+          location.timestamp = this[0];
+          location.name = this[1];
+          location.address = this[2];
+          location.latitude = parseFloat(this[3]);
+          location.longitude = parseFloat(this[4]);
+          location.note = this[5];
+          location.img = this[6];
+          locations.push(location);
 
-  
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 6,
           disableDefaultUI: true,
@@ -48,40 +62,100 @@ function initMap() {
          jump1(map);            // 50
        }, 1750);
  
-      //   setTimeout(function(){
-      //     getDirections2(map);   // 6350
-      //   }, 1800);
+         setTimeout(function(){
+           getDirections2(map);   // 6350
+         }, 1800);
  
-      //  setTimeout(function(){
-      //    getDirections3(map);    // 7750
-      //  }, 8150);
+        setTimeout(function(){
+          getDirections3(map);    // 7750
+        }, 8150);
  
-      //  setTimeout(function(){
-      //    getDirections4(map);    // 730
-      //  }, 15900);
+        setTimeout(function(){
+          getDirections4(map);    // 730
+        }, 15900);
  
-      //  setTimeout(function(){
-      //    jump2(map);             // 800
-      //  }, 16630);
+        setTimeout(function(){
+          jump2(map);             // 800
+        }, 16630);
  
-      //  setTimeout(function(){
-      //    getDirections5(map);    // 2600 + 2700
-      //  }, 17430);
+        setTimeout(function(){
+          getDirections5(map);    // 2600 + 2700
+        }, 17430);
  
-      //  setTimeout(function(){
-      //    getDirections6(map);    // 2300 + 4350
-      //  }, 22730);
+        setTimeout(function(){
+          getDirections6(map);    // 2300 + 4350
+        }, 22730);
  
-      //  setTimeout(function(){
-      //    jump3(map);
-      //  }, 29380);
-
+        setTimeout(function(){
+          jump3(map);
+        }, 29380);
+/*
        new google.maps.KmlLayer({
         url: "https://lilanyang.studio/kml/paris-texas.kmz",
         map: map,
       });
+*/
+      setLocations(map, locations);
+    });
 
+    });
 }
+
+function setLocations(map, locations) {
+    var bounds = new google.maps.LatLngBounds();
+    var infowindow = new google.maps.InfoWindow({
+      content: "Content String"
+    });
+       
+    for (var i = 0; i < locations.length; i++) {
+      var new_marker = createMarker(map, locations[i], infowindow);
+      bounds.extend(new_marker.position);
+    }
+  
+    map.fitBounds(bounds);
+
+    console.log("setlocation executed");
+  }
+
+
+function createMarker(map, location, infowindow) {
+    var position = {
+      lat: parseFloat(location.latitude),
+      lng: parseFloat(location.longitude)
+    };
+  
+    var icon_paris_texas = {
+      url: "../icon/paris-texas.png", // url
+      scaledSize: new google.maps.Size(30, 30), // scaled size
+      origin: new google.maps.Point(0, 0), // origin
+      anchor: new google.maps.Point(15, 15) // anchor
+    };
+    
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title: location.name,
+        icon: icon_paris_texas
+    });
+    
+    google.maps.event.addListener(marker, "click", function () {
+      infowindow.setContent(
+        "<div>" + "<img src = '" + location.img + "'" + "<br>" + 
+        (location.name === undefined ? "" : "<p><strong>Location: </strong>" + location.name + "</p>") +
+        (location.address === undefined ? "" : "<p><strong>Address: </strong>" + location.address + "</p>") +
+        (location.timestamp === undefined ? "" : "<p><strong>Timestamp: </strong>" + location.timestamp + "</p>") +
+        (location.note === undefined ? "" : "<p><strong>Note: </strong>" + location.note + "</p>") +
+        "</div>"
+      );
+      
+      infowindow.open(map, marker);
+      });
+  
+    return marker;
+  }
+
+
+
 
 /* Travel Modes Abandoned
 *  Tuning paramter is no witchcraft but mathmatics.
