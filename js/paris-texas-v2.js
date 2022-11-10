@@ -161,21 +161,21 @@ function createMarker(map, location, infowindow) {
 *  Tuning paramter is no witchcraft but mathmatics.
 */
 function route1(map, pathCoords) {
-    var route = new google.maps.Polyline({
-        path: [],
-        geodesic : true,
-        strokeColor: 'white',
-        strokeOpacity: 0.5,
-        strokeWeight: 5,
-        editable: false,
-        map:map
-    });
+  var route = new google.maps.Polyline({
+      path: [],
+      geodesic : true,
+      strokeColor: 'white',
+      strokeOpacity: 0.5,
+      strokeWeight: 5,
+      editable: false,
+      map:map
+  });
 
-    for (var i = 0; i < pathCoords.length; i++) {
-        setTimeout(function(coords) {
-            route.getPath().push(coords);
-        }, 4 * i, pathCoords[i]);
-    }
+  for (var i = 0; i < pathCoords.length; i++) {
+      setTimeout(function(coords) {
+          route.getPath().push(coords);
+      }, 4 * i, pathCoords[i]);
+  }
 }
 
 function route2(map, pathCoords) {
@@ -271,18 +271,18 @@ function route6(map, pathCoords) {
 
 // Travis Walking 0:58 - 6:59
 function getDirections1(map) {
-    var directionsService = new google.maps.DirectionsService();
-    var request = {
-              origin: new google.maps.LatLng(29.127178, -103.242195),       // Big Bend National Park
-              waypoints: google.maps.LatLng(29.321473, -103.615719),        // Terlingua
-              destination: new google.maps.LatLng(29.622680, -103.572845),   // Terlingua M.D. Clinc
-              travelMode: google.maps.TravelMode.WALKING
-          };
-    directionsService.route(request, function(result, status) {
-        if (status == google.maps.DirectionsStatus.OK) {
-            route1(map, result.routes[0].overview_path);
-        }
-    });
+  var directionsService = new google.maps.DirectionsService();
+  var request = {
+            origin: new google.maps.LatLng(29.127178, -103.242195),       // Big Bend National Park
+            waypoints: google.maps.LatLng(29.321473, -103.615719),        // Terlingua
+            destination: new google.maps.LatLng(29.622680, -103.572845),   // Terlingua M.D. Clinc
+            travelMode: google.maps.TravelMode.WALKING
+        };
+  directionsService.route(request, function(result, status) {
+      if (status == google.maps.DirectionsStatus.OK) {
+          route1(map, result.routes[0].overview_path);
+      }
+  });
 }
 
 // Walter flys from LA 6:59
