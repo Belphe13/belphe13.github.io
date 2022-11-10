@@ -19,7 +19,7 @@ function initMap() {
 /* JSON Request from Google Sheet
     Needs: Google Sheet ID, API key with Map JavaScript, Google Sheets enabled
   */
-    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1PiGipEMaa0Mn12UPUsS5Su0jmaBE_LfFRZDOHXkqOJE/values/Sheet1!A2:G?key=AIzaSyAMytzLDrJXPz7KCAaD-EhqVGDlkP6H5As", function (data) {
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1YLRxJ94hOi5cdyps90kUJKqvAlqQHgLuPe_HCRAtuRY/values/Sheet1!A2:G?key=AIzaSyAMytzLDrJXPz7KCAaD-EhqVGDlkP6H5As", function (data) {
         $(data.values).each(function () {
           var location = {};
           location.timestamp = this[0];
@@ -110,7 +110,6 @@ function setLocations(map, locations) {
     for (var i = 0; i < locations.length; i++) {
       var new_marker = createMarker(map, locations[i], infowindow);
       bounds.extend(new_marker.position);
-      console.log("location img:" + locations[i].img);
     }
   
     map.fitBounds(bounds);
@@ -141,7 +140,7 @@ function createMarker(map, location, infowindow) {
     google.maps.event.addListener(marker, "click", function () {
       infowindow.setContent(
         "<div>" + 
-        (location.img === undefined ? "" : "<img src='" + location.img + "'/>" + "<br>") + 
+        (location.img === undefined ? "" : "<img src='" + location.img + "'  width='400px'/>") + 
         (location.name === undefined ? "" : "<p><strong>Location: </strong>" + location.name + "</p>") +
         (location.address === undefined ? "" : "<p><strong>Address: </strong>" + location.address + "</p>") +
         (location.timestamp === undefined ? "" : "<p><strong>Timestamp: </strong>" + location.timestamp + "</p>") +
@@ -335,7 +334,7 @@ function getDirections2(map) {
                 {location: new google.maps.LatLng(30.893293, -102.873053)},     // Stop at the Gas Station
                 {location: new google.maps.LatLng(31.798908, -106.394487)},     // El Paso Airport
                 {location: new google.maps.LatLng(31.799097, -106.396152)},     // Avid Car Rental
-                //{location: new google.maps.LatLng(35.111173, -115.542870)}      // Mojave Desert
+                {location: "Mojave Deseart, California"}      // Mojave Desert
               ],
               destination: new google.maps.LatLng(34.219878, -118.350022),      // Walter's Home
               travelMode: google.maps.TravelMode.DRIVING
@@ -362,7 +361,8 @@ function getDirections3(map) {
                 {location: new google.maps.LatLng(34.220059, -118.348308)},     // Walking home midpoint
                 {location: new google.maps.LatLng(34.219878, -118.350022)},     // Walter's home
                 {location: new google.maps.LatLng(34.219730, -118.350115)},     // Backyard
-                {location: '13795 Balboa Blvd, Sylmar, CA 91342'}               // Travis Nightwalking
+                {location: '13276 Van Nuys Blvd, Pacoima, CA 91331'},              // Travis Nightwalking
+                {location: '13795 Balboa Blvd, Sylmar, CA 91342'}               // Nightwalking at Bridge
               ],
               destination: new google.maps.LatLng(34.198446, -118.321350),      // Hunter's School
               travelMode: google.maps.TravelMode.WALKING
