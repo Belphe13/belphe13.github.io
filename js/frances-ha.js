@@ -10,13 +10,49 @@
 */
 
 var map_nyc, map_sac, map_par, map_world, map_upstate;
+var t;
 
+const SCARAMENTO_BOUNDS = {
+  north: 38.75,
+  south: 38.43,
+  west: -121.74,
+  east: -121.19,
+};
+
+// NOT FUNCTIONING
+const NY_BOUNDS = {
+  north: 40.98,
+  south: 40.53,
+  west: -74.10,
+  east: -73.70,
+};
+
+const UPSTATE_BOUNDS = {
+  north: 41.70,
+  south: 41.67,
+  west: -73.91,
+  east: -73.87,
+};
+
+const PARIS_BOUNDS = {
+  north: 49.03,
+  south: 48.72,
+  west: 2.11,
+  east: 2.65,
+};
 
 async function initMap() {
+
+  t = 0;
+
        map_nyc = new google.maps.Map(document.getElementById('map_nyc'), {
          zoom: 12,
          disableDefaultUI: true,
          center: new google.maps.LatLng(40.761494, -73.977643),     // MoMA
+         restriction: {
+          latLngBounds: NY_BOUNDS,
+          strictBounds: false,
+        },
          styles: [
 		         {elementType: 'geometry', stylers: [{color: '#212121'}]},
 		         {elementType: 'labels.icon', stylers: [{visibility: 'off'}]},
@@ -91,11 +127,14 @@ async function initMap() {
          ]
        });
 
-
        map_sac = new google.maps.Map(document.getElementById('map_sac'), {
          zoom: 11,
          disableDefaultUI: true,
          center: new google.maps.LatLng(38.580751, -121.490961),
+         restriction: {
+          latLngBounds: SCARAMENTO_BOUNDS,
+          strictBounds: false,
+        },
          styles: [
             {elementType: 'geometry', stylers: [{color: '#212121'}]},
             {elementType: 'labels.icon', stylers: [{visibility: 'off'}]},
@@ -135,6 +174,10 @@ async function initMap() {
          zoom: 15,
          disableDefaultUI: true,
          center: new google.maps.LatLng(41.686785, -73.895664),       // Vassar College
+         restriction: {
+          latLngBounds: UPSTATE_BOUNDS,
+          strictBounds: false,
+        },
          styles: [
             {elementType: 'geometry', stylers: [{color: '#212121'}]},
             {elementType: 'labels.icon', stylers: [{visibility: 'off'}]},
@@ -174,6 +217,10 @@ async function initMap() {
          zoom: 13,
          disableDefaultUI: true,
          center: new google.maps.LatLng(48.863842, 2.322681),       // Orangeire Museum
+         restriction: {
+          latLngBounds: PARIS_BOUNDS,
+          strictBounds: false,
+        },
          styles: [
             {elementType: 'geometry', stylers: [{color: '#212121'}]},
             {elementType: 'labels.icon', stylers: [{visibility: 'off'}]},
@@ -209,145 +256,203 @@ async function initMap() {
          ]
        });
 
-
        getDirections1(map_nyc);     // 190
        getDirections1(map_world);
+
+       t += 200;
 
        setTimeout(function(){
          jump1(map_nyc);            // 50 + 1720
          jump1(map_world);
-       }, 190);
+       }, t);
+
+       t += 1750;
 
        setTimeout(function(){
-         getDirections2(map_nyc);   // 460
-         getDirections2(map_world);
-       }, 1960);
+        getDirections2(map_nyc);     // 460
+        getDirections2(map_world);
+       }, t);
+
+       t += 50;
 
        setTimeout(function(){
          jump2(map_nyc);            // 50 + 1050
          jump2(map_world);
-       }, 2010);
+       }, t);
+
+       t+=1000;
 
        setTimeout(function(){
-         getDirections3(map_nyc);   //
-         getDirections3(map_world);
-       }, 3110);
+        getDirections3(map_nyc);
+        getDirections3(map_world);
+       }, t);
+
+       t += 900;
 
        setTimeout(function(){
-         getDirections4(map_nyc);   //
-         getDirections4(map_world);
-       }, 4000);
+        getDirections4(map_nyc);
+        getDirections4(map_world);
+       }, t);
+
+       t += 2000;
 
        setTimeout(function(){
-         getDirections5(map_nyc);   //
-         getDirections5(map_world);
-       }, 6000);
+        getDirections5(map_nyc);
+        getDirections5(map_world);
+       }, t);
+
+       t += 500;
 
        setTimeout(function(){
-         getDirections6(map_nyc);   //
-         getDirections6(map_world);
-       }, 6500);
+        getDirections6(map_nyc);
+        getDirections6(map_world);
+       }, t);
+
+       t += 1000;
 
        setTimeout(function(){
-         jump3(map_nyc);   //
-         jump3(map_world);
-       }, 7500);
+        jump3(map_nyc);
+        jump3(map_world);
+       }, t);
+
+       t += 500;
 
        setTimeout(function(){
-         getDirections7(map_nyc);   //
-         getDirections7(map_world);
-       }, 8000);
+        getDirections7(map_nyc);
+        getDirections7(map_world);
+       }, t);
+
+       t += 500;
 
        setTimeout(function(){
-         jump4(map_nyc);   //
-         jump4(map_world);
-       }, 8500);
+        jump4(map_nyc);
+        jump4(map_world);
+       }, t);
+
+       t+=500;
 
        setTimeout(function(){
-         getDirections8(map_nyc);   //
-         getDirections8(map_world);
-       }, 9000);
+        getDirections8(map_nyc);
+        getDirections8(map_world);
+       }, t);
+
+       t+=1000;
 
        setTimeout(function(){
-         jump5(map_nyc);   //
-         jump5(map_world);
-       }, 10000);
+        jump5(map_nyc);
+        jump5(map_world);
+       }, t);
+
+       t+=2000;
+
+       // Sacramento Trip
+       setTimeout(function(){
+        jump6(map_nyc);
+        jump6(map_sac);
+        jump6(map_world);
+       }, t);
+
+       t+=200;
 
        setTimeout(function(){
-         jump6(map_nyc);
-         jump6(map_sac);   //
-         jump6(map_world);
-       }, 12000);
+        getDirections9(map_sac);
+        getDirections9(map_world);
+       }, t);
+
+       t += 1300;
 
        setTimeout(function(){
-         getDirections9(map_sac);
-         getDirections9(map_world);
-       }, 12200);
+        jump7(map_nyc);
+        jump7(map_sac);
+        jump7(map_world);
+       }, t);
+
+       t+=500;
+
+       // Returned to NYC
+       setTimeout(function(){
+        getDirections10(map_nyc);
+        getDirections10(map_world);
+       }, t);
+
+       t+=1000;
+
+       // Off to Paris
+       setTimeout(function(){
+        jump8(map_par);
+        jump8(map_world);
+        jump8(map_upstate);
+       }, t);
+
+       t+=200;
 
        setTimeout(function(){
-         jump7(map_sac);
-         jump7(map_nyc);
-         jump7(map_world);
-       }, 13500);
+        getDirections11(map_par);
+        getDirections11(map_world);
+       }, t);
 
-       setTimeout(function(){
-         getDirections10(map_nyc);
-         getDirections10(map_world);
-       }, 14000);
-
-       setTimeout(function(){
-         jump8(map_par);
-         jump8(map_nyc);
-         jump8(map_world);
-       }, 15000);
-
-       setTimeout(function(){
-         getDirections11(map_par);
-         getDirections11(map_world);
-       }, 15200);
+       t+=1000;
 
       setTimeout(function(){
         getDirections12(map_par);
         getDirections12(map_world);
-      }, 16200);
+      }, t);
+
+      t+=3000;
 
       setTimeout(function(){
-        jump9(map_par);
         jump9(map_nyc);
+        jump9(map_par);
         jump9(map_world);
-      }, 18000);
+      }, t);
 
+      t+=500;
+
+      // Going upstate
       setTimeout(function(){
-        jump10(map_upstate);
         jump10(map_nyc);
         jump10(map_world);
-      }, 18500);
+        jump10(map_upstate);
+      }, t);
+
+      t+=500;
 
       setTimeout(function(){
-        getDirections13(map_upstate);
         getDirections13(map_world);
-      }, 19000);
+        getDirections13(map_upstate);
+      }, t);
+
+      t+=3000;
 
       setTimeout(function(){
-        getDirections14(map_upstate);
         getDirections14(map_world);
-      }, 21000);
+        getDirections14(map_upstate);
+      }, t);
+
+      t+=1000;
 
       setTimeout(function(){
-        jump11(map_upstate);
         jump11(map_nyc);
         jump11(map_world);
-      }, 22000);
+        jump11(map_upstate);
+      }, t);
+
+      t+=1500;
 
       setTimeout(function(){
         getDirections15(map_nyc);
         getDirections15(map_world);
-      }, 22500);
+      }, t);
+
+      t+=500;
 
       setTimeout(function(){
         jump12(map_nyc);
         jump12(map_world);
-      }, 24000);
+      }, t);
+
+      
+
 }
 
 
@@ -1072,7 +1177,7 @@ function route11(map, pathCoords) {
     for (var i = 0; i < pathCoords.length; i++) {
         setTimeout(function(coords) {
             route.getPath().push(coords);
-        }, 10 * i, pathCoords[i]);
+        }, 3 * i, pathCoords[i]);
     }
 }
 
@@ -1116,7 +1221,7 @@ function route12(map, pathCoords) {
     for (var i = 0; i < pathCoords.length; i++) {
         setTimeout(function(coords) {
             route.getPath().push(coords);
-        }, 10 * i, pathCoords[i]);
+        }, 5 * i, pathCoords[i]);
     }
 }
 
