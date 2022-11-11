@@ -10,6 +10,10 @@
 *     1. Detailed line colors?
 *     2. Potential smooth PanTo?
 *     3. jump2/3(map) discard???
+*
+*   V2
+*   Markers added with associated screenshots
+*
 */
 
 var map;
@@ -56,16 +60,18 @@ function initMap() {
           ]
         });
  
-       getDirections1(map);     // 1250 + 500
- 
+        setTimeout(function(){
+        getDirections1(map);     // 1250 + 500
+        }, 100);
+
        setTimeout(function(){
          jump1(map);            // 50
        }, 1750);
- 
+
          setTimeout(function(){
            getDirections2(map);   // 6350
          }, 1800);
- 
+   
         setTimeout(function(){
           getDirections3(map);    // 7750
         }, 8150);
@@ -81,7 +87,7 @@ function initMap() {
         setTimeout(function(){
           getDirections5(map);    // 2600 + 2700
         }, 17430);
- 
+
         setTimeout(function(){
           getDirections6(map);    // 2300 + 4350
         }, 22730);
@@ -161,21 +167,21 @@ function createMarker(map, location, infowindow) {
 *  Tuning paramter is no witchcraft but mathmatics.
 */
 function route1(map, pathCoords) {
-  var route = new google.maps.Polyline({
-      path: [],
-      geodesic : true,
-      strokeColor: 'white',
-      strokeOpacity: 0.5,
-      strokeWeight: 5,
-      editable: false,
-      map:map
-  });
+    var route = new google.maps.Polyline({
+        path: [],
+        geodesic : true,
+        strokeColor: 'white',
+        strokeOpacity: 0.5,
+        strokeWeight: 5,
+        editable: false,
+        map:map
+    });
 
-  for (var i = 0; i < pathCoords.length; i++) {
-      setTimeout(function(coords) {
-          route.getPath().push(coords);
-      }, 4 * i, pathCoords[i]);
-  }
+    for (var i = 0; i < pathCoords.length; i++) {
+        setTimeout(function(coords) {
+            route.getPath().push(coords);
+        }, 4 * i, pathCoords[i]);
+    }
 }
 
 function route2(map, pathCoords) {
@@ -271,18 +277,18 @@ function route6(map, pathCoords) {
 
 // Travis Walking 0:58 - 6:59
 function getDirections1(map) {
-  var directionsService = new google.maps.DirectionsService();
-  var request = {
-            origin: new google.maps.LatLng(29.127178, -103.242195),       // Big Bend National Park
-            waypoints: google.maps.LatLng(29.321473, -103.615719),        // Terlingua
-            destination: new google.maps.LatLng(29.622680, -103.572845),   // Terlingua M.D. Clinc
-            travelMode: google.maps.TravelMode.WALKING
-        };
-  directionsService.route(request, function(result, status) {
-      if (status == google.maps.DirectionsStatus.OK) {
-          route1(map, result.routes[0].overview_path);
-      }
-  });
+    var directionsService = new google.maps.DirectionsService();
+    var request = {
+              origin: "Emory Peak, Texas 79834",       // Big Bend National Park
+              destination: "51470 TX-118, Alpine, TX 79830",   // Terlingua M.D. Clinc
+              travelMode: 'WALKING',
+          };
+
+    directionsService.route(request, function(result, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+            route1(map, result.routes[0].overview_path);
+        }
+    });
 }
 
 // Walter flys from LA 6:59
@@ -380,7 +386,7 @@ function getDirections4(map) {
     var directionsService = new google.maps.DirectionsService();
     var request = {
               origin: new google.maps.LatLng(34.198446, -118.321350),      // Hunter's School
-              waypoints: google.maps.LatLng(34.490968, -118.203032),      // Hunter about Universe
+              waypoints: new google.maps.LatLng(34.490968, -118.203032),      // Hunter about Universe
               destination: new google.maps.LatLng(33.919858, -116.773296),      // Payphone
               travelMode: google.maps.TravelMode.DRIVING
           };
@@ -396,7 +402,7 @@ function getDirections4(map) {
 function jump2(map) {
   var lineSymbol = {
     path: 'M 0,-1 0,1',
-    strokeOpacity: 1,
+    strokeOpacity: 0.5,
     scale: 4
   };
 
@@ -404,7 +410,7 @@ function jump2(map) {
     path: [],
     geodesic: true,
     strokeColor: 'white',
-    strokeOpacity: 0.5,
+    strokeOpacity: 0,
     strokeWeight: 5,
     editable: false,
     icons: [{
