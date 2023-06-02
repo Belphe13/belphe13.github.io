@@ -3,9 +3,9 @@
 
 <head>
 
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
-<script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4G00WYERF"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -13,8 +13,8 @@
     }
     gtag('js', new Date());
 
-    gtag('config', 'UA-133224330-1');
-</script>
+    gtag('config', 'G-V4G00WYERF');
+  </script>
 
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/projects.css" type="text/css">
@@ -33,20 +33,20 @@
   <div class="container">
     <div class="sub_nav">
       <a href="index.html">LILAN</a>
-			<a href="ecfc.html">FILM</a>
-			<a href="" id="current_nav">CODING</a>
-			<a href="about.html">ABOUT</a>
+      <a href="ecfc.html">FILM</a>
+      <a href="" id="current_nav">CODING</a>
+      <a href="about.html">ABOUT</a>
     </div>
 
     <div class="left_nav">
       <a href="cinepath.html">CINEPATH</a><br>
       <a href="planktons.html">P1ANKT0NS</a><br>
-			<a href="nature-lab.html">ILLUMINATED BAY</a><br>
-			<a href="y202k.html" id="current_project">Y2.02K</a><br>
+      <a href="nature-lab.html">ILLUMINATED BAY</a><br>
+      <a href="y202k.html" id="current_project">Y2.02K</a><br>
       <a href="p5js.html">P5.JS</a><br>
-			<a href="cyberencoding.html">CYBERENCODE</a><br>
-			<a href="dataviz.html">TABLEAU</a><br>
-  		<a href="ece.html">TECHNICAL</a><br>
+      <a href="cyberencoding.html">CYBERENCODE</a><br>
+      <a href="dataviz.html">TABLEAU</a><br>
+      <a href="ece.html">TECHNICAL</a><br>
     </div>
 
     <div class="content">
@@ -56,12 +56,19 @@
       </div>
 
       <div class="description">
-        <p>Sensor instrument with Pure Data patch controlled by Leap Motion controller, which takes hand and finger motions and coordinates as inputs to control the sound and volume, while outputs a composition of organ, beeping, dialing tones and other sound samples.
+        <p>Sensor instrument with Pure Data patch controlled by Leap Motion controller, which takes hand and finger
+          motions and coordinates as inputs to control the sound and volume, while outputs a composition of organ,
+          beeping, dialing tones and other sound samples.
         </p>
 
         <br><br><br>
 
-        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/490552963?h=805410aa25&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Programming Sound: Y2.02K"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+            src="https://player.vimeo.com/video/490552963?h=805410aa25&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Programming Sound: Y2.02K"></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
 
         <div class="citation">
           <p>Screen recording of <i>Y2.02K</i> performance along with Leap Motion Visualizer
@@ -77,74 +84,77 @@
       </div>
 
       <div class="subtitle">
-          <p>CONTROL</p>
+        <p>CONTROL</p>
       </div>
 
       <div class="description">
         <ul>
-        <li>Gestures:
-        <p>
-        &emsp; - Move the palm in X, Y, and Z directions <br>
-        &emsp; - Open/Close the palm <br>
-        &emsp; - Circle/Swipe/Kep Tap/Screen Tap
-        </p>
-        </li><br>
+          <li>Gestures:
+            <p>
+              &emsp; - Move the palm in X, Y, and Z directions <br>
+              &emsp; - Open/Close the palm <br>
+              &emsp; - Circle/Swipe/Kep Tap/Screen Tap
+            </p>
+          </li><br>
 
-        <li>Number of Fingers:
-        <p>Considering the possible glitches of sensor failures, I deliberately chose to have a consistent organ sound throughout.</p>
-        </li><br>
+          <li>Number of Fingers:
+            <p>Considering the possible glitches of sensor failures, I deliberately chose to have a consistent organ
+              sound throughout.</p>
+          </li><br>
 
-        <li>Y Coordinates:
-        <p>The pitch of the organ.</p>
-        </li><br>
+          <li>Y Coordinates:
+            <p>The pitch of the organ.</p>
+          </li><br>
 
-        <li>X Z Coordinates:
-        <p>The XZ-plane was divided into 16 sub-sections and each has either sample or oscillator sound that will play once the palm position triggers.
-        </li><br>
+          <li>X Z Coordinates:
+            <p>The XZ-plane was divided into 16 sub-sections and each has either sample or oscillator sound that will
+              play once the palm position triggers.
+          </li><br>
 
-        <li>Finger Count:
-        <p>It tweaks the oscillators in the organ.</p>
-        </li><br>
+          <li>Finger Count:
+            <p>It tweaks the oscillators in the organ.</p>
+          </li><br>
 
-        <li>Sphere Radius:
-        <p>It represents the volume control. Volume is high when you open the palm and low when you close it.</p>
-        </li><br>
+          <li>Sphere Radius:
+            <p>It represents the volume control. Volume is high when you open the palm and low when you close it.</p>
+          </li><br>
 
-        <li>Circle, Swipe, Key Tap and Screen Tap:
-        <p>Either will generate a random dial sound.</p>
-        </li>
-        
+          <li>Circle, Swipe, Key Tap and Screen Tap:
+            <p>Either will generate a random dial sound.</p>
+          </li>
+
         </ul> <!-- end of all controls-->
       </div><!-- end of description -->
 
       <br><br><br>
 
       <div class="subtitle">
-          <p>HARDWARE</p>
+        <p>HARDWARE</p>
       </div>
 
       <div class="description">
-      <p>Leap Motion: the technology of yesterday! I have been fascinated with gestural controlling for quite a while and this is the first time using this sensor, which tracks hand movements and collects data.
-      
-      <br><br>
-        <iframe src="https://player.vimeo.com/video/520670058" width="800" height="450" frameborder="0"
-        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-       <br><br>
+        <p>Leap Motion: the technology of yesterday! I have been fascinated with gestural controlling for quite a while
+          and this is the first time using this sensor, which tracks hand movements and collects data.
 
-      In this project, it tracks: <br>
+          <br><br>
+          <iframe src="https://player.vimeo.com/video/520670058" width="800" height="450" frameborder="0"
+            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <br><br>
 
-      &emsp; - Palm position<br>
-      &emsp; - Sphere Radius<br>
-      &emsp; - Finger Count<br>
-      &emsp; - Circle<br>
-      &emsp; - Swipe<br>
-      &emsp; - Key Tap<br>
-      &emsp; - Screen Tap<br>
-      </p>
+          In this project, it tracks: <br>
+
+          &emsp; - Palm position<br>
+          &emsp; - Sphere Radius<br>
+          &emsp; - Finger Count<br>
+          &emsp; - Circle<br>
+          &emsp; - Swipe<br>
+          &emsp; - Key Tap<br>
+          &emsp; - Screen Tap<br>
+        </p>
       </div>
 
       <br><br><br>
-<!--
+      <!--
       <div class="subtitle">
           <p>SOFTWARE</p>
       </div>
