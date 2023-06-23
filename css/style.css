@@ -5,17 +5,22 @@
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
-ul, li {
+ul,
+li {
   list-style-position: inside;
   font-weight: bold;
-  font-size: 30px;          /* 75% */
+  font-size: 30px;
+  /* 75% */
   color: #fff
 }
 
-a, p, span {
+a,
+p,
+span {
   text-decoration: none;
   font-weight: bold;
-  font-size: 30px;          /* 75% */
+  font-size: 30px;
+  /* 75% */
   color: #fff;
 }
 
@@ -29,7 +34,8 @@ body {
   background-image: url("../img/background/bg_places.jpg");
 }
 
-#places, #profile {
+#places,
+#profile {
   background-image: url("../img/background/bg_places.jpg");
 }
 
@@ -45,20 +51,21 @@ body {
 }
 
 .title {
-	margin: 0 auto;
-	padding-top: 20%;
+  margin: 0 auto;
+  padding-top: 20%;
   text-align: center;
 }
 
 .content {
   overflow: hidden;
   text-align: center;
-	margin-left: 10%;
-	margin-right: 10%;
-	padding-top: 80px;       /* changed from 100px to 80px */
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 80px;
+  /* changed from 100px to 80px */
   padding-bottom: 10%;
-	width: 80%;
-	height: 100%;
+  width: 80%;
+  height: 100%;
 }
 
 #map {
@@ -73,35 +80,42 @@ body {
 }
 
 .basic_info p {
-  font-size: 45px;                /* 75% */
+  font-size: 45px;
+  /* 75% */
   margin-top: 40px;
   color: #ffcc33;
 }
 
 .description p {
-  font-size: 30px;                /* 75% */
+  font-size: 30px;
+  /* 75% */
   margin-top: 20px;
-  line-height: 37.5px;		        /* 75% */
+  line-height: 37.5px;
+  /* 75% */
   color: #ffffff;
 }
 
 .bio p {
-  font-size: 30px;                /* 75% */
+  font-size: 30px;
+  /* 75% */
   margin-top: 20px;
-  line-height: 37.5px;		        /* 75% */
+  line-height: 37.5px;
+  /* 75% */
   color: #ffffff;
 }
 
 .bio a:hover {
-	color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .skillset p {
-  margin-top: 30px;               /* 75% */
+  margin-top: 30px;
+  /* 75% */
   color: #ffcc33;
 }
 
-.skillset span {                  /* 75% */
+.skillset span {
+  /* 75% */
   line-height: 75px;
   padding: 6px;
   margin-top: 15px;
@@ -110,66 +124,73 @@ body {
 }
 
 .content span {
-	/* 75% */
-	line-height: 45px;		/* 75->45px */
-	font-size: 30px;
-	margin-top: 15px;
-	margin-right: 5px;
-	border: solid 6px #fff;
-	/* dropdown */
-	border-radius: 75px;
-	padding: 5px 20px;
-	display: inline-flex;
+  /* 75% */
+  line-height: 45px;
+  /* 75->45px */
+  font-size: 30px;
+  margin-top: 15px;
+  margin-right: 5px;
+  border: solid 6px #fff;
+  /* dropdown */
+  border-radius: 75px;
+  padding: 5px 20px;
+  display: inline-flex;
 }
 
 .content span:hover {
-	color: #ffcc33;
-	border: solid 6px #ffcc33;
-	/* 75% */
+  color: #ffcc33;
+  border: solid 6px #ffcc33;
+  /* 75% */
 }
 
-.description a:hover{
+.description a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .bio span {
-	/* 75% */
-	line-height: 45px;		/* 75->45px */
-	font-size: 30px;
-	margin-top: 15px;
-	margin-right: 5px;
-	border: solid 6px #fff;
-	/* dropdown */
-	border-radius: 75px;
-	padding: 5px 20px;
-	display: inline-flex;
+  /* 75% */
+  line-height: 45px;
+  /* 75->45px */
+  font-size: 30px;
+  margin-top: 15px;
+  margin-right: 5px;
+  border: solid 6px #fff;
+  /* dropdown */
+  border-radius: 75px;
+  padding: 5px 20px;
+  display: inline-flex;
 }
 
 .bio span:hover {
-	color: #ffcc33;
-	border: solid 6px #ffcc33;
-	/* 75% */
+  color: #ffcc33;
+  border: solid 6px #ffcc33;
+  /* 75% */
 }
 
 .about {
-    /* 75% */
-    margin-top: 75px;
-    padding-top: 75px;
-    padding-left: 5%;       /* 3.85% -> 5% */
-    padding-right: 5%;       /* 3.85% -> 5% */
-    width: 36%;             /* 15% -> 37% */
+  /* 75% */
+  margin-top: 75px;
+  padding-top: 75px;
+  padding-left: 5%;
+  /* 3.85% -> 5% */
+  padding-right: 5%;
+  /* 3.85% -> 5% */
+  width: 36%;
+  /* 15% -> 37% */
 
-    /* not changed */
-    position: fixed;
-    z-index: 2;
-    line-height: 45px;
-    font-size: 22.5px;
+  /* not changed */
+  position: fixed;
+  z-index: 2;
+  line-height: 45px;
+  font-size: 22.5px;
 }
 
 .about p {
-  font-size: 30px;                /* 75% */
+  font-size: 30px;
+  /* 75% */
   margin-top: 20px;
-  line-height: 37.5px;		        /* 75% */
+  line-height: 37.5px;
+  /* 75% */
   color: #ffffff;
 }
 
@@ -187,20 +208,21 @@ body {
 }
 
 .about span {
-	/* 75% */
-	line-height: 45px;		/* 75->45px */
-	font-size: 30px;
-	margin-top: 15px;
-	margin-right: 5px;
-	border: solid 6px #fff;
-	/* dropdown */
-	border-radius: 75px;
-	padding: 5px 20px;
-	display: inline-flex;
+  /* 75% */
+  line-height: 45px;
+  /* 75->45px */
+  font-size: 30px;
+  margin-top: 15px;
+  margin-right: 5px;
+  border: solid 6px #fff;
+  /* dropdown */
+  border-radius: 75px;
+  padding: 5px 20px;
+  display: inline-flex;
 }
 
 .about span:hover {
-	color: #ffcc33;
-	border: solid 6px #ffcc33;
-	/* 75% */
+  color: #ffcc33;
+  border: solid 6px #ffcc33;
+  /* 75% */
 }

@@ -98,7 +98,7 @@
 }
 
 #nature_lab,
-#p5js  {
+#p5js {
 	background-image: url("../img/background/bg_risd-beach.JPG");
 }
 
@@ -193,7 +193,8 @@ s {
 
 .content span {
 	/* 75% */
-	line-height: 45px;		/* 75->45px */
+	line-height: 45px;
+	/* 75->45px */
 	font-size: 30px;
 	margin-top: 15px;
 	margin-right: 5px;
@@ -207,6 +208,5 @@ s {
 .content span:hover {
 	color: #ffcc33;
 	border: solid 6px #ffcc33;
-	cursor:pointer;
+	cursor: pointer;
 }
-
