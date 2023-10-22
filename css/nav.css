@@ -78,6 +78,7 @@ body {
   /* not changed */
   position: fixed;
   z-index: 2;
+  display: block;
 }
 
 .left_nav a {
