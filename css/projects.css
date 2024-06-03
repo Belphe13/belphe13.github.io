@@ -97,8 +97,7 @@
 	background-color: white;
 }
 
-#nature_lab,
-#p5js {
+#nature_lab, #force, #p5js {
 	background-image: url("../img/background/bg_risd-beach.JPG");
 }
 
