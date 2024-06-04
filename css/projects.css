@@ -67,6 +67,10 @@
 	background-image: url("../img/background/bg_ecfc.png");
 }
 
+#force {
+	background-image: url("../img/background/bg_ipark.png");
+}
+
 /* background image in project pages */
 #cinepath {
 	background-image: url("../img/background/bg_projects.jpg");
@@ -97,7 +101,7 @@
 	background-color: white;
 }
 
-#nature_lab, #force, #p5js {
+#nature_lab, #p5js {
 	background-image: url("../img/background/bg_risd-beach.JPG");
 }
 
