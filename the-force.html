@@ -52,23 +52,37 @@
 	<div class="container">
 		<div class="sub_nav">
 			<a href="index.html">LILAN</a>
-			<a href="" id="current_nav">FILM</a>
-			<a href="cineml.html">DIGITAL</a>
+			<a href="" id="current_nav" class="dropdown-toggle">FILM</a>
+			<a href="cineml.html" class="dropdown-toggle">DIGITAL</a>
 			<a href="cv.html">CV</a>
 
 			<div class="dropdown_film">
 				<a href="ecfc.html">EVERYTHING COMES FULL CIRCLE</a><br>
-				<span>🌱 </span><a href="the-force.html" id="top_current_project">THE FORCE THAT THROUGH THE GREEN FUSE DRIVES THE FLOWER</a><br>
+				<span>🌱 </span><a href="the-force.html" id="top_current_project">THE FORCE THAT THROUGH THE GREEN
+					FUSE DRIVES THE FLOWER</a><br>
 				<a href="woke-up.html">I WOKE UP IN THE MORNING</a><br>
 				<a href="perfect-human.html">THE PERFECT HUMAN</a><br>
 				<a href="boston.html">BOSTON</a><br>
 				<a href="cineml.html">CINEML</a><br>
+			</div><!-- end of dropdown_film-->
+
+			<div class="dropdown_digital">
+				<a href="cinepath.html" id="current_project">CINEPATH</a><br>
+				<a href="planktons.html">P1ANKT0NS</a><br>
+				<a href="nature-lab.html">ILLUMINATED BAY</a><br>
+				<a href="y202k.html">Y2.02K</a><br>
+				<a href="p5js.html">P5.JS</a><br>
+				<a href="cyberencoding.html">CYBERENCODE</a><br>
+				<a href="ece.html">TECHNICAL</a><br>
 			</div>
+
 		</div>
+
 
 		<div class="left_nav">
 			<a href="ecfc.html">EVERYTHING COMES FULL CIRCLE</a><br>
-			<span>🌱 </span><a href="green-fuse.html" id="current_project">THE FORCE THAT THROUGH THE GREEN FUSE DRIVES THE FLOWER</a><br>
+			<span>🌱 </span><a href="green-fuse.html" id="current_project">THE FORCE THAT THROUGH THE GREEN FUSE DRIVES
+				THE FLOWER</a><br>
 			<a href="woke-up.html">I WOKE UP IN THE MORNING</a><br>
 			<a href="perfect-human.html">PERFECT HUMAN</a><br>
 			<a href="boston.html">BOSTON</a><br>
@@ -130,6 +144,38 @@
 			}
 		});
 	}
+</script>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+		const dropdownFilm = document.querySelector('.dropdown_film');
+		const dropdownDigital = document.querySelector('.dropdown_digital');
+
+		dropdownToggles.forEach(toggle => {
+			toggle.addEventListener('click', (e) => {
+				e.preventDefault();
+				const clickedDropdown = toggle.textContent.toLowerCase();
+
+				if (clickedDropdown === 'film') {
+					dropdownFilm.style.display = dropdownFilm.style.display === 'block' ? 'none' :
+						'block';
+					dropdownDigital.style.display = 'none';
+				} else if (clickedDropdown === 'digital') {
+					dropdownDigital.style.display = dropdownDigital.style.display === 'block' ?
+						'none' : 'block';
+					dropdownFilm.style.display = 'none';
+				}
+			});
+		});
+
+		document.addEventListener('click', (e) => {
+			if (!e.target.closest('.dropdown') && !e.target.classList.contains('dropdown-toggle')) {
+				dropdownFilm.style.display = 'none';
+				dropdownDigital.style.display = 'none';
+			}
+		});
+	});
 </script>
 
 </html>
