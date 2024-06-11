@@ -71,6 +71,10 @@
 	background-image: url("../img/background/bg_ipark.png");
 }
 
+#untitled {
+	background-image: url("../img/background/bg_projects.jpg");
+}
+
 /* background image in project pages */
 #cinepath {
 	background-image: url("../img/background/bg_projects.jpg");
