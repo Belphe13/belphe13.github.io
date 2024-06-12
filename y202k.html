@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="css/projects.css" type="text/css">
   <link rel="stylesheet" href="css/nav.css" type="text/css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <title>📟 Y2.02K</title>
+  <script src="js/dropdown.js"></script>
+  <title>Y2.02K 📟</title>
 </head>
 
 <style>
@@ -29,28 +30,48 @@
   }
 
   .content {
-		transition: all 0.5s ease-in-out;
-	}
+    transition: all 0.5s ease-in-out;
+  }
 
-	@media (max-width: 1200px) {
-		.left_nav {
-			display: none;
-		}
+  @media (max-width: 1200px) {
+    .left_nav {
+      display: none;
+    }
 
-		.content {
-			margin-left: 15%;
-			width: 70%;
-		}
-	}
+    .content {
+      margin-left: 15%;
+      width: 70%;
+    }
+  }
 </style>
 
 <body id="pd">
   <div class="container">
     <div class="nav">
       <a href="index.html">LILAN</a>
-      <a href="ecfc.html">FILM</a>
-      <a href="" id="current_nav">DIGITAL</a>
+      <a href="ecfc.html" class="dropdown-toggle">FILM</a>
+      <a href="" id="current_nav" class="dropdown-toggle">DIGITAL</a>
       <a href="cv.html">CV</a>
+
+      <div class="dropdown_film">
+        <a href="ecfc.html">EVERYTHING COMES FULL CIRCLE</a><br><br>
+        <a href="perfect-human.html">THE PERFECT HUMAN</a><br><br>
+        <a href="the-force.html">THE FORCE THAT THROUGH THE GREEN FUSE DRIVES THE FLOWER</a><br><br>
+        <a href="untitled.html">UNTITLED: FROM PVD TO BOS</a><br><br>
+        <a href="woke-up.html">I WOKE UP IN THE MORNING</a><br><br>
+        <a href="boston.html">CITY SYMPHONY: BOSTON</a><br><br>
+        <a href="cineml.html">CINEML: PARIS</a>
+      </div><!-- end of dropdown_film-->
+
+      <div class="dropdown_digital">
+        <a href="cinepath.html">CINEPATH</a><br><br>
+        <a href="planktons.html">P1ANKT0NS</a><br><br>
+        <a href="nature-lab.html">ILLUMINATED BAY</a><br><br>
+        <a href="y202k.html" id="top_current_project">Y2.02K</a><br><br>
+        <a href="p5js.html">P5.JS</a><br><br>
+        <a href="cyberencoding.html">CYBERENCODE</a><br><br>
+        <a href="ece.html">TECHNICAL</a>
+      </div><!-- end of dropdown digital-->
     </div>
 
     <div class="left_nav">

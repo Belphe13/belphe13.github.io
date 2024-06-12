@@ -20,46 +20,70 @@
   <link rel="stylesheet" href="css/projects.css" type="text/css">
   <link rel="stylesheet" href="css/nav.css" type="text/css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  <title>🏙️ City Symphony: Boston</title>
+  <script src="js/dropdown.js"></script>
+  <title>City Symphony: Boston 🏙️</title>
 </head>
 
 <style>
-	.white p {
-		color: #ffffff;
-	}
+  .white p {
+    color: #ffffff;
+  }
 
-	.tab1 {
-		tab-size: 1;
-	}
+  .tab1 {
+    tab-size: 1;
+  }
 
-	.content {
-		transition: all 0.5s ease-in-out;
-	}
+  .content {
+    transition: all 0.5s ease-in-out;
+  }
 
-	@media (max-width: 1200px) {
-		.left_nav {
-			display: none;
-		}
+  @media (max-width: 1200px) {
+    .left_nav {
+      display: none;
+    }
 
-		.content {
-			margin-left: 15%;
-			width: 70%;
-		}
-	}
+    .content {
+      margin-left: 15%;
+      width: 70%;
+    }
+  }
 </style>
 
 <body id="bolex">
   <div class="container">
     <div class="nav">
       <a href="index.html">LILAN</a>
-      <a href="" id="current_nav">FILM</a>
-      <a href="cinepath.html">DIGITAL</a>
+      <a href="" id="current_nav" class="dropdown-toggle">FILM</a>
+      <a href="cineml.html" class="dropdown-toggle">DIGITAL</a>
       <a href="cv.html">CV</a>
+
+      <div class="dropdown_film">
+        <a href="ecfc.html">EVERYTHING COMES FULL CIRCLE</a><br><br>
+        <a href="perfect-human.html">THE PERFECT HUMAN</a><br><br>
+        <a href="the-force.html">THE FORCE THAT THROUGH THE GREEN FUSE
+          DRIVES THE FLOWER</a><br><br>
+        <a href="untitled.html">UNTITLED: FROM PVD TO BOS</a><br><br>
+        <a href="woke-up.html">I WOKE UP IN THE MORNING</a><br><br>
+        <a href="boston.html" id="top_current_project">CITY SYMPHONY: BOSTON</a><br><br>
+        <a href="cineml.html">CINEML: PARIS</a>
+      </div><!-- end of dropdown_film-->
+
+      <div class="dropdown_digital">
+        <a href="cinepath.html">CINEPATH</a><br><br>
+        <a href="planktons.html">P1ANKT0NS</a><br><br>
+        <a href="nature-lab.html">ILLUMINATED BAY</a><br><br>
+        <a href="y202k.html">Y2.02K</a><br><br>
+        <a href="p5js.html">P5.JS</a><br><br>
+        <a href="cyberencoding.html">CYBERENCODE</a><br><br>
+        <a href="ece.html">TECHNICAL</a>
+      </div><!-- end of dropdown digital-->
     </div>
 
     <div class="left_nav">
       <a href="ecfc.html">EVERYTHING COMES FULL CIRCLE</a><br><br>
       <a href="perfect-human.html">THE PERFECT HUMAN</a><br><br>
+      <a href="the-force.html">THE FORCE THAT THROUGH THE GREEN FUSE DRIVES THE FLOWER</a><br><br>
+      <a href="untitled.html">UNTITLED: FROM PVD TO BOS</a><br><br>
       <a href="woke-up.html">I WOKE UP IN THE MORNING</a><br><br>
       <a href="boston.html" id="current_project">CITY SYMPHONY: BOSTON</a><br><br>
       <a href="cineml.html">CINEML: PARIS</a>
@@ -120,22 +144,5 @@
     </div><!-- end of content -->
   </div>
 </body>
-
-<script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var more = this.nextElementSibling;
-      if (more.style.display === "block") {
-        more.style.display = "none";
-      } else {
-        more.style.display = "block";
-      }
-    });
-  }
-</script>
 
 </html>
