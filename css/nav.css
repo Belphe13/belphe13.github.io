@@ -32,7 +32,7 @@ body {
 
 /* navigations */
 .nav {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
   height: 75px;
   /* 75% */
@@ -119,10 +119,8 @@ body {
   color: #fff;
   z-index: 3;
   /* text-align: left; */
-  width: 100%;
-  /* height: 100vh; */
   height: auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 70%;
   padding-left: 15%;
   padding-right: 15%;
@@ -132,8 +130,9 @@ body {
 
 .dropdown_film a,
 .dropdown_digital a {
-  line-height: 50px;
+  line-height: 45px;
+  font-size: 32.5px;
   color: #fff;
-  border-bottom: solid 6px #fff;
   margin: auto 10px;
+  border: none;
 }
