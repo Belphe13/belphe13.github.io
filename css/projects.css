@@ -71,8 +71,12 @@
 	background-image: url("../img/background/bg_ipark.png");
 }
 
-#untitled {
+#untitled-pvd-bos {
 	background-image: url("../img/background/bg_projects.jpg");
+}
+
+#untitled-film {
+	background-image: url("../img/background/bg_untitled-film.jpg");
 }
 
 /* background image in project pages */
