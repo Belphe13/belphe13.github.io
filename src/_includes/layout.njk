@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4G00WYERF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-V4G00WYERF');
+  </script>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/css/nav.css" type="text/css">
+  {% if styles %}
+  {% for style in styles %}
+  <link rel="stylesheet" href="/{{ style }}" type="text/css">
+  {% endfor %}
+  {% endif %}
+  <title>{{ title }}</title>
+</head>
+<body{% if body_id %} id="{{ body_id }}"{% endif %}>
+  <div class="container">
+    {% include "nav.njk" %}
+    {{ content | safe }}
+  </div>
+  <script src="/js/dropdown.js"></script>
+</body>
+</html>

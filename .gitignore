@@ -1,6 +1,5 @@
-
-img/.DS_Store
+node_modules/
+_site/
 .DS_Store
 img/.DS_Store
 img/projects/.DS_Store
-.DS_Store
