@@ -21,7 +21,11 @@
 </head>
 <body{% if body_id %} id="{{ body_id }}"{% endif %}>
   <div class="container">
-    {% include "nav.njk" %}
+
+    {% if hide_nav != true %}
+      {% include "nav.njk" %}
+    {% endif %}
+
     {{ content | safe }}
   </div>
   <script src="/js/dropdown.js"></script>

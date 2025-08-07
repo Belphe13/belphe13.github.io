@@ -59,7 +59,7 @@ body {
   /* 75% */
 }
 
-#current_nav {
+.nav a[aria-current="page"] {
   /* 75% */
   color: #ffcc33;
   border-bottom: solid 6px #ffcc33;

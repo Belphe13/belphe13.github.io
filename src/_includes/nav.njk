@@ -1,8 +1,28 @@
+{% set filmPages = [
+  '/untitled-film/',
+  '/ecfc/',
+  '/perfect-human/',
+  '/the-force/',
+  '/untitled-pvd-bos/',
+  '/woke-up/',
+  '/boston/',
+  '/cineml/'
+] %}
+{% set digitalPages = [
+  '/planktons/',
+  '/nature-lab/',
+  '/y202k/',
+  '/p5js/',
+  '/cyberencoding/',
+  '/ece/',
+  '/radius/'
+] %}
+
 <div class="nav">
-  <a href="/" id="current_nav">LILAN</a>
-  <a href="/ecfc/" class="dropdown-toggle">FILM</a>
-  <a href="/cinepath/" class="dropdown-toggle">DIGITAL</a>
-  <a href="/cv/">CV</a>
+  <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>LILAN</a>
+  <a href="/ecfc/" class="dropdown-toggle" {% if page.url in filmPages %}aria-current="page"{% endif %}>FILM</a>
+  <a href="/cinepath/" class="dropdown-toggle" {% if page.url in digitalPages or page.url.startsWith('/cinepath') %}aria-current="page"{% endif %}>DIGITAL</a>
+  <a href="/cv/" {% if page.url == '/cv/' %}aria-current="page"{% endif %}>CV</a>
 
   <div class="dropdown_film">
     <a href="/untitled-film/">UNTITLED FILM DISINFECTION PROJECT</a><br><br>
