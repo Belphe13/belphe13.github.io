@@ -20,8 +20,8 @@
 
 <div class="nav">
   <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>LILAN</a>
-  <a href="/ecfc/" class="dropdown-toggle" {% if page.url in filmPages %}aria-current="page"{% endif %}>FILM</a>
-  <a href="/cinepath/" class="dropdown-toggle" {% if page.url in digitalPages or page.url.startsWith('/cinepath') %}aria-current="page"{% endif %}>DIGITAL</a>
+  <a href="/untitled-film/" class="dropdown-toggle film" {% if page.url in filmPages %}aria-current="page"{% endif %}>FILM</a>
+  <a href="/cinepath/" class="dropdown-toggle digital" {% if page.url in digitalPages or page.url.startsWith('/cinepath') %}aria-current="page"{% endif %}>DIGITAL</a>
   <a href="/cv/" {% if page.url == '/cv/' %}aria-current="page"{% endif %}>CV</a>
 
   <div class="dropdown_film">
