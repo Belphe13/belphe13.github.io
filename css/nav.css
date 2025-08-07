@@ -51,6 +51,7 @@ body {
   /* 75% */
   margin: auto 10px;
   /* 50% */
+  font-size: 37.5px;
 }
 
 .nav a:hover {
