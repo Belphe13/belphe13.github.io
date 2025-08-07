@@ -1,0 +1,18 @@
+---
+layout: layout.njk
+title: "Radius"
+hide_nav: true
+---
+<input type="number" id="num-input" value="1"> miles<br>
+  <input id="pac-input" class="controls" type="text" placeholder="Search Box" value="01236">
+  <button type="button" id="button" onclick="drawOnclick()">Submit</button>
+
+  <div id="map"></div>
+
+  <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUWAKLSoS7v52u7nHNa2QXygx-ucdx-t8&amp;callback=initMap&amp;libraries=places&amp;v=weekly" defer=""></script>
