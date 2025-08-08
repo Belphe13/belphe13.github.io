@@ -129,6 +129,16 @@ body {
   padding-bottom: 30px;
 }
 
+.dropdown_film::before,
+.dropdown_digital::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+}
+
 .dropdown_film a,
 .dropdown_digital a {
   line-height: 45px;
