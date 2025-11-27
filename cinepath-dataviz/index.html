@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4G00WYERF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-V4G00WYERF');
+  </script>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/css/nav.css" type="text/css">
+  
+  
+  <link rel="stylesheet" href="/css/projects.css" type="text/css">
+  
+  
+  <title>Cinepath | Lilan Yang</title>
+</head>
+<body id="cinepath">
+  <div class="container">
+
+    
+      
+
+<div class="nav">
+  <a href="/" >LILAN</a>
+  <a href="/untitled-film/" class="dropdown-toggle film" aria-current="page">FILM</a>
+  <a href="/cv/" >CV</a>
+
+  <div class="dropdown_film">
+    <a href="/untitled-film/">UNTITLED FILM DISINFECTION PROJECT</a><br><br>
+    <a href="/ecfc/">EVERYTHING COMES FULL CIRCLE</a><br><br>
+    <a href="/perfect-human/">THE PERFECT HUMAN</a><br><br>
+    <a href="/the-force/">THE FORCE THAT THROUGH THE GREEN FUSE DRIVES THE FLOWER</a><br><br>
+    <a href="/untitled-pvd-bos/">UNTITLED: FROM PVD TO BOS</a><br><br>
+    <a href="/woke-up/">I WOKE UP IN THE MORNING</a><br><br>
+    <a href="/boston/">CITY SYMPHONY: BOSTON</a><br><br>
+    <a href="/cineml/">CINEML: PARIS</a><br><br>
+    <a href="/cinepath/">CINEPATH</a>
+  </div>
+</div>
+
+    
+
+    <!--
+		<div class="left_nav">
+			<a href="" id="current_project">CINEPATH</a><br>
+			<a href="/cyberencoding/">CYBERENCODE</a><br>
+			<a href="/dropper/">DROPPER</a><br>
+			<a href="/old-school/">OLD SCHOOL</a><br>
+			<a href="/p5js/">P5.JS PRACTICES</a><br>
+			<a href="/ui/">UI PRACTICES</a><br>
+			<a href="/dataviz/">DATAVIZ</a><br>
+			<a href="/vr/">VR</a><br>
+			<a href="/fpga/">FPGA</a><br>
+		</div>
+-->
+		<div id="top" class="content" style="padding-top: 100px;
+		padding-right: 10%;
+		padding-bottom: 10%;
+		margin-top: 100px;
+		margin-left: 15%;
+		width: 70%;
+		height: 100%;
+		position: relative;
+		text-align: left;
+		z-index: 1;">
+
+			<div class="title">
+				<p>CINEPATH</p>
+			</div> <!-- end of title -->
+
+			<div class="description">
+				<p>Cinepath is a visualized interface for cinematic film locations. This is a personal voyage of cinema
+					in terms of the interdisciplinary studies with cinema and data visualization. Here are tabs of
+					actual data visualizations of two films and Github repository:</p>
+				<br>
+			</div> <!-- end of description -->
+
+			<a href="https://github.com/Belphe13/cinepath" target="_blank">
+				<span>GITHUB</span>
+			</a>
+
+			<a href="/cinepath-paris-texas/" target="_blank">
+				<span>PARIS, TEXAS</span>
+			</a>
+
+			<a href="/cinepath-frances-ha/" target="_blank">
+				<span>FRANCES HA</span><br>
+			</a>
+
+			<br><img width="100%" src="/img/projects/cinepath/paris_texas.jpg">
+
+			<div class="citation">
+				<p><i>Paris, Texas</i>, Directed by Wim Wenders, 1984</p>
+			</div>
+
+			<div class="subtitle" id="ideation">
+				<p>IDEATION</p>
+			</div>
+			<div class="description">
+				<p>I was inspired by a <a href="https://www.youtube.com/watch?v=8ry9X2FPfHM" target="_blank" style="font-size: 30px; border-bottom: solid 6px;">YouTube Video</a> which mapped the opening
+					scene of <i>Baby Driver</i>. However, instead of making a video with tools much as Adobe After
+					Effects to animate all the routes, I had this visualization automaton in mind which uses webpages as
+					the medium and allows user interactions to explore the map online. </p>
+			</div>
+
+			<div class="subtitle">
+				<p>DATASET</p>
+			</div>
+			<div class="description">
+				<p>The datasets of timestamps and coordinates for both <a href="https://docs.google.com/spreadsheets/d/1dgnXWjQUK333q3rBSVExVK6eVsJthgtJ8WgNuJTC2mI/edit?usp=sharing" target="_blank" style="font-size: 30px; border-bottom: solid 6px;"><i>Paris, Texas</i></a> and
+					<a href="https://drive.google.com/file/d/11ZFBLR-PEUpNg5wLnhYCgnmLOxCNIzMf/view?usp=sharing" target="_blank" style="font-size: 30px; border-bottom: solid 6px;"><i>Frances Ha</i></a> were
+					self-collected with available sources online such as IMDb, Google Street Views that helped analyzing
+					the film frame by frame with timestamps, as well as director’s commentary that revealed the real
+					filming location.<br>
+				</p>
+			</div>
+
+			<div class="subtitle">
+				<p>CHALLENGES</p>
+			</div>
+			<div class="description">
+				<p>Now we have coordinates, but how can we show the movement from point A to point B? <br><br>
+					I’ve seen several visualizations online like this <a href="https://codepen.io/idafroseth/pen/NpLMOx" target="_blank" style="font-size: 30px; border-bottom: solid 6px;">Google Maps Animation</a>
+					with all the coordinates along the way and connected by straight lines. When the number of dots is
+					large enough, it creates smooth turns with Json. However, Online Google Maps API Documentation has
+					been extremely helpful resources to request a route with specific transportation method varied from
+					walking to public transportation. So, in a short word, this project is composed of many route
+					requests to the Google server. <br>
+				</p>
+			</div>
+
+			<div class="subtitle">
+				<p>PROTOTYPE</p>
+			</div>
+			<div class="description">
+				<br>
+				<a href="/cinepath-paris-texas/" target="_blank">
+					<span>PARIS, TEXAS</span>
+				</a>
+				<br>
+				<img width="49%" src="/img/projects/cinepath/paris_texas-los_angeles.png">
+				<img width="49%" src="/img/projects/cinepath/paris_texas-north_america.png">
+				<br>
+				<p>
+					<i>Paris, Texas</i> (1984) directed by Wim Wenders is one of my favorite films in the 80s. It's a
+					road movie by its core. The stories started with Travis, the protagonist, who has been vanished in
+					society for four years re-appeared in the dessert inside Big Bend National Park. These road trips
+					are back and forth between Texas and California, which exemplifies the dynamics of movements in
+					terms of a geographical locations that could possibly evoke viewers' experience of moving through
+					space. For this film, I chose to only have one map of Southeastern part of United States and created
+					an overlay that covered additional sea areas to play snapshots of the film to get audiences a
+					geographical sense of the places when a 145-min film shrinking into 30 seconds.
+				</p><br>
+				<a href="/cinepath-frances-ha/" target="_blank">
+					<span>FRANCES HA</span>
+				</a>
+				<br>
+				<img width="100%" src="/img/projects/cinepath/frances_ha-all.jpg">
+				<br>
+				<p>Comparatively, <i>Frances Ha</i> (2013) is a more recent production takes places mostly in New York
+					City. There was also a fair amount of travels in this film where the protagonist visited Sacramento,
+					Paris and Upstate New York. Since there were multiple places, the decision is to have maps for each
+					of the location with an additional world map to get a big picture.</p><br>
+			</div>
+
+			<div class="subtitle">
+				<p>IMPROVEMENTS</p>
+			</div>
+			<div class="description">
+				<p>To further understand a director's film locations throughout their career, more data visualizations
+					could be created on one film director, to better analyze their moving patterns, interests of certain
+					regions and transportation preferences throughout their career.<br><br>
+					Technically, the data collection process could also be optimized with deep-learning programs to
+					recognize locations by video processing to extract frames in the film, In this way, it could reduce
+					the time and efforts to generate more visualizations with the utilization of a back-end
+					database.<br></p>
+			</div>
+
+			<br><img width="100%" src="/img/projects/cinepath/frances_ha.jpg">
+			<div class="citation">
+				<p><i>Frances Ha</i>, Directed by Noah Baumbach, 2013</p>
+			</div>
+
+			<div class="subtitle">
+				<p>ACKNOWLEDGEMENT</p>
+			</div>
+			<div class="description">
+				<p>Special thanks to Ben Grosser, a professor in New Media at University of Illinois at
+					Urbana-Champaign, who has been the best advisor that guided me throughout this project and
+					encouraged me to think beyond the traditional method.<br><br>
+					To my dearest friend Gail Cheng from University of Florida, who helped me out of her way by
+					repeatedly watching B&amp;W <i>Frances Ha</i> on Netflix and matching storefronts on Google Street
+					View.<br><br>
+					And to all my friends who offered aesthetic suggestions and technical supports, I couldn’t create
+					this prototype without them.<br>
+				</p>
+			</div>
+
+			<div class="subtitle">
+				<p>REFERENCES</p>
+			</div>
+			<div class="citation">
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=8ry9X2FPfHM" target="_blank">Baby Driver's Opening Car
+							Chase, Mapped</a></li>
+					<li><a href="https://docs.google.com/spreadsheets/d/1dgnXWjQUK333q3rBSVExVK6eVsJthgtJ8WgNuJTC2mI/edit?usp=sharing" target="_blank">Timestamps and Coordinates for <i>Paris, Texas</i></a></li>
+					<li><a href="https://drive.google.com/file/d/11ZFBLR-PEUpNg5wLnhYCgnmLOxCNIzMf/view?usp=sharing" target="_blank">Timestamps and Coordinates for <i>Frances Ha</i></a></li>
+					<li><a href="https://codepen.io/idafroseth/pen/NpLMOx" target="_blank">Google Maps Animation by Ida
+							Marie Frøseth</a></li>
+					<li><a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">Google Maps JavaScript API</a></li>
+					<li><a href="https://mapstyle.withgoogle.com/" target="_blank">Google Maps Platform Styling
+							Wizard</a></li>
+				</ul>
+			</div>
+
+			<!--
+			<div class="collapsible">
+				<br><span>READ MORE</span>
+			</div>
+
+			<div class="more">
+				<div class="description">
+					<p>Not that Paris, Texas itself has been iconic in cinema history for its vivid color palette and geographical span from Texas to California, back to Taxas then into the void, but it also has provided me with personal reflections over matters
+						of relationships and family. And I see the land and the road in awe.</p>
+					<br>
+				</div>
+			</div><br>
+
+			<img width="800px" src="/img/projects/cinepath/frances_ha.jpg">
+
+			<div class="description">
+				<p>A 2013 Film Directed by Noah Baumbach</p>
+			</div>
+
+			<div class="collapsible">
+				<br><span>READ MORE</span>
+			</div>
+
+			<div class="more">
+				<div class="description">
+					<p>Frances Ha! Appreciation to a dearest old friend who recommended this film to me during high school, and I have been recommended to others ever since. We don't see the reason not to fall for the story that mostly happened in New York City
+						with a few small trips to Sacremnto, CA, Paris, France and Poughkeepsie, NY. </p>
+					<br>
+				</div>
+			</div><br>
+-->
+
+		</div><!-- end of content -->
+
+  </div>
+  <script src="/js/dropdown.js"></script>
+</body>
+</html>
