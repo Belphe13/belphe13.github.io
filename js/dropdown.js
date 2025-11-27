@@ -1,15 +1,11 @@
 // JavaScript for click-based dropdown navigation
 
 document.addEventListener('DOMContentLoaded', () => {
-  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-  const filmLink = document.querySelector('.dropdown-toggle.film') || dropdownToggles[0];
-  const digitalLink = document.querySelector('.dropdown-toggle.digital') || dropdownToggles[1];
+  const filmLink = document.querySelector('.dropdown-toggle.film');
   const filmDropdown = document.querySelector('.dropdown_film');
-  const digitalDropdown = document.querySelector('.dropdown_digital');
 
   const dropdowns = [
-    { link: filmLink, menu: filmDropdown },
-    { link: digitalLink, menu: digitalDropdown }
+    { link: filmLink, menu: filmDropdown }
   ];
 
   function hideAll() {
@@ -35,11 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('click', (event) => {
     const clickedFilm = filmLink && filmLink.contains(event.target);
-    const clickedDigital = digitalLink && digitalLink.contains(event.target);
 
-    if (clickedFilm || clickedDigital) {
-      const targetDropdown = clickedFilm ? filmDropdown : digitalDropdown;
-      const targetLink = clickedFilm ? filmLink : digitalLink;
+    if (clickedFilm) {
+      const targetDropdown = filmDropdown;
+      const targetLink = filmLink;
       const isOpen = targetDropdown && targetDropdown.style.display === 'block';
 
       if (!isOpen) {
@@ -53,9 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const clickedInsideDropdown = dropdowns.some(
-      ({ menu }) => menu && menu.contains(event.target)
-    );
+    const clickedInsideDropdown = dropdowns.some(({ menu }) => menu && menu.contains(event.target));
 
     if (!clickedInsideDropdown) {
       hideAll();
