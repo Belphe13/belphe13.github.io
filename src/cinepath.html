@@ -1,84 +1,20 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V4G00WYERF"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'G-V4G00WYERF');
-	</script>
-
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/projects.css" type="text/css">
-	<link rel="stylesheet" href="css/nav.css" type="text/css">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-	<script src="js/dropdown.js"></script>
-	<title>Cinepath 📍</title>
-</head>
-
-<style>
-	.content {
-		transition: all 0.5s ease-in-out;
-	}
-
-	@media (max-width: 1200px) {
-		.left_nav {
-			display: none;
-		}
-
-		.content {
-			margin-left: 15%;
-			width: 70%;
-		}
-	}
-</style>
-
-<body id="cinepath">
-	<div class="container">
-		<div class="nav">
-			<a href="index.html">LILAN</a>
-			<a href="ecfc.html" class="dropdown-toggle">FILM</a>
-			<a href="" id="current_nav" class="dropdown-toggle">DIGITAL</a>
-			<a href="cv.html">CV</a>
-	  
-			<div class="dropdown_film">
-			  <a href="untitled-film.html">UNTITLED FILM DISINFECTION PROJECT</a><br><br>
-			  <a href="ecfc.html">EVERYTHING COMES FULL CIRCLE</a><br><br>
-			  <a href="perfect-human.html">THE PERFECT HUMAN</a><br><br>
-			  <a href="the-force.html">THE FORCE THAT THROUGH THE GREEN FUSE DRIVES THE FLOWER</a><br><br>
-			  <a href="untitled-pvd-bos.html">UNTITLED: FROM PVD TO BOS</a><br><br>
-			  <a href="woke-up.html">I WOKE UP IN THE MORNING</a><br><br>
-			  <a href="boston.html">CITY SYMPHONY: BOSTON</a><br><br>
-			  <a href="cineml.html">CINEML: PARIS</a>
-			</div><!-- end of dropdown_film-->
-	  
-			<div class="dropdown_digital">
-			  <a href="cinepath.html" id="top_current_project">CINEPATH</a><br><br>
-			  <a href="planktons.html">P1ANKT0NS</a><br><br>
-			  <a href="nature-lab.html">ILLUMINATED BAY</a><br><br>
-			  <a href="y202k.html">Y2.02K</a><br><br>
-			  <a href="p5js.html">P5.JS</a><br><br>
-			  <a href="cyberencoding.html">CYBERENCODE</a><br><br>
-			  <a href="ece.html">TECHNICAL</a>
-			</div><!-- end of dropdown digital-->
-		  </div>
-
-		<div class="left_nav">
-			<a href="cinepath.html" id="current_project">CINEPATH</a><br><br>
-			<a href="planktons.html">P1ANKT0NS</a><br><br>
-			<a href="nature-lab.html">ILLUMINATED BAY</a><br><br>
-			<a href="y202k.html">Y2.02K</a><br><br>
-			<a href="p5js.html">P5.JS</a><br><br>
-			<a href="cyberencoding.html">CYBERENCODE</a><br><br>
-			<a href="ece.html">TECHNICAL</a>
+---
+layout: layout.njk
+title: "Cinepath 📍"
+body_id: cinepath
+styles:
+  - css/projects.css
+---
+<div class="left_nav">
+			<a href="/untitled-film/">UNTITLED FILM DISINFECTION PROJECT</a><br><br>
+			<a href="/ecfc/">EVERYTHING COMES FULL CIRCLE</a><br><br>
+			<a href="/perfect-human/">THE PERFECT HUMAN</a><br><br>
+			<a href="/the-force/">THE FORCE THAT THROUGH THE GREEN FUSE DRIVES THE FLOWER</a><br><br>
+			<a href="/untitled-pvd-bos/">UNTITLED: FROM PVD TO BOS</a><br><br>
+			<a href="/woke-up/">I WOKE UP IN THE MORNING</a><br><br>
+			<a href="/boston/">CITY SYMPHONY: BOSTON</a><br><br>
+			<a href="/cineml/">CINEML: PARIS</a><br><br>
+			<a href="/cinepath/" id="current_project">CINEPATH</a>
 		</div>
 
 		<div class="content">
@@ -100,19 +36,19 @@
 				<br>
 			</div> <!-- end of description -->
 
-			<!-- <a href="cinepath-paris-texas.html" target="_blank">
+			<!-- <a href="/cinepath-paris-texas/" target="_blank">
 						<span>PARIS, TEXAS ⏎</span>
 					</a>
 		
-					<a href="cinepath-frances-ha.html" target="_blank">
+					<a href="/cinepath-frances-ha/" target="_blank">
 						<span>FRANCES HA ⏎</span>
 					</a>
 
-					<a href="cinepath-before-sunrise.html" target="_blank">
+					<a href="/cinepath-before-sunrise/" target="_blank">
 						<span>BEFORE SUNRISE ⏎</span>
 					</a>
 
-					<a href="cinepath-before-sunset.html" target="_blank">
+					<a href="/cinepath-before-sunset/" target="_blank">
 						<span>BEFORE SUNSET ⏎</span>
 					</a> -->
 
@@ -122,16 +58,12 @@
 
 			<br><br><br>
 
-			<div style="padding:62.5% 0 0 0;position:relative;"><iframe
-					src="https://player.vimeo.com/video/375555808?h=a3357bf9b1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay=1&amp;loop=1&amp"
-					frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-					style="position:absolute;top:0;left:0;width:100%;height:100%;"
-					title="Cinepath: Frances Ha"></iframe></div>
+			<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/375555808?h=a3357bf9b1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay=1&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Cinepath: Frances Ha"></iframe></div>
 			<script src="https://player.vimeo.com/api/player.js"></script>
 
 
 
-			<!-- <img width="100%" src="img/projects/cinepath/paris_texas.jpg"> -->
+			<!-- <img width="100%" src="/img/projects/cinepath/paris_texas.jpg"> -->
 
 			<div class="citation">
 				<p><i>Cinepath: Frances Ha</i></p>
@@ -143,21 +75,17 @@
 				<p>PROTOTYPE</p>
 			</div>
 			<div class="description">
-				<a href="https://belphe13.github.io/cinepath-paris-texas.html" target="_blank">
+				<a href="/cinepath-paris-texas/" target="_blank">
 					<span>PARIS, TEXAS ⏎</span>
 				</a>
 
-				<a href="https://belphe13.github.io/cinepath-paris-texas-v2.html" target="_blank">
+				<a href="/cinepath-paris-texas-v2/" target="_blank">
 					<span>PARIS, TEXAS V2 ⏎</span>
 				</a>
 
 				<br><br>
 
-				<div style="padding:62.5% 0 0 0;position:relative;"><iframe
-						src="https://player.vimeo.com/video/375554750?h=63b47bd08e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay=1&amp;loop=1&amp"
-						frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-						style="position:absolute;top:0;left:0;width:100%;height:100%;"
-						title="Cinepath: Paris, Texas"></iframe></div>
+				<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/375554750?h=63b47bd08e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay=1&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Cinepath: Paris, Texas"></iframe></div>
 				<script src="https://player.vimeo.com/api/player.js"></script>
 
 				<br>
@@ -172,16 +100,16 @@
 					audiences a geographical sense of the places when a 145-min film shrinking into 30 seconds.
 				</p>
 
-				<!-- <img width="49%" src="img/projects/cinepath/paris_texas-los_angeles.png">
-						<img width="49%" src="img/projects/cinepath/paris_texas-north_america.png">	 -->
+				<!-- <img width="49%" src="/img/projects/cinepath/paris_texas-los_angeles.png">
+						<img width="49%" src="/img/projects/cinepath/paris_texas-north_america.png">	 -->
 
 				<br>
-				<a href="https://belphe13.github.io/cinepath-frances-ha.html" target="_blank">
+				<a href="/cinepath-frances-ha/" target="_blank">
 					<span>FRANCES HA ⏎</span>
 				</a>
 				<br><br>
 
-				<img width="100%" src="img/projects/cinepath/frances_ha-all.jpg">
+				<img width="100%" src="/img/projects/cinepath/frances_ha-all.jpg">
 				<br>
 				<p>
 					Comparatively, <i>Frances Ha</i> (2013) by Noah Baumbach is a more recent production takes places
@@ -196,39 +124,31 @@
 				</p><br>
 			</div>
 
-			<br><img width="100%" src="img/projects/cinepath/frances_ha.jpg">
+			<br><img width="100%" src="/img/projects/cinepath/frances_ha.jpg">
 			<div class="citation">
 				<p><i>Frances Ha</i> (2013), directed by Noah Baumbach</p>
 			</div>
 
 			<br><br><br>
 
-			<a href="cinepath-before-sunrise.html" target="_blank">
+			<a href="/cinepath-before-sunrise/" target="_blank">
 				<span>BEFORE SUNRISE ⏎</span>
 			</a>
 
 			<br><br>
 
-			<div style="padding:54.58% 0 0 0;position:relative;"><iframe
-					src="https://player.vimeo.com/video/515089215?h=efb8638345&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay=1&amp;loop=1&amp"
-					frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-					style="position:absolute;top:0;left:0;width:100%;height:100%;"
-					title="Cinepath: Before Sunrise"></iframe></div>
+			<div style="padding:54.58% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/515089215?h=efb8638345&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay=1&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Cinepath: Before Sunrise"></iframe></div>
 			<script src="https://player.vimeo.com/api/player.js"></script>
 
 			<br><br><br>
 
-			<a href="cinepath-before-sunset.html" target="_blank">
+			<a href="/cinepath-before-sunset/" target="_blank">
 				<span>BEFORE SUNSET ⏎</span>
 			</a>
 
 			<br><br>
 
-			<div style="padding:54.58% 0 0 0;position:relative;"><iframe
-					src="https://player.vimeo.com/video/515473020?h=e67232afc5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay=1&amp;loop=1&amp"
-					frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-					style="position:absolute;top:0;left:0;width:100%;height:100%;"
-					title="Cinepath: Before Sunset"></iframe></div>
+			<div style="padding:54.58% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/515473020?h=e67232afc5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479;autoplay=1&amp;loop=1&amp;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Cinepath: Before Sunset"></iframe></div>
 			<script src="https://player.vimeo.com/api/player.js"></script>
 
 			<br>
@@ -260,7 +180,7 @@
 				</div>
 			</div><br>
 
-			<img width="800px" src="img/projects/cinepath/frances_ha.jpg">
+			<img width="800px" src="/img/projects/cinepath/frances_ha.jpg">
 
 			<div class="description">
 				<p>A 2013 Film Directed by Noah Baumbach</p>
@@ -280,24 +200,3 @@
 -->
 
 		</div><!-- end of content -->
-	</div>
-</body>
-
-<script>
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-
-	for (i = 0; i < coll.length; i++) {
-		coll[i].addEventListener("click", function () {
-			this.classList.toggle("active");
-			var more = this.nextElementSibling;
-			if (more.style.display === "block") {
-				more.style.display = "none";
-			} else {
-				more.style.display = "block";
-			}
-		});
-	}
-</script>
-
-</html>
