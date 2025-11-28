@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V4G00WYERF"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-V4G00WYERF');
+	</script>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/projects.css" type="text/css">
+	<link rel="stylesheet" href="css/nav.css" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script src="js/dropdown.js"></script>
+	<title>Technical Projects 💡</title>
+</head>
+
+<style>
+	.content {
+		transition: all 0.5s ease-in-out;
+	}
+
+	@media (max-width: 1200px) {
+		.left_nav {
+			display: none;
+		}
+
+		.content {
+			margin-left: 15%;
+			width: 70%;
+		}
+	}
+</style>
+
+<body id="ece">
+	<div class="container">
+		<div class="nav">
+			<a href="index.html">LILAN</a>
+			<a href="ecfc.html" class="dropdown-toggle">FILM</a>
+			<a href="" id="current_nav" class="dropdown-toggle">DIGITAL</a>
+			<a href="cv.html">CV</a>
+
+			<div class="dropdown_film">
+				<a href="untitled-film.html">UNTITLED FILM DISINFECTION PROJECT</a><br><br>
+				<a href="ecfc.html">EVERYTHING COMES FULL CIRCLE</a><br><br>
+				<a href="perfect-human.html">THE PERFECT HUMAN</a><br><br>
+				<a href="the-force.html">THE FORCE THAT THROUGH THE GREEN FUSE DRIVES THE FLOWER</a><br><br>
+				<a href="untitled-pvd-bos.html">UNTITLED: FROM PVD TO BOS</a><br><br>
+				<a href="woke-up.html">I WOKE UP IN THE MORNING</a><br><br>
+				<a href="boston.html">CITY SYMPHONY: BOSTON</a><br><br>
+				<a href="cineml.html">CINEML: PARIS</a>
+			</div><!-- end of dropdown_film-->
+
+			<div class="dropdown_digital">
+				<a href="cinepath.html">CINEPATH</a><br><br>
+				<a href="planktons.html">P1ANKT0NS</a><br><br>
+				<a href="nature-lab.html">ILLUMINATED BAY</a><br><br>
+				<a href="y202k.html">Y2.02K</a><br><br>
+				<a href="p5js.html">P5.JS</a><br><br>
+				<a href="cyberencoding.html">CYBERENCODE</a><br><br>
+				<a href="ece.html" id="top_current_project">TECHNICAL</a>
+			</div><!-- end of dropdown digital-->
+		</div>
+
+		<div class="left_nav">
+			<a href="cinepath.html">CINEPATH</a><br><br>
+			<a href="planktons.html">P1ANKT0NS</a><br><br>
+			<a href="nature-lab.html">ILLUMINATED BAY</a><br><br>
+			<a href="y202k.html">Y2.02K</a><br><br>
+			<a href="p5js.html">P5.JS</a><br><br>
+			<a href="cyberencoding.html">CYBERENCODE</a><br><br>
+			<a href="ece.html" id="current_project">TECHNICAL</a>
+		</div>
+
+		<div class="content">
+
+			<div class="title">
+				<p>TECHNICAL PROJECTS</p>
+			</div> <!-- end of title -->
+
+			<div class="description">
+				<p>Collaborative engineering group projects during my undergraduate studies including work in virtual
+					reality, 3D modeling, full-stack development, and cybersecurity.</p><br>
+			</div>
+			<br>
+			<div class="collapsible">
+				<span>ZKTAP ▼</span>
+			</div>
+
+			<div class="more" id="zktap">
+				<div class="description">
+					<p><i>zkTap: A Zero-Knowledge Trustless Authentication Protocol</i> (2019) is my senior project for
+						ECE 445 Senior Design Lab. It was such a pleasure to work with two fellow ECE seniors Joseph Kuo
+						and Majdi Hassan under the guidance from graduate teaching assistant Evan Widloski and professor
+						Arne Fliflet. It has been selected into ECE Hall of Fame.</p>
+					<br>
+				</div> <!-- end of description -->
+
+				<a href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=16180" target="_blank">
+					<span>PROPOSAL ⏎</span>
+				</a>
+
+				<a href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=16198" target="_blank">
+					<span>DESIGN DOCUMNET ⏎</span>
+				</a>
+
+				<div class="subtitle">
+					<p>BLOCK DIAGRAM</p>
+				</div>
+				<div class="description">
+					<br><img width="800px" src="img/projects/zktap/dd_block.jpg">
+				</div>
+
+				<div class="subtitle">
+					<p>PHYSICAL DESIGN</p>
+				</div>
+				<div class="description">
+					<br><img width="800px" src="img/projects/zktap/tag_physical.jpeg">
+					<br><img width="800px" src="img/projects/zktap/reader_physical.jpeg">
+				</div>
+			</div>
+			<!--end of zktap -->
+
+			<br>
+
+			<div class="collapsible" id="fsae">
+				<span>FSAE SPONSOR PROJECT ▼</span>
+			</div>
+
+			<div class="more">
+				<div class="description">
+					<p> A sponsor project for Illinois Motorsports that completed FSAE (Formula Society of Automotive
+						Engineers) Michigan and FSAE Lincoln autocross tracks in 3D and exported to Assetto Corsa racing
+						simulator. Group of 5 engineers utilized Unity for modeling and Assetto Corsa SDK for game
+						integration to help Illinois Motorsports team to prepare using Oculus VR headset. Monocular
+						depth cue and stereopsis has been incorporated on our textured tracks to create comfortabel and
+						realsitic racing simulation, and physics engine were taken care of by Assetto Corsa SDK. </p>
+					<img width="750px" src="img/projects/vr/michigan.jpg">
+					<img width="750px" src="img/projects/vr/michigan_2.jpg">
+					<img width="750px" src="img/projects/vr/lincoln.jpg">
+				</div>
+			</div><!-- end of more -->
+
+			<br>
+
+			<div class="collapsible" id="flight-sim">
+				<span>VR FLIGHT SIMULATOR ▼</span>
+			</div>
+
+			<div class="more">
+				<div class="description">
+					<p> This machine problem requires to set up the terrains in Unity, import a model for the plane,
+						create several scenes for start menu with ray casting, interactive tutorial with pitch, yaw and
+						roll controls, and make it a shooting game with sound and score display.</p><br>
+					<img width="750px" src="img/projects/vr/flight_sim_plane.jpg">
+					<img width="750px" src="img/projects/vr/flight_sim_terrain.jpg">
+					<img width="750px" src="img/projects/vr/flight_sim_tutorial.jpg">
+				</div>
+			</div>
+
+			<!--
+			<div class="collapsible" id="fpga">
+				<span>FPGA</span>
+			  </div>
+
+			<div class="more">
+				<div class="description">
+					<p>A 80s inspired dress-up game written all in hardware language SystemVerilog</p>
+					<a href="pdf/ECE_385_Final_Project.pdf" target="_blank"><span>REPORT</span></a>
+					<br>
+				</div>
+				<br>
+				<img width="100%" src="img/projects/fpga/fpga.jpg">
+			</div>
+-->
+
+		</div><!-- end of content -->
+	</div>
+</body>
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function () {
+			this.classList.toggle("active");
+			var more = this.nextElementSibling;
+			if (more.style.display === "block") {
+				more.style.display = "none";
+			} else {
+				more.style.display = "block";
+			}
+		});
+	}
+</script>
+
+</html>

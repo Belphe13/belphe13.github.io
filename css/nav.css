@@ -51,7 +51,6 @@ body {
   /* 75% */
   margin: auto 10px;
   /* 50% */
-  font-size: 37.5px;
 }
 
 .nav a:hover {
@@ -60,7 +59,7 @@ body {
   /* 75% */
 }
 
-.nav a[aria-current="page"] {
+#current_nav {
   /* 75% */
   color: #ffcc33;
   border-bottom: solid 6px #ffcc33;
@@ -127,16 +126,6 @@ body {
   padding-right: 15%;
   margin-top: 15px;
   padding-bottom: 30px;
-}
-
-.dropdown_film::before,
-.dropdown_digital::before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: 0;
-  width: 100%;
-  height: 15px;
 }
 
 .dropdown_film a,

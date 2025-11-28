@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133224330-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-133224330-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/projects.css" type="text/css">
+  <link rel="stylesheet" href="css/nav.css" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Projects | Lilan Yang</title>
+</head>
+
+<body id="projects">
+  <div class="container">
+    <div class="sub_nav">
+      <a href="index.html">LILAN</a>
+      <a href="projects.html" id="current_nav">PROJECTS</a>
+			<a href="places.html">PLACES</a>
+      <!--
+			<a href="people.html">PEOPLE</a>
+      <a href="profile.html">PROFILE</a>
+      -->
+    </div>
+
+    <div class="projects-index">
+
+        <a href="cineml.html">
+      <div id="projects-cineml" class="box">
+          <img src="img/projects/cineml.png">
+          <p>CINE-ML</p>
+      </div>
+              </a>
+
+        <br><br>
+
+        <a href="boston.html">
+      <div id="projects-bolex" class="box">
+
+          <img src="img/projects/boston.png">
+          <p>BOSTON</p>
+
+      </div>
+              </a>
+
+        <a href="y202k.html">
+      <div id="projects-pd" class="box">
+
+          <img src="img/projects/whiteboard.jpeg">
+          <p>Y2.02K</p>
+
+      </div>
+              </a>
+
+        <a href="cinepath.html">
+      <div id="projects-cinepath" class="box">
+
+          <img src="img/projects/cinepath.jpg">
+          <p>CINEPATH</p>
+
+      </div>
+              </a>
+
+      <div id="projects-cyberencoding" class="box">
+        <a href="cyberencoding.html">
+          <img src="img/projects/cyberencoding.jpg">
+          <p>CYBERNCODE</p>
+        </a>
+      </div>
+
+      <div id="projects-dataviz" class="box">
+        <a href="dataviz.html">
+          <img src="img/projects/dataviz.jpg">
+          <p>DATAVIZ</p>
+        </a>
+      </div>
+
+      <div id="projects-p5js" class="box">
+        <a href="p5js.html">
+          <iframe width="546px" height="195px" src="https://editor.p5js.org/Belphe13/embed/l6DzefJiD"></iframe>
+          <p>P5.JS</p>
+        </a>
+      </div>
+
+      <div id="projects-ui" class="box">
+        <a href="dropper.html">
+          <img src="img/projects/dropper.jpg">
+          <p>DROPPER</p>
+        </a>
+      </div>
+
+      <div id="projects-old-school" class="box">
+        <a href="old-school.html">
+          <img src="img/projects/old_school.jpg">
+          <p>OLD SCHOOL</p>
+        </a>
+      </div>
+
+      <div id="projects-ece" class="box">
+        <a href="ece.html">
+          <img src="img/projects/michigan.jpg">
+          <p>ENGINEERING</p>
+        </a>
+      </div>
+
+    </div><!-- end of content -->
+
+  </div>
+
+</body>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var more = this.nextElementSibling;
+      if (more.style.display === "block") {
+        more.style.display = "none";
+      } else {
+        more.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</html>

@@ -1,0 +1,9 @@
+1. index page redesign with bio pic ............... not started
+2. Responsive vimeo links ......................... in progress
+3. CYBERENCODE in P5JS
+
+
+
+****
+ROPDOWNS ⬇ ▼
+NEWPAGE ⏎↩︎↵
