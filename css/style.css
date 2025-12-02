@@ -226,3 +226,13 @@ body {
   border: solid 6px #ffcc33;
   /* 75% */
 }
+
+@media (max-width: 1200px) {
+  .about {
+    position: static;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+  }
+}

@@ -147,3 +147,42 @@ body {
   margin: auto 10px;
   border: none;
 }
+
+@media (max-width: 1200px) {
+  .left_nav {
+    position: sticky;
+    top: 85px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    z-index: 2;
+  }
+
+  .left_nav a {
+    line-height: 28px;
+    font-size: 20px;
+  }
+
+  body#untitled-film .left_nav,
+  body#ecfc .left_nav,
+  body#perfect-human .left_nav,
+  body#force .left_nav,
+  body#untitled-pvd-bos .left_nav,
+  body#bolex .left_nav,
+  body#cineml .left_nav,
+  body#cinepath .left_nav,
+  body#wokeup .left_nav {
+    display: none;
+  }
+
+  .left_nav.cv-nav {
+    display: flex;
+  }
+}
