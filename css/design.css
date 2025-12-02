@@ -33,7 +33,7 @@
     /* 75% */
 }
 
-#design .sub_nav a[aria-current="page"] {
+#design #current_nav {
     /* 75% */
     color: #ffcc33;
     border-bottom: solid 6px #ffcc33;
