@@ -2,7 +2,8 @@ name: Deploy Eleventy to GitHub Pages
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, develop ]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -35,6 +36,20 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
+      - name: Trigger Netlify build hook
+        if: env.NETLIFY_BUILD_HOOK != ''
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          echo "Triggering Netlify build via hook"
+          curl -X POST -s -o /dev/null -w "%{http_code}\n" "$NETLIFY_BUILD_HOOK"
+
+      - name: Skip Netlify build (no hook configured)
+        if: env.NETLIFY_BUILD_HOOK == ''
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: echo "NETLIFY_BUILD_HOOK secret not set; skipping Netlify trigger"
 
   deploy:
     needs: build
