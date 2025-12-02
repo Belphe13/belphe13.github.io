@@ -1,0 +1,29 @@
+{% set filmPages = [
+  '/untitled-film/',
+  '/ecfc/',
+  '/perfect-human/',
+  '/the-force/',
+  '/untitled-pvd-bos/',
+  '/woke-up/',
+  '/boston/',
+  '/cineml/',
+  '/cinepath/'
+] %}
+
+<div class="nav">
+  <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>LILAN</a>
+  <a href="/untitled-film/" class="dropdown-toggle film" {% if page.url in filmPages or page.url.startsWith('/cinepath') %}aria-current="page"{% endif %}>FILM</a>
+  <a href="/cv/" {% if page.url == '/cv/' %}aria-current="page"{% endif %}>CV</a>
+
+  <div class="dropdown_film">
+    <a href="/untitled-film/">UNTITLED FILM DISINFECTION PROJECT</a><br><br>
+    <a href="/ecfc/">EVERYTHING COMES FULL CIRCLE</a><br><br>
+    <a href="/perfect-human/">THE PERFECT HUMAN</a><br><br>
+    <a href="/the-force/">THE FORCE THAT THROUGH THE GREEN FUSE DRIVES THE FLOWER</a><br><br>
+    <a href="/untitled-pvd-bos/">UNTITLED: FROM PVD TO BOS</a><br><br>
+    <a href="/woke-up/">I WOKE UP IN THE MORNING</a><br><br>
+    <a href="/boston/">CITY SYMPHONY: BOSTON</a><br><br>
+    <a href="/cineml/">CINEML: PARIS</a><br><br>
+    <a href="/cinepath/">CINEPATH</a>
+  </div>
+</div>
