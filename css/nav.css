@@ -169,4 +169,20 @@ body {
     line-height: 28px;
     font-size: 20px;
   }
+
+  body#untitled-film .left_nav,
+  body#ecfc .left_nav,
+  body#perfect-human .left_nav,
+  body#force .left_nav,
+  body#untitled-pvd-bos .left_nav,
+  body#bolex .left_nav,
+  body#cineml .left_nav,
+  body#cinepath .left_nav,
+  body#wokeup .left_nav {
+    display: none;
+  }
+
+  .left_nav.cv-nav {
+    display: flex;
+  }
 }
