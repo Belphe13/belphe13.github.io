@@ -20,3 +20,4 @@ All HTML files live in the `src/` directory and share a common layout with globa
 
 - **GitHub Pages (lilanyang.studio):** Pushing to `develop` or `master` runs the `Deploy Eleventy to GitHub Pages` workflow, which builds the site and publishes `_site` to Pages.
 - **Netlify (lilanyang.netlify.app):** Add a repository secret named `NETLIFY_BUILD_HOOK` with your site’s build hook URL. The workflow will trigger it on each push to `develop` or `master` after the build completes. If the secret is unset, the workflow will skip the Netlify trigger while still completing the GitHub Pages deploy.
+
