@@ -235,4 +235,9 @@ body {
     padding-right: 5%;
     box-sizing: border-box;
   }
+
+  #map {
+    position: relative;
+    z-index: 1;
+  }
 }
