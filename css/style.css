@@ -235,7 +235,7 @@ body {
     padding-right: 5%;
     box-sizing: border-box;
   }
-
+/*
   #map {
     position: fixed;
     top: 0;
@@ -244,4 +244,5 @@ body {
     height: 100%;
     z-index: -1;
   }
+  */
 }
