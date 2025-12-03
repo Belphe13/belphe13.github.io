@@ -228,21 +228,8 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .about {
-    position: static;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-  }
-/*
-  #map {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  */
-}
+		.about {
+			width: 90%;
+			padding-left: 5%;
+		}
+	}
