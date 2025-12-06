@@ -77,6 +77,7 @@ body {
   color: #fff;
   cursor: pointer;
   position: relative;
+  z-index: 5;
 }
 
 .nav-toggle__icon,
@@ -294,6 +295,10 @@ body {
     margin: 0;
   }
 
+  .nav-menu.is-open.show-film > a {
+    display: none;
+  }
+
   .nav-menu.is-open .dropdown_film {
     position: static;
     display: none;
@@ -307,5 +312,11 @@ body {
     display: block;
     line-height: 40px;
     font-size: 32px;
+  }
+
+  .nav-menu.is-open.show-film .dropdown_film {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
