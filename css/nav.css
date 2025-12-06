@@ -84,19 +84,21 @@ body {
 .nav-toggle__icon::after {
   content: "";
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 28px;
   height: 3px;
   background: #fff;
   transition: transform 0.25s ease, opacity 0.25s ease, background 0.25s ease;
 }
 
-.nav-toggle__icon { top: 50%; transform: translateY(-50%); }
-.nav-toggle__icon::before { transform: translateY(-8px); }
-.nav-toggle__icon::after { transform: translateY(8px); }
+.nav-toggle__icon { transform: translate(-50%, -50%); }
+.nav-toggle__icon::before { transform: translate(-50%, -50%) translateY(-8px); }
+.nav-toggle__icon::after { transform: translate(-50%, -50%) translateY(8px); }
 
 .nav-toggle.is-open .nav-toggle__icon { background: transparent; }
-.nav-toggle.is-open .nav-toggle__icon::before { transform: translateY(0) rotate(45deg); }
-.nav-toggle.is-open .nav-toggle__icon::after { transform: translateY(0) rotate(-45deg); }
+.nav-toggle.is-open .nav-toggle__icon::before { transform: translate(-50%, -50%) rotate(45deg); }
+.nav-toggle.is-open .nav-toggle__icon::after { transform: translate(-50%, -50%) rotate(-45deg); }
 
 .nav a {
   line-height: 60px;
