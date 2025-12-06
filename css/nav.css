@@ -65,10 +65,6 @@ body {
   height: 100%;
 }
 
-.nav-menu.dropdown-open > a:not(.dropdown-toggle.film) {
-  display: none;
-}
-
 .nav-toggle {
   display: none;
   align-items: center;
@@ -305,10 +301,6 @@ body {
     width: 100%;
     padding: 0 5%;
     margin-top: 0;
-  }
-
-  .nav-menu.is-open.dropdown-open > a:not(.dropdown-toggle.film) {
-    display: none;
   }
 
   .nav-menu.is-open .dropdown_film a {
