@@ -228,8 +228,56 @@ body {
 }
 
 @media (max-width: 1200px) {
-		.about {
-			width: 90%;
-			padding-left: 5%;
-		}
+                .about {
+                        width: 90%;
+                        padding-left: 5%;
+                }
+}
+
+@media (max-width: 600px) {
+  ul,
+  li,
+  a,
+  p,
+  span {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .basic_info p {
+    font-size: 27px;
+    margin-top: 24px;
+  }
+
+  .description p,
+  .bio p,
+  .about p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 12px;
+  }
+
+  .skillset p {
+    margin-top: 18px;
+  }
+
+  .skillset span,
+  .content span,
+  .bio span,
+  .about span {
+    line-height: 32px;
+    font-size: 18px;
+    border-width: 4px;
+    padding: 4px 14px;
+    border-radius: 60px;
+    margin-top: 10px;
+    margin-right: 4px;
+  }
+
+  .about {
+    padding-top: 45px;
+    margin-top: 45px;
+    line-height: 32px;
+    font-size: 18px;
+  }
 }
