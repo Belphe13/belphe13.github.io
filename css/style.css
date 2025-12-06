@@ -79,13 +79,6 @@ body {
   margin-right: 5%;
 }
 
-.basic_info p {
-  font-size: 45px;
-  /* 75% */
-  margin-top: 40px;
-  color: #ffcc33;
-}
-
 .description p {
   font-size: 30px;
   /* 75% */
@@ -106,21 +99,6 @@ body {
 
 .bio a:hover {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.skillset p {
-  margin-top: 30px;
-  /* 75% */
-  color: #ffcc33;
-}
-
-.skillset span {
-  /* 75% */
-  line-height: 75px;
-  padding: 6px;
-  margin-top: 15px;
-  margin-right: 3.75px;
-  border: solid 6px #fff;
 }
 
 .content span {
@@ -231,6 +209,7 @@ body {
                 .about {
                         width: 90%;
                         padding-left: 5%;
+                        padding-right: 5%;
                 }
 }
 
@@ -238,35 +217,22 @@ body {
   ul,
   li,
   a,
+  i,
   p,
   span {
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
-  .basic_info p {
-    font-size: 27px;
-    margin-top: 24px;
-  }
-
-  .description p,
-  .bio p,
   .about p {
-    font-size: 18px;
-    line-height: 27px;
-    margin-top: 12px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 30px;
   }
 
-  .skillset p {
-    margin-top: 18px;
-  }
-
-  .skillset span,
-  .content span,
-  .bio span,
   .about span {
     line-height: 32px;
-    font-size: 18px;
+    font-size: 24px;
     border-width: 4px;
     padding: 4px 14px;
     border-radius: 60px;

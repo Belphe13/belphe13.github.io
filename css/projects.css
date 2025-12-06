@@ -222,6 +222,31 @@ s {
 	cursor: pointer;
 }
 
+@media (max-width: 600px) {
+	.title p {
+		font-size: 36px;
+	}
+
+	.description p {
+	font-size: 24px;
+	line-height: 32px;
+	}
+
+	ul,
+  li,
+  a,
+  i,
+  p,
+  span {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .subtitle p {
+	border-bottom: 4px solid #ffffff;
+  }
+}
+
 @media (max-width: 1200px) {
 	.content {
 		margin-left: 5%;
