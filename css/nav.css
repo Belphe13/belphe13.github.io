@@ -46,10 +46,12 @@ body {
 .nav {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  height: 75px;
+  height: 60px;
   /* 75% */
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,8 +63,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 20px;
   height: 100%;
+  position: relative;
 }
 
 .nav-toggle {
@@ -91,21 +94,32 @@ body {
   transition: transform 0.25s ease, opacity 0.25s ease, background 0.25s ease;
 }
 
-.nav-toggle__icon { top: 50%; transform: translateY(-50%); }
-.nav-toggle__icon::before { transform: translateY(-8px); }
-.nav-toggle__icon::after { transform: translateY(8px); }
+.nav-toggle__icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-toggle__icon::before,
+.nav-toggle__icon::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.nav-toggle__icon::before { transform: translate(-50%, -8px); }
+.nav-toggle__icon::after { transform: translate(-50%, 8px); }
 
 .nav-toggle.is-open .nav-toggle__icon { background: transparent; }
-.nav-toggle.is-open .nav-toggle__icon::before { transform: translateY(0) rotate(45deg); }
-.nav-toggle.is-open .nav-toggle__icon::after { transform: translateY(0) rotate(-45deg); }
+.nav-toggle.is-open .nav-toggle__icon::before { transform: translate(-50%, 0) rotate(45deg); }
+.nav-toggle.is-open .nav-toggle__icon::after { transform: translate(-50%, 0) rotate(-45deg); }
 
 .nav a {
-  line-height: 60px;
+  line-height: 54px;
   /* 75% */
   color: #fff;
   border-bottom: solid 6px #fff;
   /* 75% */
-  margin: auto 10px;
+  margin: 0 10px;
   /* 50% */
   font-size: 37.5px;
 }
@@ -182,6 +196,9 @@ body {
   padding-left: 15%;
   padding-right: 15%;
   margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
   padding-bottom: 30px;
 }
 
@@ -269,7 +286,10 @@ body {
   }
 
   .nav-menu {
-    display: none;
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .nav-toggle {
@@ -277,7 +297,10 @@ body {
   }
 
   .nav-menu.is-open {
-    display: flex;
+    display: flex !important;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -306,6 +329,9 @@ body {
     width: 100%;
     padding: 0 5%;
     margin-top: 0;
+    left: auto;
+    top: auto;
+    transform: none;
   }
 
   .nav-menu.is-open .dropdown_film a {

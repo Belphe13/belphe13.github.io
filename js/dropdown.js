@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenu?.classList.remove('is-open', 'show-film');
     navToggle?.classList.remove('is-open');
     navToggle?.setAttribute('aria-expanded', 'false');
+    navMenu?.setAttribute('aria-hidden', 'true');
     hideAllDropdowns();
   }
 
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenu?.classList.add('is-open');
     navToggle?.classList.add('is-open');
     navToggle?.setAttribute('aria-expanded', 'true');
+    navMenu?.setAttribute('aria-hidden', 'false');
   }
 
   function toggleMenu() {
@@ -138,4 +140,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   hideAllDropdowns();
+  navMenu?.setAttribute('aria-hidden', 'true');
 });
