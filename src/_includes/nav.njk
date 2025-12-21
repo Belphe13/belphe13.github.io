@@ -18,6 +18,7 @@
   <div id="nav-menu" class="nav-menu">
     <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>LILAN</a>
     <a href="/untitled-film/" class="dropdown-toggle film" {% if page.url in filmPages or page.url.startsWith('/cinepath') %}aria-current="page"{% endif %}>FILM</a>
+    <a href="/ufdp-performance/" {% if page.url == '/ufdp-performance/' %}aria-current="page"{% endif %}>PERFORMANCE</a>
     <a href="/cv/" {% if page.url == '/cv/' %}aria-current="page"{% endif %}>CV</a>
 
     <div class="dropdown_film">
