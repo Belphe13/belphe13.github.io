@@ -9,6 +9,18 @@
   '/cinepath/'
 ] %}
 
+{% set exhibitionPages = [
+  '/aide-memoire/',
+  '/alchemy/',
+  '/nowhere-near/',
+  '/atlas/',
+  '/aaff/',
+  '/mono-no-aware/',
+  '/risd-grad-show/',
+  '/dm/',
+  '/of-soiled-bodies/'
+] %}
+
 <div class="nav">
   <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
     <span class="sr-only">Toggle navigation</span>
@@ -18,6 +30,7 @@
   <div id="nav-menu" class="nav-menu">
     <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>LILAN</a>
     <a href="/untitled-film/" class="dropdown-toggle film" {% if page.url in filmPages or page.url.startsWith('/cinepath') %}aria-current="page"{% endif %}>FILM</a>
+    <a href="/aide-memoire/" class="dropdown-toggle exhibition" {% if page.url in exhibitionPages %}aria-current="page"{% endif %}>EXHIBITION</a>
     <a href="/ufdp-performance/" {% if page.url == '/ufdp-performance/' %}aria-current="page"{% endif %}>PERFORMANCE</a>
     <a href="/cv/" {% if page.url == '/cv/' %}aria-current="page"{% endif %}>CV</a>
 
@@ -30,6 +43,18 @@
       <a href="/woke-up/">I WOKE UP IN THE MORNING</a><br><br>
       <a href="/cineml/">CINEML: PARIS</a><br><br>
       <a href="/cinepath/">CINEPATH</a>
+    </div>
+
+    <div class="dropdown_exhibition">
+      <a href="/aide-memoire/">AIDE-MÉMOIRE</a><br><br>
+      <a href="/alchemy/">ALCHEMY</a><br><br>
+      <a href="/nowhere-near/">NOWHERE NEAR</a><br><br>
+      <a href="/atlas/">ATLAS</a><br><br>
+      <a href="/aaff/">ANN ARBOR FILM FESTIVAL</a><br><br>
+      <a href="/mono-no-aware/">MONO NO AWARE</a><br><br>
+      <a href="/risd-grad-show/">RISD GRAD SHOW</a><br><br>
+      <a href="/dm/">DIGITAL + MEDIA BIENNIAL</a><br><br>
+      <a href="/of-soiled-bodies/">OF SOILED BODIES</a>
     </div>
   </div>
 </div>

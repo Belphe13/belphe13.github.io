@@ -3,12 +3,15 @@
 document.addEventListener('DOMContentLoaded', () => {
   const filmLink = document.querySelector('.dropdown-toggle.film');
   const filmDropdown = document.querySelector('.dropdown_film');
+  const exhibitionLink = document.querySelector('.dropdown-toggle.exhibition');
+  const exhibitionDropdown = document.querySelector('.dropdown_exhibition');
   const navMenu = document.querySelector('#nav-menu');
   const navToggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.nav');
 
   const dropdowns = [
-    { link: filmLink, menu: filmDropdown }
+    { link: filmLink, menu: filmDropdown, name: 'film' },
+    { link: exhibitionLink, menu: exhibitionDropdown, name: 'exhibition' }
   ];
 
   const isMobileView = () => window.matchMedia('(max-width: 900px)').matches;
@@ -22,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
         link.setAttribute('aria-expanded', 'false');
       }
     });
-    navMenu?.classList.remove('show-film');
+    navMenu?.classList.remove('show-film', 'show-exhibition');
   }
 
   function closeMenu() {
-    navMenu?.classList.remove('is-open', 'show-film');
+    navMenu?.classList.remove('is-open', 'show-film', 'show-exhibition');
     navToggle?.classList.remove('is-open');
     navToggle?.setAttribute('aria-expanded', 'false');
     navMenu?.setAttribute('aria-hidden', 'true');
@@ -58,20 +61,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function showMobileFilmMenu() {
+  function showMobileMenu(name, dropdown, link) {
     if (!navMenu?.classList.contains('is-open')) {
       openMenu();
     }
-    const isFilmOpen = navMenu?.classList.contains('show-film');
-    hideAllDropdowns();
-    if (isFilmOpen) {
-      return;
+    const isMenuOpen = navMenu?.classList.contains(`show-${name}`);
+    
+     // If switching between menus, we need to hide others but keep main nav open
+    if (!isMenuOpen) {
+       hideAllDropdowns();
+       navMenu?.classList.add(`show-${name}`);
+       if (dropdown) {
+         dropdown.style.display = 'block';
+       }
+       link?.setAttribute('aria-expanded', 'true');
+    } else {
+      // If clicking already open menu, maybe close it? Or do nothing?
+      // Current behavior for film seem to be: receive click -> showMobileFilmMenu -> return if open.
+      // So if it is open, we do nothing.
     }
-    navMenu?.classList.add('show-film');
-    if (filmDropdown) {
-      filmDropdown.style.display = 'block';
-    }
-    filmLink?.setAttribute('aria-expanded', 'true');
   }
 
   navToggle?.addEventListener('click', (event) => {
@@ -79,40 +87,47 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleMenu();
   });
 
-  filmLink?.addEventListener('click', (event) => {
-    if (isMobileView()) {
-      event.preventDefault();
-      event.stopPropagation();
-      showMobileFilmMenu();
-      return;
-    }
+  // Attach listeners to all dropdowns
+  dropdowns.forEach(({ link, menu, name }) => {
+    if (!link) return;
 
-    const isOpen = filmDropdown && filmDropdown.style.display === 'block';
-    if (!isOpen) {
-      event.preventDefault();
-      openDropdown(filmDropdown, filmLink);
-      return;
-    }
+    link.addEventListener('click', (event) => {
+      if (isMobileView()) {
+        event.preventDefault();
+        event.stopPropagation();
+        showMobileMenu(name, menu, link);
+        return;
+      }
 
-    hideAllDropdowns();
+      const isOpen = menu && menu.style.display === 'block';
+      if (!isOpen) {
+        event.preventDefault();
+        openDropdown(menu, link);
+        return;
+      }
+
+      hideAllDropdowns();
+    });
   });
 
   document.addEventListener('click', (event) => {
     const clickedInsideDropdown = dropdowns.some(({ menu }) => menu && menu.contains(event.target));
-    const clickedFilm = filmLink && filmLink.contains(event.target);
+    const clickedLink = dropdowns.some(({ link }) => link && link.contains(event.target));
 
     if (isMobileView()) {
       const clickedInsideNav = nav && nav.contains(event.target);
       if (!clickedInsideNav) {
         closeMenu();
       }
-      if (!clickedInsideDropdown && !clickedFilm) {
-        hideAllDropdowns();
+      if (!clickedInsideDropdown && !clickedLink) {
+         // Don't hide dropdowns in mobile immediately on outside click if nav is open?
+         // Original code: if (!clickedInsideDropdown && !clickedFilm) hideAllDropdowns()
+         hideAllDropdowns();
       }
       return;
     }
 
-    if (!clickedInsideDropdown && !clickedFilm) {
+    if (!clickedInsideDropdown && !clickedLink) {
       hideAllDropdowns();
     }
   });

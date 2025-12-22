@@ -109,6 +109,19 @@
 	background-color: white;
 }
 
+/* Exhibition pages background */
+#aide-memoire,
+#alchemy,
+#nowhere-near,
+#atlas,
+#aaff,
+#mono-no-aware,
+#risd-grad-show,
+#dm,
+#of-soiled-bodies {
+	background-image: url("../img/background/bg_projects.jpg");
+}
+
 #nature_lab, #p5js {
 	background-image: url("../img/background/bg_risd-beach.JPG");
 }
