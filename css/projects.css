@@ -118,11 +118,13 @@
 #mono-no-aware,
 #risd-grad-show,
 #dm,
-#of-soiled-bodies {
+#of-soiled-bodies,
+#synthetic-realities {
 	background-image: url("../img/background/bg_projects.jpg");
 }
 
-#nature_lab, #p5js {
+#nature_lab,
+#p5js {
 	background-image: url("../img/background/bg_risd-beach.JPG");
 }
 
@@ -242,38 +244,39 @@ s {
 	}
 
 	.description p {
-	font-size: 24px;
-	line-height: 32px;
+		font-size: 24px;
+		line-height: 32px;
 	}
 
 	ul,
-  li,
-  a,
-  i,
-  p,
-  span {
-    font-size: 24px;
-    line-height: 32px;
-  }
+	li,
+	a,
+	i,
+	p,
+	span {
+		font-size: 24px;
+		line-height: 32px;
+	}
 
-  .content span {
-    line-height: 32px;
-    font-size: 24px;
-    border-width: 4px;
-    padding: 4px 14px;
-    border-radius: 60px;
-    margin-top: 10px;
-    margin-right: 4px;
-  }
+	.content span {
+		line-height: 32px;
+		font-size: 24px;
+		border-width: 4px;
+		padding: 4px 14px;
+		border-radius: 60px;
+		margin-top: 10px;
+		margin-right: 4px;
+	}
 
-  .subtitle p {
-	border-bottom: 4px solid #ffffff;
-  }
+	.subtitle p {
+		border-bottom: 4px solid #ffffff;
+	}
 
-  .citation p, .citation i {
-    font-size: 20px;
-	line-height: 20px;
-    color: #ffffff;
+	.citation p,
+	.citation i {
+		font-size: 20px;
+		line-height: 20px;
+		color: #ffffff;
 	}
 }
 
