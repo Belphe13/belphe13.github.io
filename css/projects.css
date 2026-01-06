@@ -59,7 +59,8 @@
 	background-image: url("../img/background/bg_wokeup.png");
 }
 
-#perfect-human {
+#perfect-human,
+#synthetic-realities {
 	background-image: url("../img/film/916761730012_11A.jpg");
 }
 
@@ -110,24 +111,30 @@
 }
 
 /* Exhibition pages background */
-#aide-memoire,
 #alchemy,
 #nowhere-near,
-#atlas,
 #aaff,
-#mono-no-aware,
 #risd-grad-show,
 #dm,
-#of-soiled-bodies,
-#synthetic-realities {
+#of-soiled-bodies {
 	background-image: url("../img/background/bg_projects.jpg");
 }
 
-#nature_lab,
-#p5js {
+#atlas {
+	background-image: url("../img/background/bg_ml2.jpeg");
+}
+
+#aide-memoire {
+	background-image: url("../img/background/bg_am.jpg");
+}
+
+#dm {
 	background-image: url("../img/background/bg_risd-beach.JPG");
 }
 
+#mono-no-aware {
+	background-image: url("../img/background/bg_mono-xvi.jpeg");
+}	
 /* css for each project page */
 .container {
 	height: 100%;
@@ -237,11 +244,52 @@ s {
 	cursor: pointer;
 }
 
+
+.poster {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	align-items: stretch;
+	gap: 10px;
+}
+
+.poster img {
+	width: calc(25% - 7.5px);
+	object-fit: cover;
+}
+
+.quotation p {
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 37.5px;
+    color: #ffffff;
+    font-style: italic;
+    border-left: 6px solid #ffcc33;
+    padding-left: 30px;
+}
+
+.quotation .author {
+    font-size: 22.5px;
+    color: #ffcc33;
+    margin-top: 10px;
+    text-align: right;
+	font-weight: bold;
+}
+
 @media (max-width: 600px) {
+	.poster {
+		flex-wrap: wrap;
+	}
+
+	.poster img {
+		width: calc(50% - 5px);
+	}
+
 	.title p {
 		font-size: 36px;
 		line-height: 36px;
 	}
+
 
 	.description p {
 		font-size: 24px;
