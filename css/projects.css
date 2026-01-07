@@ -258,6 +258,18 @@ s {
 	object-fit: cover;
 }
 
+.photo_display {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.photo_display img {
+    object-fit: cover;
+}
+
 .quotation p {
     font-size: 30px;
     margin-top: 20px;
