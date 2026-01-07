@@ -17,5 +17,13 @@
   },
   "dependencies": {
     "jsdom": "^26.1.0"
+  },
+  "overrides": {
+    "@11ty/eleventy": {
+      "js-yaml": "4.1.1",
+      "gray-matter": {
+        "js-yaml": "3.14.2"
+      }
+    }
   }
 }
