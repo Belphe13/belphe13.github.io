@@ -99,9 +99,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
+      event.preventDefault(); // Always prevent navigation
+      
       const isOpen = menu && menu.style.display === 'block';
       if (!isOpen) {
-        event.preventDefault();
         openDropdown(menu, link);
         return;
       }
