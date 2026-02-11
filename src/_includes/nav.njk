@@ -22,16 +22,56 @@
   '/of-soiled-bodies/'
 ] %}
 
-<div class="nav">
-  <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
-    <span class="sr-only">Toggle navigation</span>
-    <span class="nav-toggle__icon" aria-hidden="true"></span>
-  </button>
+{% set nextPageUrl = "" %}
+{% if page.url in filmPages %}
+  {% set found = false %}
+  {% for url in filmPages %}
+    {% if found == false %}
+      {% if url == page.url %}
+        {% set found = true %}
+        {% if loop.last %}
+          {% set nextPageUrl = filmPages[0] %}
+        {% else %}
+          {% set nextPageUrl = filmPages[loop.index0 + 1] %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% elif page.url in exhibitionPages %}
+  {% set found = false %}
+  {% for url in exhibitionPages %}
+    {% if found == false %}
+      {% if url == page.url %}
+        {% set found = true %}
+        {% if loop.last %}
+          {% set nextPageUrl = exhibitionPages[0] %}
+        {% else %}
+          {% set nextPageUrl = exhibitionPages[loop.index0 + 1] %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
-  <button class="nav-back" aria-label="Go back" style="display: none;">
-    <span class="sr-only">Go back</span>
-    <span class="nav-back__icon" aria-hidden="true"></span>
-  </button>
+<div class="nav">
+  <div class="nav-mobile-controls">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="nav-toggle__icon" aria-hidden="true"></span>
+    </button>
+
+    <button class="nav-back" aria-label="Go back" style="display: none;">
+      <span class="sr-only">Go back</span>
+      <span class="nav-back__icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  {% if nextPageUrl %}
+  <a href="{{ nextPageUrl }}" class="nav-next" aria-label="Next Project">
+    <span class="nav-next__text">Next</span>
+    <span class="nav-next__icon" aria-hidden="true"></span>
+  </a>
+  {% endif %}
 
   <div id="nav-menu" class="nav-menu">
     <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>LILAN</a>

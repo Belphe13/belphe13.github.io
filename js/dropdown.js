@@ -32,12 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  const navNext = document.querySelector('.nav-next');
+
   function closeMenu() {
     navMenu?.classList.remove('is-open', 'show-film', 'show-exhibition');
     navToggle?.classList.remove('is-open');
     navToggle?.setAttribute('aria-expanded', 'false');
     navMenu?.setAttribute('aria-hidden', 'true');
     hideAllDropdowns();
+    if (navNext) {
+      navNext.style.display = 'flex';
+    }
   }
 
   function openMenu() {
@@ -45,6 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle?.classList.add('is-open');
     navToggle?.setAttribute('aria-expanded', 'true');
     navMenu?.setAttribute('aria-hidden', 'false');
+    if (navNext) {
+      navNext.style.display = 'none';
+    }
   }
 
   function toggleMenu() {
@@ -164,6 +172,13 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', () => {
     if (!isMobileView()) {
       closeMenu();
+      // On desktop, nav-next should be hidden by CSS, but inline style overrides it.
+      if (navNext) navNext.style.display = '';
+    } else {
+        // On mobile resize (e.g. orientation change), if menu is closed, ensure navNext is visible.
+        if (navNext && !navMenu?.classList.contains('is-open')) {
+            navNext.style.display = 'flex';
+        }
     }
   });
 
