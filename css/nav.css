@@ -306,6 +306,53 @@ body {
     display: flex;
   }
 
+  .nav-back {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    margin-left: 10px; /* Space between close button and back button */
+  }
+
+  /* Make sure back button is visible when needed */
+  .nav-menu.is-open.show-film ~ .nav-back,
+  .nav-menu.is-open.show-exhibition ~ .nav-back {
+      display: flex;
+  }
+  
+  /* But wait, nav-back is a sibling of nav-menu, so we can use sibling selector if nav-back comes after. 
+     In HTML structure: nav-back, nav-toggle, nav-menu.
+     So we can't style nav-back based on nav-menu class with sibling selector if nav-menu is after.
+     We will handle visibility with JS.
+  */
+
+  .nav-back__icon {
+    width: 22px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: relative;
+  }
+
+  .nav-back__icon::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    top: 50%;
+    left: 1px;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
   .nav-menu.is-open {
     display: flex !important;
     flex-direction: column;

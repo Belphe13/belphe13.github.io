@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const exhibitionDropdown = document.querySelector('.dropdown_exhibition');
   const navMenu = document.querySelector('#nav-menu');
   const navToggle = document.querySelector('.nav-toggle');
+  const navBack = document.querySelector('.nav-back');
   const nav = document.querySelector('.nav');
 
   const dropdowns = [
@@ -26,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     navMenu?.classList.remove('show-film', 'show-exhibition');
+    if (navBack) {
+      navBack.style.display = 'none';
+    }
   }
 
   function closeMenu() {
@@ -75,6 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
          dropdown.style.display = 'block';
        }
        link?.setAttribute('aria-expanded', 'true');
+       if (navBack) {
+         navBack.style.display = 'flex';
+       }
     } else {
       // If clicking already open menu, maybe close it? Or do nothing?
       // Current behavior for film seem to be: receive click -> showMobileFilmMenu -> return if open.
@@ -85,6 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
   navToggle?.addEventListener('click', (event) => {
     event.stopPropagation();
     toggleMenu();
+  });
+
+  navBack?.addEventListener('click', (event) => {
+    event.stopPropagation();
+    hideAllDropdowns();
   });
 
   // Attach listeners to all dropdowns
