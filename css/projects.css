@@ -134,7 +134,8 @@
 
 #mono-no-aware {
 	background-image: url("../img/background/bg_mono-xvi.jpeg");
-}	
+}
+
 /* css for each project page */
 .container {
 	height: 100%;
@@ -259,32 +260,32 @@ s {
 }
 
 .photo_display {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    align-items: stretch;
-    gap: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	align-items: stretch;
+	gap: 10px;
 }
 
 .photo_display img {
-    object-fit: cover;
+	object-fit: cover;
 }
 
 .quotation p {
-    font-size: 30px;
-    margin-top: 20px;
-    line-height: 37.5px;
-    color: #ffffff;
-    font-style: italic;
-    border-left: 6px solid #ffcc33;
-    padding-left: 30px;
+	font-size: 30px;
+	margin-top: 20px;
+	line-height: 37.5px;
+	color: #ffffff;
+	font-style: italic;
+	border-left: 6px solid #ffcc33;
+	padding-left: 30px;
 }
 
 .quotation .author {
-    font-size: 22.5px;
-    color: #ffcc33;
-    margin-top: 10px;
-    text-align: right;
+	font-size: 22.5px;
+	color: #ffcc33;
+	margin-top: 10px;
+	text-align: right;
 	font-weight: bold;
 }
 
@@ -349,4 +350,11 @@ s {
 		padding-right: 0;
 		margin-top: 80px;
 	}
+}
+
+/* Responsive video embeds for specific projects */
+.content iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 700 / 500;
 }
