@@ -251,3 +251,9 @@ body {
     font-size: 18px;
   }
 }
+
+@media (min-width: 901px) {
+  .mobile-tablet-only {
+    display: none;
+  }
+}
