@@ -281,6 +281,11 @@ s {
 	padding-left: 30px;
 }
 
+.quotation a {
+	font-size: 30px;
+	border-bottom: solid 4.5px;
+}
+
 .quotation .author {
 	font-size: 22.5px;
 	color: #ffcc33;
@@ -334,6 +339,11 @@ s {
 	}
 
 	.quotation p {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.quotation a {
 		font-size: 24px;
 		line-height: 32px;
 	}
