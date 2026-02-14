@@ -240,6 +240,10 @@ body {
     margin-right: 4px;
   }
 
+  .about span:hover {
+    border: solid 4px #ffcc33;
+  }
+
   .about {
     padding-top: 45px;
     margin-top: 45px;

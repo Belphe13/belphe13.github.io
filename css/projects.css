@@ -329,6 +329,19 @@ s {
 		margin-right: 4px;
 	}
 
+	.content span:hover {
+		border: solid 4px #ffcc33;
+	}
+
+	.quotation p {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.quotation .author {
+		font-size: 20px;
+	}
+
 	.subtitle p {
 		border-bottom: 4px solid #ffffff;
 	}
