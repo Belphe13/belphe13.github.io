@@ -9,10 +9,58 @@
     gtag('js', new Date());
     gtag('config', 'G-V4G00WYERF');
   </script>
+
+  {%- set siteUrl = "https://lilanyang.studio" -%}
+  {%- set siteName = "Lilan Yang" -%}
+  {%- set siteAuthor = "Lilan Yang" -%}
+  {%- set defaultDescription = "Lilan Yang is a moving image artist working with 16mm film, installation, photography, and performance. Based in Boston, exploring migration, memory, and perception." -%}
+  {%- set pageUrl = siteUrl + page.url -%}
+  {%- set rawDescription = description | default(defaultDescription) -%}
+  {%- set cleanDescription = rawDescription | striptags | replace('  ', ' ') | trim -%}
+  {%- set pageImage = og_image | default("/img/index/ecfc.png") -%}
+  {%- if "http" in pageImage -%}
+    {%- set pageImageAbs = pageImage -%}
+  {%- else -%}
+    {%- set pageImageAbs = siteUrl + pageImage -%}
+  {%- endif -%}
+  {%- set pageSchemaType = schema_type | default('WebPage') -%}
+  {%- set ogType = og_type | default('website') -%}
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ description }}">
+  <meta name="description" content="{{ cleanDescription }}">
+  {%- if keywords %}
+  <meta name="keywords" content="{{ keywords }}">
+  {%- endif %}
+  <meta name="author" content="{{ siteAuthor }}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="canonical" href="{{ pageUrl }}">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/favicon.ico" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="{{ ogType }}">
+  <meta property="og:site_name" content="{{ siteName }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ cleanDescription }}">
+  <meta property="og:url" content="{{ pageUrl }}">
+  <meta property="og:image" content="{{ pageImageAbs }}">
+  <meta property="og:image:alt" content="{{ title }}">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ cleanDescription }}">
+  <meta name="twitter:image" content="{{ pageImageAbs }}">
+  <meta name="twitter:image:alt" content="{{ title }}">
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+
   <link rel="stylesheet" href="/css/nav.css" type="text/css">
   {% if styles %}
   {% for style in styles %}
@@ -25,6 +73,105 @@
   <script src="/{{ script }}"></script>
   {% endfor %}
   {% endif %}
+
+  {%- if page.url == '/' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lilan Yang",
+    "alternateName": "Lilan Yang Studio",
+    "url": "{{ siteUrl }}",
+    "image": "{{ siteUrl }}/img/index/ecfc.png",
+    "jobTitle": "Artist and Filmmaker",
+    "description": "Moving image artist working with 16mm film, installation, photography, and performance. Rooted in the materiality of 16mm, the practice explores the flux of migration, the decay of memory, and the intricacies of perception.",
+    "birthPlace": { "@type": "Place", "name": "Chongqing, China" },
+    "workLocation": {
+      "@type": "Place",
+      "name": "Boston, Massachusetts, USA",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Boston",
+        "addressRegion": "MA",
+        "addressCountry": "US"
+      }
+    },
+    "nationality": { "@type": "Country", "name": "China" },
+    "knowsAbout": [
+      "16mm film",
+      "Experimental film",
+      "Moving image art",
+      "Film installation",
+      "Analog filmmaking",
+      "Computational photography",
+      "Machine learning in art",
+      "Memory and perception",
+      "Migration"
+    ],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Rhode Island School of Design", "sameAs": "https://www.risd.edu/" },
+      { "@type": "CollegeOrUniversity", "name": "University of Illinois at Urbana-Champaign", "sameAs": "https://illinois.edu/" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/lilanyang.studio/"
+    ],
+    "email": "mailto:lilanyang.studio@gmail.com"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ siteName }}",
+    "alternateName": "Lilan Yang Studio",
+    "url": "{{ siteUrl }}",
+    "inLanguage": "en",
+    "author": {
+      "@type": "Person",
+      "name": "Lilan Yang",
+      "url": "{{ siteUrl }}"
+    }
+  }
+  </script>
+  {%- endif %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{{ pageSchemaType }}",
+    "name": {{ title | dump | safe }},
+    "headline": {{ title | dump | safe }},
+    "description": {{ cleanDescription | dump | safe }},
+    "url": "{{ pageUrl }}",
+    "image": "{{ pageImageAbs }}",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "{{ siteName }}",
+      "url": "{{ siteUrl }}"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Lilan Yang",
+      "url": "{{ siteUrl }}"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Lilan Yang",
+      "url": "{{ siteUrl }}"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Lilan Yang",
+      "url": "{{ siteUrl }}"
+    }{% if date_published %},
+    "datePublished": "{{ date_published }}"{% endif %}{% if genre %},
+    "genre": {{ genre | dump | safe }}{% endif %}{% if artMedium %},
+    "artMedium": {{ artMedium | dump | safe }}{% endif %}{% if artform %},
+    "artform": {{ artform | dump | safe }}{% endif %}
+  }
+  </script>
 </head>
 <body{% if body_id %} id="{{ body_id }}"{% endif %}>
   <div class="container">
