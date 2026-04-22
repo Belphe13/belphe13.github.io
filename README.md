@@ -1,6 +1,6 @@
 # lilanyang.studio
 
-Source for [lilanyang.studio](https://lilanyang.studio) — Lilan Yang's moving-image and installation portfolio. Built with [Eleventy](https://www.11ty.dev/) and deployed to GitHub Pages (with a Netlify mirror).
+Source for [lilanyang.studio](https://lilanyang.studio) — Lilan Yang's moving-image and installation portfolio. Built with [Eleventy](https://www.11ty.dev/) and deployed to GitHub Pages.
 
 ## Local development
 
@@ -70,7 +70,4 @@ Eleventy writes `src/foo.html` to `_site/foo/index.html`. An `afterBuild` hook i
 
 ## Deployment
 
-- **GitHub Pages (lilanyang.studio):** pushes to `master` or `develop` trigger `.github/workflows/deploy.yml`, which builds the site and publishes `_site/` via `actions/deploy-pages`.
-- **Netlify mirror (lilanyang.netlify.app):** set a repo secret `NETLIFY_BUILD_HOOK` to Netlify's build-hook URL. The same workflow fires it after the Pages build. If the secret is unset the step logs a skip and the Pages deploy still succeeds.
-
-The custom domain is pinned via the `CNAME` file at the repo root.
+Pushes to `master` or `develop` trigger `.github/workflows/deploy.yml`, which builds the site and publishes `_site/` to GitHub Pages via `actions/deploy-pages`. The custom domain (`lilanyang.studio`) is pinned via the `CNAME` file at the repo root.
