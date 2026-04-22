@@ -24,6 +24,8 @@
     {%- set pageImageAbs = siteUrl + pageImage -%}
   {%- endif -%}
   {%- set pageSchemaType = schema_type | default('WebPage') -%}
+  {%- set creativeWorkTypes = ['CreativeWork','VisualArtwork','Movie','VideoObject','Photograph','ImageObject','Article','BlogPosting','MediaObject','Painting','Sculpture'] -%}
+  {%- set isCreativeWork = pageSchemaType in creativeWorkTypes -%}
   {%- set ogType = og_type | default('website') -%}
 
   <meta charset="UTF-8">
@@ -150,7 +152,7 @@
       "@type": "WebSite",
       "name": "{{ siteName }}",
       "url": "{{ siteUrl }}"
-    },
+    }{% if isCreativeWork %},
     "author": {
       "@type": "Person",
       "name": "Lilan Yang",
@@ -165,7 +167,7 @@
       "@type": "Person",
       "name": "Lilan Yang",
       "url": "{{ siteUrl }}"
-    }{% if date_published %},
+    }{% endif %}{% if date_published %},
     "datePublished": "{{ date_published }}"{% endif %}{% if genre %},
     "genre": {{ genre | dump | safe }}{% endif %}{% if artMedium %},
     "artMedium": {{ artMedium | dump | safe }}{% endif %}{% if artform %},
