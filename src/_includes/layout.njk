@@ -152,7 +152,19 @@
       "@type": "WebSite",
       "name": "{{ siteName }}",
       "url": "{{ siteUrl }}"
-    }{% if isCreativeWork %},
+    }{% if pageSchemaType == 'ProfilePage' %},
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Lilan Yang",
+      "alternateName": "Lilan Yang Studio",
+      "url": "{{ siteUrl }}",
+      "image": "{{ pageImageAbs }}",
+      "jobTitle": "Artist and Filmmaker",
+      "description": {{ cleanDescription | dump | safe }},
+      "sameAs": [
+        "https://www.instagram.com/lilanyang.studio/"
+      ]
+    }{% endif %}{% if isCreativeWork %},
     "author": {
       "@type": "Person",
       "name": "Lilan Yang",
