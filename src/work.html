@@ -1,83 +1,56 @@
 ---
-layout: layout.njk
-title: "Work Index — Lilan Yang"
-description: "Index of moving image works by Lilan Yang, including Everything Comes Full Circle, The Perfect Human, I Woke Up in the Morning, CineML: Paris, and Cinepath."
-keywords: "Lilan Yang, moving image, 16mm film, experimental film, installation art, film index"
-body_id: index
-styles:
-  - css/style.css
-  - css/index.css
+permalink: /work/index.html
+eleventyExcludeFromCollections: true
 ---
+<!doctype html>
 <!--
-		<div class="content" style="margin-top: 5%">
-		
-		<div class="bio">
-			<p>Lilan Yang is an artist, cinéphile, designer and engineer whose practice involves both digital and analog technologies such as computing, data visualization, machine learning, photography, and filmmaking. 
-				
-				Her practice focuses on how we perceive the world through analog optical apparatus compared to digitally shared media, how memories can be multidimensional and fragile, and our recollections of people and places can be distorted, unrecognizable and fictitious. She holds a BS in Computer Engineering from University of Illinois at Urbana-Champaign. She recently received her MFA in Digital + Media from Rhode Island School of Design. 
-			
-			She lives with a golden retriever puppy called <a href="https://www.instagram.com/ollie.lil.yellow/" target="_blank" style="font-size: 30px; border-bottom: solid 4.5px;">Ollie</a>.
-			</p>
-		</div>
+  Redirect stub. /work was an unlinked legacy index page (the nav's WORK link
+  goes to /untitled-film/) but Google had it indexed, so serving a bare 404
+  would just leave a dead result in search for weeks.
 
+  GitHub Pages cannot issue a real 301, so this is the documented fallback: an
+  instant meta refresh plus a canonical pointing at the home page. Google treats
+  a zero-delay refresh as a soft redirect and consolidates the URL into the
+  canonical target. The inline script makes it immediate for real visitors, who
+  never see this page.
 
-		<br><br><br>
+  No layout on purpose — pulling in layout.njk would render the full nav and
+  background for a page nobody is meant to look at.
 
-		<a href="https://www.instagram.com/belphe13tuck/" target="_blank"><span>INSTAGRAM ⏎</span></a>
-
-		<a href="https://opensea.io/Lilan-Yang" target="_blank"><span>OPENSEA ⏎</span></a>
-
-		<a href="https://www.linkedin.com/in/lilanyang/" target="_blank"><span>LINKEDIN ⏎</span></a><br>
-
-		<a href="/pdf/Yang_Lilan_Resume.pdf" target="_blank"><span>RESUME ⏎</span></a>
-
-		<a href="/pdf/Yang_Lilan_CV.pdf" target="_blank"><span>CV ⏎</span></a><br>
-
-		<a href="#down"><span>INDEX ▼</span></a>
-	
-		<br>
-	</div>
+  The original page content is in git history: git show 51e7c7c:src/work.html
+  Excluded from collections so it stays out of sitemap.xml.
 -->
-		<div class="projects-index" id="down">
+<html lang="en">
 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Redirecting — Lilan Yang</title>
+	<link rel="canonical" href="https://lilanyang.studio/">
+	<meta http-equiv="refresh" content="0; url=/">
+	<script>window.location.replace("/");</script>
+	<style>
+		body {
+			background: #000;
+			color: #fff;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: bold;
+			margin: 0;
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 24px;
+		}
 
+		a {
+			color: #ffcc33;
+		}
+	</style>
+</head>
 
-			<div id="projects-ecfc" class="box">
-				<a href="/ecfc/">
-					<img src="/img/index/everything-comes-full-circle-thumbnail.webp" loading="eager" fetchpriority="high" decoding="async" alt="Everything Comes Full Circle — 16mm film installation with inkjet-printed film">
-					<p>EVERYTHING COMES FULL CIRCLE<br><span class="extra">16mm Film Installation with Inkjet-Printed
-							Film</span></p>
-				</a>
-			</div>
+<body>
+	<p>This page has moved. <a href="/">Go to lilanyang.studio</a>.</p>
+</body>
 
-
-<div id="projects-perfect-human" class="box">
-				<a href="/perfect-human/">
-					<img src="/img/index/the-perfect-human-thumbnail.webp" loading="lazy" decoding="async" alt="The Perfect Human — laser-printed-and-cut 16mm film remake with StyleGAN2">
-					<p>THE PERFECT HUMAN<br><span class="extra">Laser-Printed-and-Cut 16mm Film Remake with
-							StyleGAN2</span></p>
-				</a>
-			</div>
-
-						<div id="projects-woke-up" class="box">
-				<a href="/woke-up/">
-					<img src="/img/index/i-woke-up-in-the-morning-thumbnail.webp" loading="lazy" decoding="async" alt="I Woke Up in the Morning — 16mm film of Boston and Texas">
-					<p>I WOKE UP IN THE MORNING<br><span class="extra">16mm Film of Boston and Texas</span></p>
-				</a>
-			</div>
-
-			<div id="projects-cineml" class="box">
-				<a href="/cineml/">
-					<img src="/img/index/cineml-paris-thumbnail.webp" loading="lazy" decoding="async" alt="CineML: Paris — a city symphony of Paris made with machine learning">
-					<p>CINE-ML<br><span class="extra">City Symphony of Paris made with Machine Learning</span></p>
-				</a>
-			</div>
-
-			<div id="projects-cinepath" class="box">
-				<a href="/cinepath/">
-					<img src="/img/index/cinepath-thumbnail.webp" loading="lazy" decoding="async" alt="Cinepath — film location data visualization with Google Maps">
-					<p>CINEPATH<br><span class="extra">Film Location Data Visualization with Google Maps</span></p>
-				</a>
-			</div>
-
-		</div><!-- end of content -->
+</html>

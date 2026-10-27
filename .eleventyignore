@@ -1,9 +1,0 @@
-# Unlinked legacy work index. Nothing in the nav or llms.txt points at it — the
-# nav's WORK link goes to /untitled-film/ — so it is not built, not written to
-# _site, and not listed in sitemap.xml. The source is kept for reference;
-# remove this line to publish it again.
-#
-# Note: `permalink: false` in the page's front matter is NOT enough. Eleventy
-# still renders the template, and nav.njk's `page.url.startsWith('/cinepath')`
-# throws once page.url is false.
-src/work.html
