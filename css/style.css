@@ -158,6 +158,7 @@ body {
 
   /* not changed */
   position:fixed;
+  height: 100%;
   z-index: 2;
   line-height: 45px;
   font-size: 22.5px;
@@ -177,7 +178,6 @@ body {
   line-height: 45px;
   font-size: 22.5px;
   color: #fff;
-  display: inline-flexbox;
 }
 
 .about a:hover {
@@ -255,5 +255,23 @@ body {
 @media (min-width: 901px) {
   .mobile-tablet-only {
     display: none;
+  }
+}
+
+/* Mobile/tablet: html and body are locked to height:100% and .about is fixed, so
+   the page cannot scroll. Anchor the panel between the nav and the bottom edge and
+   let it scroll internally, keeping the links below the bio reachable on short
+   screens (iPhone SE/8) and in landscape. */
+@media (max-width: 900px) {
+  .about {
+    top: 75px;
+    bottom: 0;
+    height: auto;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 }

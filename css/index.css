@@ -167,3 +167,26 @@
 a:hover .extra {
 	display: inline-block;
 }
+/* Mobile/tablet: .box img is sized by height alone and floated right, so a
+   551px-wide thumbnail in a ~390px box loses its left 161px entirely rather than
+   being cropped evenly. Fit it to the box and crop from the centre instead.
+   Desktop keeps the float, where the image is meant to sit right of the artwork. */
+@media (max-width: 900px) {
+
+  .box img,
+  .box iframe {
+    float: none;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* .box p is absolutely positioned but sets no top/left, so it relied on its
+     static position being at the top of the box while the image was floated out
+     of flow. Un-floating the image would push the caption 200px down, so anchor
+     it explicitly; the existing 70px margins still provide the inset. */
+  .box p {
+    top: 0;
+    left: 0;
+  }
+}
