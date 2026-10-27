@@ -59,27 +59,27 @@
 }
 
 #projects {
-	background-image: url("../img/background/bg_projects.jpg");
+	background-image: url("../img/background/bg_projects.webp");
 }
 
 #cineml {
-	background-image: url("../img/background/bg_ml.png");
+	background-image: url("../img/background/bg_ml.webp");
 }
 
 #bolex {
-	background-image: url("../img/background/bg_bolex.png");
+	background-image: url("../img/background/bg_bolex.webp");
 }
 
 #wokeup {
-	background-image: url("../img/background/bg_wokeup.png");
+	background-image: url("../img/background/bg_wokeup.webp");
 }
 
 #perfect-human {
-	background-image: url("../img/film/916761730012_11A.jpg");
+	background-image: url("../img/film/916761730012_11A.webp");
 }
 
 #ecfc {
-	background-image: url("../img/background/bg_ecfc.png");
+	background-image: url("../img/background/bg_ecfc.webp");
 }
 
 /* color for boxes on project pages */

@@ -31,12 +31,12 @@ body {
 }
 
 #index {
-  background-image: url("../img/background/bg_places.jpg");
+  background-image: url("../img/background/bg_places.webp");
 }
 
 #places,
 #profile {
-  background-image: url("../img/background/bg_places.jpg");
+  background-image: url("../img/background/bg_places.webp");
 }
 
 #people {

@@ -44,66 +44,66 @@
 }
 
 #projects {
-	background-image: url("../img/background/bg_projects.jpg");
+	background-image: url("../img/background/bg_projects.webp");
 }
 
 #cineml {
-	background-image: url("../img/background/bg_ml.png");
+	background-image: url("../img/background/bg_ml.webp");
 }
 
 #bolex {
-	background-image: url("../img/background/bg_bolex.png");
+	background-image: url("../img/background/bg_bolex.webp");
 }
 
 #wokeup {
-	background-image: url("../img/background/bg_wokeup.png");
+	background-image: url("../img/background/bg_wokeup.webp");
 }
 
 #perfect-human,
 #synthetic-realities {
-	background-image: url("../img/film/916761730012_11A.jpg");
+	background-image: url("../img/film/916761730012_11A.webp");
 }
 
 #ecfc {
-	background-image: url("../img/background/bg_ecfc.png");
+	background-image: url("../img/background/bg_ecfc.webp");
 }
 
 #force {
-	background-image: url("../img/background/bg_ipark.png");
+	background-image: url("../img/background/bg_ipark.webp");
 }
 
 #untitled-pvd-bos {
-	background-image: url("../img/background/bg_projects.jpg");
+	background-image: url("../img/background/bg_projects.webp");
 }
 
 #untitled-film {
-	background-image: url("../img/background/bg_untitled-film.jpg");
+	background-image: url("../img/background/bg_untitled-film.webp");
 }
 
 /* background image in project pages */
 #cinepath {
-	background-image: url("../img/background/bg_projects.jpg");
+	background-image: url("../img/background/bg_projects.webp");
 }
 
 #cyberencoding,
 #pd {
-	background-image: url("../img/background/bg_cyber.jpg");
+	background-image: url("../img/background/bg_cyber.webp");
 }
 
 #ui {
-	background-image: url("../img/background/bg_ui.jpg");
+	background-image: url("../img/background/bg_ui.webp");
 }
 
 #old_school {
-	background-image: url("../img/background/bg_old_school.jpg");
+	background-image: url("../img/background/bg_old_school.webp");
 }
 
 #ece {
-	background-image: url("../img/background/bg_fpga.jpg");
+	background-image: url("../img/background/bg_fpga.webp");
 }
 
 #dataviz {
-	background-image: url("../img/background/bg_index.jpg");
+	background-image: url("../img/background/bg_index.webp");
 }
 
 #design {
@@ -117,23 +117,23 @@
 #risd-grad-show,
 #dm,
 #of-soiled-bodies {
-	background-image: url("../img/background/bg_projects.jpg");
+	background-image: url("../img/background/bg_projects.webp");
 }
 
 #atlas {
-	background-image: url("../img/background/bg_ml2.jpeg");
+	background-image: url("../img/background/bg_ml2.webp");
 }
 
 #aide-memoire {
-	background-image: url("../img/background/bg_am.jpg");
+	background-image: url("../img/background/bg_am.webp");
 }
 
 #dm {
-	background-image: url("../img/background/bg_risd-beach.JPG");
+	background-image: url("../img/background/bg_risd-beach.webp");
 }
 
 #mono-no-aware {
-	background-image: url("../img/background/bg_mono-xvi.jpeg");
+	background-image: url("../img/background/bg_mono-xvi.webp");
 }
 
 /* css for each project page */
@@ -176,11 +176,18 @@
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.citation p {
+.citation p,
+.citation figcaption {
 	/* 75% */
 	font-size: 22.5px;
 	margin-top: 11.25px;
 	color: #ffffff;
+}
+
+/* nav.css styles captions via its `a, p, span` rule, which figcaption doesn't match,
+   so the weight has to be set here for figure captions to match the div ones. */
+.citation figcaption {
+	font-weight: bold;
 }
 
 .citation a {
@@ -357,6 +364,7 @@ s {
 	}
 
 	.citation p,
+	.citation figcaption,
 	.citation i {
 		font-size: 20px;
 		line-height: 20px;
