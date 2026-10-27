@@ -49,7 +49,7 @@ Full reference (all optional except `layout` and `title`):
 | `keywords`       | `<meta name="keywords">`. |
 | `schema_type`    | JSON-LD `@type`. Defaults to `WebPage`. Use `CreativeWork` (or `VisualArtwork`, `Movie`, etc.) for artworks, `ExhibitionEvent` for shows, `ProfilePage`/`AboutPage` for bio pages. Only `CreativeWork` and its subtypes emit `author`/`creator`/`publisher` — this is intentional and keeps Google Search Console's rich-result validator quiet. |
 | `genre`, `artMedium`, `artform`, `date_published` | Extra JSON-LD fields for `CreativeWork`. |
-| `og_image`       | Path to the social share image. Defaults to `/img/index/ecfc.jpg`. |
+| `og_image`       | Path to the social share image. Defaults to `/img/index/everything-comes-full-circle-thumbnail.webp`. |
 | `og_type`        | OG type. Defaults to `website`. |
 | `body_id`        | Sets `<body id="...">` for page-scoped CSS. |
 | `styles`         | List of extra stylesheets to load after `nav.css`. |
@@ -58,11 +58,14 @@ Full reference (all optional except `layout` and `title`):
 
 ## Images
 
-- Originals live under `img/` and `frames/` and are copied straight to `_site/`.
-- Every `<img>` tag should carry `alt=""`, `loading="lazy"`, and `decoding="async"`. The first (LCP) image on a page should use `loading="eager" fetchpriority="high"` instead.
+- All images are WebP and live under `img/` and `frames/`, copied straight to `_site/`.
+- Content image filenames are descriptive, lowercase and hyphenated, leading with the work or exhibition name (`the-perfect-human-16mm-projector-installation.webp`) — the filename is part of the image's search URL, so keep new ones in that form. No spaces, `+`, or underscores.
+- Directories under `img/projects/`, `img/exhibitions/` and `img/performance/` are named after the full work or exhibition title for the same reason (`img/projects/everything-comes-full-circle/`, not `ecfc/`).
+- Every `<img>` tag should carry `alt`, `loading="lazy"`, and `decoding="async"`. The first (LCP) image on a page should use `loading="eager" fetchpriority="high"` instead. Decorative images — the `frames/paris-texas/` animation sequence — correctly use `alt=""` so screen readers skip them.
+- Content images are wrapped in `<figure class="citation">` with a `<figcaption>`; the caption is styled alongside the older `<div class="citation"><p>` form in `css/projects.css`.
 - `img/background/` and `img/film/` are referenced from CSS and JS — don't rename files in those folders.
-- `frames/paris-texas/` holds a JS-loaded PNG sequence; keep filenames stable.
-- When adding new photography, re-encode to JPG at ~q85 progressive and resize so the longest side ≤ 2000 px before committing — large originals bloat the repo and hurt mobile load times.
+- `frames/paris-texas/` holds a JS-loaded image sequence; keep filenames stable.
+- When adding new photography, encode to WebP with `cwebp -q 82 -m 6` (use `-lossless -m 6` for flat graphics and posters, whichever comes out smaller) and resize so the longest side ≤ 2000 px before committing — large originals bloat the repo and hurt mobile load times.
 
 ## URL routing
 

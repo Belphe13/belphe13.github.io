@@ -17,7 +17,7 @@
   {%- set pageUrl = siteUrl + page.url -%}
   {%- set rawDescription = description | default(defaultDescription) -%}
   {%- set cleanDescription = rawDescription | striptags | replace('  ', ' ') | trim -%}
-  {%- set pageImage = og_image | default("/img/index/ecfc.jpg") -%}
+  {%- set pageImage = og_image | default("/img/index/everything-comes-full-circle-thumbnail.webp") -%}
   {%- if "http" in pageImage -%}
     {%- set pageImageAbs = pageImage -%}
   {%- else -%}
@@ -84,7 +84,7 @@
     "name": "Lilan Yang",
     "alternateName": "Lilan Yang Studio",
     "url": "{{ siteUrl }}",
-    "image": "{{ siteUrl }}/img/index/ecfc.jpg",
+    "image": "{{ siteUrl }}/img/index/everything-comes-full-circle-thumbnail.webp",
     "jobTitle": "Artist and Filmmaker",
     "description": "Moving image artist working with 16mm film, installation, photography, and performance. Rooted in the materiality of 16mm, the practice explores the flux of migration, the decay of memory, and the intricacies of perception.",
     "birthPlace": { "@type": "Place", "name": "Chongqing, China" },
