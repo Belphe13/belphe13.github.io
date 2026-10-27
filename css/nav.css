@@ -303,6 +303,9 @@ body {
   .nav {
     justify-content: space-between;
     padding: 0 12px;
+    /* width:100% is content-box by default, so the 24px of padding was added on top
+       of the full viewport width and pushed the right-hand gutter off-screen */
+    box-sizing: border-box;
   }
 
   .nav-mobile-controls {
@@ -482,5 +485,41 @@ body {
     font-size: 24px;
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+/* The open menu is a fixed full-screen overlay. With justify-content:center a list
+   taller than the screen (EXHIBITION's 10 items on a small phone, or any list in
+   landscape) overflows off BOTH ends and neither end can be scrolled to. Let the
+   overlay scroll, and centre with auto margins instead: autos split the free space
+   when the list fits, and collapse to 0 when it doesn't, so the first item stays at
+   the top and everything below it is reachable. */
+@media (max-width: 900px) {
+
+  .nav-menu.is-open {
+    justify-content: flex-start;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    /* clears the 75px bar and the close button when the list is scrolled to the top */
+    padding: 85px 0 40px;
+    box-sizing: border-box;
+  }
+
+  /* top-level menu: the five links are the flex items */
+  .nav-menu.is-open > a:first-of-type {
+    margin-top: auto;
+  }
+
+  .nav-menu.is-open > a:last-of-type {
+    margin-bottom: auto;
+  }
+
+  /* submenu open: the links are display:none, so the dropdown is the only flex item */
+  .nav-menu.is-open.show-film .dropdown_film,
+  .nav-menu.is-open.show-exhibition .dropdown_exhibition {
+    margin-top: auto;
+    margin-bottom: auto;
+    box-sizing: border-box;
   }
 }
